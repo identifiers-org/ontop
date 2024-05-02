@@ -1,0 +1,262 @@
+@prefix : <http://identifiers.org/> .
+@prefix g: <http://identifiers.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix obda: <https://w3id.org/obda/vocabulary#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix idorg: <http://identifiers.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://identifiers.org/> .
+
+<http://identifiers.org/> rdf:type owl:Ontology ;
+                           owl:versionIRI <http://identifiers.org/0.1> ;
+                          #  owl:imports <http://www.w3.org/ns/dcat> ;
+                           owl:versionInfo 0.1 .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://identifiers.org/isNamespaceOf
+idorg:isNamespaceOf rdf:type owl:ObjectProperty ;
+                    owl:inverseOf idorg:isResourceOf ;
+                    rdfs:domain idorg:Namespace ;
+                    rdfs:range idorg:Resource .
+
+
+###  http://identifiers.org/isResourceOf
+idorg:isResourceOf rdf:type owl:ObjectProperty ;
+                   rdfs:domain idorg:Resource .
+
+
+###  http://identifiers.org/responsibleFor
+idorg:responsibleFor rdf:type owl:ObjectProperty ;
+                     owl:inverseOf idorg:responsibleInstitution ;
+                     rdfs:domain idorg:Institution ;
+                     rdfs:range idorg:Resource .
+
+
+###  http://identifiers.org/responsibleInstitution
+idorg:responsibleInstitution rdf:type owl:ObjectProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain idorg:Resource ;
+                             rdfs:range idorg:Institution .
+
+
+###  http://identifiers.org/successor
+idorg:successor rdf:type owl:ObjectProperty ;
+                rdfs:domain idorg:Namespace ;
+                rdfs:range idorg:Namespace .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://identifiers.org/authHelpDescription
+idorg:authHelpDescription rdf:type owl:DatatypeProperty ,
+                                   owl:FunctionalProperty ;
+                          rdfs:domain idorg:Resource ;
+                          rdfs:range xsd:string ;
+                          rdfs:label "Authentication description"@en .
+
+
+###  http://identifiers.org/authHelpUrl
+idorg:authHelpUrl rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain idorg:Resource ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "Authentication Description URL"@en .
+
+
+###  http://identifiers.org/countryCode
+idorg:countryCode rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( idorg:Institution
+                                              idorg:Resource
+                                            )
+                              ] ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "Country code"@en .
+
+
+###  http://identifiers.org/deprecationDate
+idorg:deprecationDate rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf dcterms:date ;
+                      rdf:type owl:FunctionalProperty ;
+                      rdfs:domain [ rdf:type owl:Class ;
+                                    owl:unionOf ( idorg:Namespace
+                                                  idorg:Resource
+                                                )
+                                  ] ;
+                      rdfs:range xsd:dateTime ;
+                      rdfs:label "Date of deprecation"@en .
+
+
+###  http://identifiers.org/deprecationOfflineDate
+idorg:deprecationOfflineDate rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf dcterms:date ;
+                             rdf:type owl:FunctionalProperty ;
+                             rdfs:domain [ rdf:type owl:Class ;
+                                           owl:unionOf ( idorg:Namespace
+                                                         idorg:Resource
+                                                       )
+                                         ] ;
+                             rdfs:range xsd:dateTime .
+
+
+###  http://identifiers.org/deprecationStatement
+idorg:deprecationStatement rdf:type owl:DatatypeProperty ,
+                                    owl:FunctionalProperty ;
+                           rdfs:domain [ rdf:type owl:Class ;
+                                         owl:unionOf ( idorg:Namespace
+                                                       idorg:Resource
+                                                     )
+                                       ] ;
+                           rdfs:range xsd:string ;
+                           rdfs:label "Deprecation statement"@en .
+
+
+###  http://identifiers.org/hasProtectedUrls
+idorg:hasProtectedUrls rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:domain idorg:Resource ;
+                       rdfs:range xsd:boolean .
+
+
+###  http://identifiers.org/homepage
+idorg:homepage rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf dcterms:date ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( idorg:Institution
+                                           idorg:Resource
+                                         )
+                           ] ;
+               rdfs:range xsd:string ;
+               rdfs:label "Home page" .
+
+
+###  http://identifiers.org/isDeprecated
+idorg:isDeprecated rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( idorg:Namespace
+                                               idorg:Resource
+                                             )
+                               ] ;
+                   rdfs:range xsd:boolean .
+
+
+###  http://identifiers.org/isOfficial
+idorg:isOfficial rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain idorg:Resource ;
+                 rdfs:range xsd:boolean .
+
+
+###  http://identifiers.org/luiPattern
+idorg:luiPattern rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( idorg:Namespace
+                                             idorg:Resource
+                                           )
+                             ] ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "Local ID pattern"@en .
+
+
+###  http://identifiers.org/mirid
+idorg:mirid rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( idorg:Namespace
+                                        idorg:Resource
+                                      )
+                        ] ;
+            rdfs:range xsd:string ;
+            rdfs:label "MIR ID"@en .
+
+
+###  http://identifiers.org/prefix
+idorg:prefix rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain idorg:Namespace ;
+             rdfs:range xsd:string ;
+             rdfs:label "Prefix"@en .
+
+
+###  http://identifiers.org/providerCode
+idorg:providerCode rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain idorg:Resource ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "Provider code"@en .
+
+
+###  http://identifiers.org/rorid
+idorg:rorid rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain idorg:Institution ;
+            rdfs:range xsd:string ;
+            rdfs:label "ROR ID"@en .
+
+
+###  http://identifiers.org/sampleID
+idorg:sampleID rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( idorg:Namespace
+                                           idorg:Resource
+                                         )
+                           ] ;
+               rdfs:range xsd:string ;
+               rdfs:label "Sample ID"@en .
+
+
+###  http://identifiers.org/urlPattern
+idorg:urlPattern rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain idorg:Resource ;
+                 rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://identifiers.org/Institution
+idorg:Institution rdf:type owl:Class ;
+                  rdfs:label "Identifiers.org Institution"@en .
+
+
+###  http://identifiers.org/Namespace
+idorg:Namespace rdf:type owl:Class ;
+                rdfs:subClassOf dcat:Dataset ;
+                rdfs:label "Identifiers.org Namespace"@en .
+
+
+###  http://identifiers.org/Resource
+idorg:Resource rdf:type owl:Class ;
+               rdfs:subClassOf dcat:DataService ;
+               rdfs:label "Identifiers.org Resource"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( idorg:Institution
+                idorg:Namespace
+                idorg:Resource
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

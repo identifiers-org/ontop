@@ -1,0 +1,3 @@
+useful https://github.com/ontop/ontop-patterns-tutorial
+
+You will need to download the postgresql JDBC driver jar file to run this. You will likely need to update the COPY command on the Dockerfile to address the location and version of the jar.

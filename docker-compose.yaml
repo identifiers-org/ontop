@@ -1,0 +1,39 @@
+version: "3.5"
+services:
+    postgresql:
+        image: postgres
+        environment:
+            - POSTGRES_DB=devdatabase
+            - POSTGRES_USER=devusername
+            - POSTGRES_PASSWORD=devpassword
+        ports:
+            - "5430:5432"
+        volumes:
+            - "../../db/registry:/docker-entrypoint-initdb.d"
+    ontop:
+        image: identifiersorg/ontop:latest # ontop/ontop plus postgresql jdbc jar
+        volumes:
+          - "./idorg-ontology:/idorg"
+          - "./bins:/idorg-bins"
+        environment:
+            - ONTOP_DB_USER=devusername
+            - ONTOP_DB_PASSWORD=devpassword
+            - ONTOP_DB_URL=jdbc:postgresql://postgresql:5432/devdatabase
+            - ONTOP_DB_DRIVER=org.postgresql.Driver
+            - ONTOP_ENABLE_DOWNLOAD_ONTOLOGY=true
+            - ONTOP_CORS_ALLOWED_ORIGINS=*
+            - ONTOP_PROPERTIES_FILE=/idorg/ontop.properties
+            - ONTOP_MAPPING_FILE=/idorg/idorg-ontology.obda
+            - ONTOP_ONTOLOGY_FILE=/idorg/idorg-ontology.ttl
+            - ONTOP_PORTAL_FILE=/idorg/ontop.portal.toml
+            - ONTOP_DEV_MODE=true
+        command:
+            - ontop 
+            - endpoint
+        ports:
+            - "8080:8080"
+        depends_on:
+            - postgresql
+networks:
+    default:
+        name: idorg-ontop
