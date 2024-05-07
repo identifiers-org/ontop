@@ -2,7 +2,7 @@ This is an initial setup of ontop for the identifiers.org registry
 
 # Setup
 
-You should use Protege with the ontop extension to edit the ontology and mappings. You can also test SPARQL queries through it.
+You should use Protege with the ontop extension to edit the ontology and mappings. You can also test SPARQL queries through it. Have a look at [this tutorial](https://ontop-vkg.org/tutorial/) to see how to set it up.
 
 To test the ontop endpoint service, use the docker compose file. For this, you will need to use the Dockerfile to create a ontop image with the postgres jar in its libraries. You will likely need to update the COPY command on the Dockerfile depending on the location and version of the jar.
 
