@@ -1,47 +1,55 @@
 [PrefixDeclaration]
-:		http://identifiers.org/
-g:		http://identifiers.org/
+:		http://identifiers.org/idot/
 owl:		http://www.w3.org/2002/07/owl#
 rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+wdp:		https://www.wikidata.org/wiki/Property:
 xml:		http://www.w3.org/XML/1998/namespace
 xsd:		http://www.w3.org/2001/XMLSchema#
-dcat:		http://www.w3.org/ns/dcat#
+foaf:		http://xmlns.com/foaf/0.1/
+idot:		http://identifiers.org/idot/
+mirr:		http://identifiers.org/miriam.resource:
 obda:		https://w3id.org/obda/vocabulary#
 rdfs:		http://www.w3.org/2000/01/rdf-schema#
 idorg:		http://identifiers.org/
+schema:		https://schema.org/
 dcterms:		http://purl.org/dc/terms/
+bioschemas:	http://bioschemas.org/
 
 [MappingDeclaration] @collection [[
-mappingId	institutions-mapping
-target		:institution/{id} a :Institution ; rdfs:label {name} ; dcterms:description {description} ; :rorid {ror_id} ; :countryCode {location_country_code} ; dcterms:created {created} ; dcterms:modified {modified} ; :homepage {home_url} . 
-source		SELECT * FROM institution
-
 mappingId	namespaces-mapping
-target		:{prefix} a :Namespace ; rdfs:label {name} ; dcterms:description {description} ; dcterms:created {created} ; dcterms:modified {modified} ; :isDeprecated {deprecated} ; :mirid {mir_id} ; :luiPattern {pattern} ; :sampleID {sample_id} ; :prefix {prefix} . 
+target		idorg:{prefix} a :Namespace ; rdfs:label {name} ; dcterms:title {name} ; dcterms:description {description} ; dcterms:created {created} ; dcterms:modified {modified} ; :isDeprecated {deprecated} ; :mirid {mir_id} ; :luiPattern {pattern} ; :sampleID {sample_id} ; :prefix {prefix} . 
 source		select * from namespace
 
 mappingId	resources-mapping
-target		:resource/{id} a :Resource ; rdfs:label {name} ; dcterms:description {description} ; dcterms:created {created} ; dcterms:modified {modified} ; :isDeprecated {deprecated} ; :deprecationDate {deprecation_date} ; :mirid {mir_id} ; :sampleID {sample_id} ; :deprecationOfflineDate {deprecation_offline_date} ; :deprecationStatement {deprecation_statement} ; :isOfficial {official} ; :providerCode {provider_code} ; :homepage {resource_home_url} ; :urlPattern {url_pattern} ; :countryCode {location_country_code} ; :authHelpUrl {auth_help_url} ; :authHelpDescription {auth_help_description} ; :hasProtectedUrls {protected_urls} . 
+target		mirr:{mir_id} a :Resource ; rdfs:label {name} ; dcterms:title {name} ; dcterms:description {description} ; dcterms:created {created} ; dcterms:modified {modified} ; :isDeprecated {deprecated} ; :isOfficial {official} ; :urlPattern {url_pattern} ; :countryCode {location_country_code} ; :authHelpUrl {auth_help_url} ; :authHelpDescription {auth_help_description} ; :hasProtectedUrls {protected_urls} ; :homepage {resource_home_url} . 
 source		select * from resource
 
 mappingId	namespace-successors-mapping
-target		:{prefix} :successor :{successor_prefix} . 
-source		select n1.prefix, n2.prefix as successor_prefix from namespace n1 left join namespace n2 on n1.successor_id = n2.id where n1.successor_id != null
+target		idorg:{prefix} :successor idorg:{successor_prefix} . 
+source		select n1.prefix, n2.prefix as successor_prefix from namespace n1 left join namespace n2 on n1.successor_id = n2.id where n1.successor_id is not NULL
 
 mappingId	namespace-to-resource-relation-mapping
-target		:{prefix} :isNamespaceOf :resource/{resource_id} . 
-source		select n.prefix, r.id as resource_id from namespace n join resource r on n.id = r.namespace_id
+target		idorg:{prefix} :isNamespaceOf mirr:{mir_id} . 
+source		select prefix, r.mir_id from namespace n join resource r on n.id = r.namespace_id
 
 mappingId	namespace-deprecation-mapping
-target		:{prefix} :isDeprecated {deprecated} ; :deprecationDate {deprecation_date} ; :deprecationOfflineDate {deprecation_offline_date} ; :deprecationStatement {deprecation_statement} . 
+target		idorg:{prefix} :deprecationDate {deprecation_date} ; :deprecationOfflineDate {deprecation_offline_date} ; :deprecationStatement {deprecation_statement} . 
 source		select * from namespace where deprecated
 
 mappingId	resource-to-namespace-mapping
-target		:resource/{id} :isResourceOf :{prefix} . 
-source		select r.id, n.prefix from resource r join namespace n on r.namespace_id = n.id
+target		mirr:{mir_id} :isResourceOf idorg:{prefix} . 
+source		select r.mir_id, n.prefix from resource r join namespace n on r.namespace_id = n.id
 
-mappingId	resource-to-and-from-institution-mapping
-target		:resource/{id} :responsibleInstitution :institution/{institution_id} . :institution/{institution_id} :responsibleFor :resource/{id} . 
-source		select id, institution_id from resource
+mappingId	resource-to-institution-mapping
+target		mirr:{mir_id} dcterms:publisher <{ror_id}> . 
+source		select i.ror_id, r.mir_id from resource r, institution i where r.institution_id = i.id and i.ror_id is not null
+
+mappingId	resource-provider-code-mapping
+target		mirr:{mir_id} :providerCode {provider_code} . 
+source		select mir_id, provider_code from resource where provider_code is not null and provider_code != 'CURATOR_REVIEW'
+
+mappingId	resource-deprecation-mapping
+target		mirr:{mir_id} :deprecationDate {deprecation_date} ; :deprecationStatement {deprecation_statement} ; :deprecationOfflineDate {deprecation_offline_date} . 
+source		select * from resource where deprecated
 ]]
 
