@@ -11,7 +11,7 @@ wget --method=PUT --no-check-certificate \
      -H "Accept: application/vnd.github+json"\
      -H "Authorization: Bearer $ONTOP_GH_TOKEN"\
      -H "X-GitHub-Api-Version: 2022-11-28"\
-     -d "{\"message\":\"Sync materialized registry tuples with database\", \"committer\":{\"name\":\"Ontop bot\", \"email\":\"identifiers-org@ebi.ac.uk\"}, \"content\":\"$(cat new-idorg-ontology-materialized.rdf|base64)\", \"sha\": \"$old_sha\"}"\
+     --body-data="{\"message\":\"Sync materialized registry tuples with database\", \"committer\":{\"name\":\"Ontop bot\", \"email\":\"identifiers-org@ebi.ac.uk\"}, \"content\":\"$(cat new-idorg-ontology-materialized.rdf|base64)\", \"sha\": \"$old_sha\"}"\
      https://api.github.com/repos/identifiers-org/ontop/contents/idorg-ontology/idorg-ontology-materialized.rdf\
 # else
 #   echo No need to update materialized file
