@@ -5357,8 +5357,7 @@ The GOLD (Genomes OnLine Database)is a resource for centralized monitoring of ge
     <http://www.w3.org/2000/01/rdf-schema#label> "Identifiers.org Terms" .
 
 :Registry
-    a <http://rdfs.org/ns/
-    #Dataset>, <http://www.w3.org/ns/dcat#Catalog> .
+    a <http://rdfs.org/ns/#Dataset>, <http://www.w3.org/ns/dcat#Catalog> .
 
 <http://identifiers.org/idr>
     :isDeprecated false ;
@@ -27613,20 +27612,16 @@ Each page contains information about a particular group, with pages linked one t
     a :Namespace, <http://purl.org/dc/dcmitype/Dataset>, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "ZINC" .
 
-<http://rdfs.org/ns/
-#uriRegexPattern>
+<http://rdfs.org/ns/#uriRegexPattern>
     a rdf:DatatypeProperty .
 
-<http://vocab.deri.ie/
->
+<http://vocab.deri.ie/>
     a <http://www.w3.org/ns/adms#SemanticAsset> .
 
-<http://vocab.deri.ie/
-#rdf>
+<http://vocab.deri.ie/#rdf>
     a <http://www.w3.org/ns/adms#SemanticDistribution> .
 
-<http://vocab.deri.ie/
-#ttl>
+<http://vocab.deri.ie/#ttl>
     a <http://www.w3.org/ns/adms#SemanticDistribution> .
 
 <http://www.w3.org/ns/dcat>
@@ -27843,8 +27838,7 @@ Each page contains information about a particular group, with pages linked one t
     <https://schema.org/supersededBy> <https://schema.org/warranty> .
 
 []
-    <https://schema.org/identifier> <http://vocab.deri.ie/
-    #Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway> .
+    <https://schema.org/identifier> <http://vocab.deri.ie/#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway> .
 
 _:cd2e4ee427e1b800e2aa8e41b27436e7d260a0cd
     a <https://schema.org/Organization>, <https://schema.org/Thing> ;

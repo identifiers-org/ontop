@@ -5,11 +5,13 @@ rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
 wdp:		https://www.wikidata.org/wiki/Property:
 xml:		http://www.w3.org/XML/1998/namespace
 xsd:		http://www.w3.org/2001/XMLSchema#
+dcat:		http://www.w3.org/ns/dcat#
 foaf:		http://xmlns.com/foaf/0.1/
 idot:		http://identifiers.org/idot/
 mirr:		http://identifiers.org/miriam.resource:
 obda:		https://w3id.org/obda/vocabulary#
 rdfs:		http://www.w3.org/2000/01/rdf-schema#
+void:		http://rdfs.org/ns/void#
 idorg:		http://identifiers.org/
 schema:		https://schema.org/
 dcterms:		http://purl.org/dc/terms/
@@ -17,7 +19,7 @@ bioschemas:	http://bioschemas.org/
 
 [MappingDeclaration] @collection [[
 mappingId	namespaces-mapping
-target		idorg:{prefix} a :Namespace ; rdfs:label {name} ; dcterms:title {name} ; dcterms:description {description} ; dcterms:created {created} ; dcterms:modified {modified} ; :isDeprecated {deprecated} ; :mirid {mir_id} ; :luiPattern {pattern} ; :sampleID {sample_id} ; :prefix {prefix} . 
+target		idorg:{prefix} a :Namespace ; rdfs:label {name} ; dcterms:title {name} ; dcterms:description {description} ; dcterms:created {created} ; dcterms:modified {modified} ; :isDeprecated {deprecated} ; :mirid {mir_id} ; :luiPattern {pattern} ; :sampleID {sample_id} ; :prefix {prefix} . :Registry dcat:dataset idorg:{prefix} . 
 source		select * from namespace
 
 mappingId	resources-mapping
@@ -37,7 +39,7 @@ target		idorg:{prefix} :deprecationDate {deprecation_date} ; :deprecationOffline
 source		select * from namespace where deprecated
 
 mappingId	resource-to-namespace-mapping
-target		mirr:{mir_id} :isResourceOf idorg:{prefix} . 
+target		mirr:{mir_id} :isResourceOf idorg:{prefix} ; dcat:servesDataset idorg:{prefix} . 
 source		select r.mir_id, n.prefix from resource r join namespace n on r.namespace_id = n.id
 
 mappingId	resource-to-institution-mapping
