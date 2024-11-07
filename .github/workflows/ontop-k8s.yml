@@ -43,7 +43,7 @@ env:
   PROJECT_ID: 'golden-tenure-196110'
   GAR_LOCATION: 'europe-west1'
   GKE_CLUSTER: 'idorg-production'
-  GKE_ZONE: 'europe-west1-c'
+  GKE_ZONE: 'europe-west1'
   IMAGE: 'static-site'
   WORKLOAD_IDENTITY_PROVIDER: 'projects/61618937397/locations/global/workloadIdentityPools/github/providers/my-repo'
 
