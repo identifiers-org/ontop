@@ -1,0 +1,58 @@
+# This workflow will run the ontop-materialize job in the identifiers kubernetes cluster
+# which generates triples for the Identifiers registry ontologies
+
+name: 'Trigger ontop-materialize job in k8s'
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # Run at 7:00 AM every day
+  push:
+    branches:
+      - main
+
+env:
+  PROJECT_ID: 'golden-tenure-196110'
+  GAR_LOCATION: 'europe-west1'
+  GKE_CLUSTER: 'idorg-production'
+  GKE_ZONE: 'europe-west1'
+  IMAGE: 'static-site'
+  WORKLOAD_IDENTITY_PROVIDER: 'projects/61618937397/locations/global/workloadIdentityPools/github/providers/my-repo'
+
+jobs:
+  setup-build-publish-deploy:
+    name: 'Setup and trigger job'
+    runs-on: 'ubuntu-latest'
+    environment: 'production'
+
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+      - name: 'Checkout'
+        uses: 'actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332' # actions/checkout@v4
+
+      # Configure Workload Identity Federation and generate an access token.
+      #
+      # See https://github.com/google-github-actions/auth for more options,
+      # including authenticating via a JSON credentials file.
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@f112390a2df9932162083945e46d439060d66ec2' # google-github-actions/auth@v2
+        with:
+          project_id: '${{ env.PROJECT_ID }}'
+          workload_identity_provider: '${{ env.WORKLOAD_IDENTITY_PROVIDER }}'
+
+
+      # Get the GKE credentials so we can deploy to the cluster
+      - name: 'Set up GKE credentials'
+        uses: 'google-github-actions/get-gke-credentials@6051de21ad50fbb1767bc93c11357a49082ad116' # google-github-actions/get-gke-credentials@v2
+        with:
+          cluster_name: '${{ env.GKE_CLUSTER }}'
+          location: '${{ env.GKE_ZONE }}'
+
+
+      # Deploy the Docker image to the GKE cluster
+      - name: 'Trigger the ontop-materialize job'
+        run: |-
+          kubectl get pods
