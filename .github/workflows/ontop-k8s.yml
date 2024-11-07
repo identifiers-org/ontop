@@ -37,6 +37,7 @@ on:
   push:
     branches:
       - '"main"'
+      - "ontop-k8s-job"
 
 env:
   PROJECT_ID: 'golden-tenure-196110' # TODO: update to your Google Cloud project ID
