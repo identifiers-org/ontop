@@ -40,9 +40,9 @@ on:
       - "ontop-k8s-job"
 
 env:
-  PROJECT_ID: 'golden-tenure-196110' # TODO: update to your Google Cloud project ID
-  GAR_LOCATION: 'europe-west1' # TODO: update to your region
-  GKE_CLUSTER: 'idorg-production' # TODO: update to your cluster name
+  PROJECT_ID: 'golden-tenure-196110'
+  GAR_LOCATION: 'europe-west1'
+  GKE_CLUSTER: 'idorg-production'
   GKE_ZONE: 'europe-west1-c'
   IMAGE: 'static-site'
   WORKLOAD_IDENTITY_PROVIDER: 'projects/61618937397/locations/global/workloadIdentityPools/github/providers/my-repo'
