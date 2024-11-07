@@ -19,9 +19,6 @@
 
 <http://identifiers.org/idot/> rdf:type owl:Ontology ;
                                 owl:versionIRI <http://identifiers.org/0.2> ;
-                                owl:imports <http://vocab.deri.ie/void> ,
-                                            <http://www.w3.org/ns/dcat> ,
-                                            schema: ;
                                 rdfs:label "Ontology for the identifiers.org registry" ;
                                 owl:versionInfo 0.2 .
 
