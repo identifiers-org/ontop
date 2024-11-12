@@ -15,12 +15,13 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix bioschemas: <http://bioschemas.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @base <http://identifiers.org/idot/> .
 
 <http://identifiers.org/idot/> rdf:type owl:Ontology ;
-                                owl:versionIRI <http://identifiers.org/0.2> ;
+                                owl:versionIRI <http://identifiers.org/0.3> ;
                                 rdfs:label "Ontology for the identifiers.org registry" ;
-                                owl:versionInfo 0.2 .
+                                owl:versionInfo 0.3 .
 
 
 #################################################################
@@ -246,3 +247,64 @@ idot:Registry rdf:type owl:NamedIndividual ,
                               "https://www.w3.org/TR/vocab-dcat-3" ;
               rdfs:seeAlso <https://docs.identifiers.org/pages/sparql.html> ;
               dcat:landingPage <https://registry.identifiers.org> .
+
+_:eq1 rdf:type owl:NamedIndividual, sh:SPARQLExecutable ;
+                   rdfs:comment "URL resolution using owl:sameAs via our virtual triple store" ;
+                   sh:select """PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT * WHERE {
+    <http://identifiers.org/uniprot:P12345> owl:sameAs ?obj .
+} LIMIT 10""" .
+
+_:eq2 rdf:type owl:NamedIndividual, sh:SPARQLExecutable ;
+                   rdfs:comment "Reverse resolution using owl:sameAs via our virtual triple store" ;
+                   sh:select """PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT * WHERE {
+    <http://purl.uniprot.org/uniprot/P12345> owl:sameAs ?obj .
+} LIMIT 10""" .
+
+_:eq3 rdf:type owl:NamedIndividual, sh:SPARQLExecutable ;
+                   rdfs:comment "Usage of id:active subgraph to limit resolution" ;
+                   sh:select """PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?target
+FROM <id:active>
+WHERE {
+    <http://identifiers.org/uniprot:P12345> owl:sameAs ?target
+}""" .
+
+_:eq4 rdf:type owl:NamedIndividual, sh:SPARQLExecutable ;
+                   rdfs:comment "List namespaces and their names" ;
+                   sh:select """PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX idot: <http://identifiers.org/idot/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT *
+WHERE {
+    ?namespace a idot:Namespace ;
+               dcterms:title ?name .
+}
+LIMIT 10""" .
+
+_:eq5 rdf:type owl:NamedIndividual, sh:SPARQLExecutable ;
+                   rdfs:comment "List namespaces and their url patterns" ;
+                   sh:select """PREFIX idot: <http://identifiers.org/idot/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT ?namespace ?urlPattern
+WHERE {
+    ?namespace a idot:Namespace ;
+               idot:isNamespaceOf ?resource .
+    ?resource idot:urlPattern ?urlPattern .
+}
+ORDER BY ASC(?namespace)
+LIMIT 10""" .
+
+_:eq6 rdf:type owl:NamedIndividual, sh:SPARQLExecutable ;
+                   rdfs:comment "Using DCAT to access registry" ;
+                   sh:select """PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+SELECT *
+WHERE {
+    ?namespace a dcat:Dataset ; dcterms:title ?namespaceTitle .
+}""" .
+
+_:eq7 rdf:type owl:NamedIndividual, sh:SPARQLExecutable ;
+                   rdfs:comment "Get full description of namespace" ;
+                   sh:select "DESCRIBE <http://identifiers.org/3dmet>" .
