@@ -1,4 +1,4 @@
-This repository contains the ontology files for identifiers.org and the required code for updating the SPARQL server with the latest information from the registry. [It was the result of ELIXIR BioHackathon 2024 project 13](https://github.com/elixir-europe/biohackathon-projects-2024/blob/main/13.md).
+This repository contains the ontology files for identifiers.org and the required code for updating the SPARQL server with the latest information from the registry. [It was the result of ELIXIR BioHackathon 2024 project 13](https://github.com/elixir-europe/biohackathon-projects-2024/blob/main/13.md). Please use our main issue page at <https://github.com/identifiers-org/identifiers-org.github.io/issues> for any issues.
 
 # How it works
 
