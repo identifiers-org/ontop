@@ -300,11 +300,16 @@ idot:eq6 rdf:type owl:NamedIndividual, sh:SPARQLExecutable ;
                    rdfs:comment "Using DCAT to access registry" ;
                    sh:select """PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX idot: <http://identifiers.org/idot/>
 SELECT *
 WHERE {
-    ?namespace a dcat:Dataset ; dcterms:title ?namespaceTitle .
+    _:namespace a dcat:Dataset ;
+                dcterms:title ?namespaceTitle .
+    [] dcat:servesDataset _:namespace ;
+       dcterms:title      ?resourceTitle ;
+       idot:urlPattern    ?pattern .
 }""" .
 
 idot:eq7 rdf:type owl:NamedIndividual, sh:SPARQLExecutable ;
                    rdfs:comment "Get full description of namespace" ;
-                   sh:select "DESCRIBE <http://identifiers.org/3dmet>" .
+                   sh:describe "DESCRIBE <http://identifiers.org/3dmet>" .
