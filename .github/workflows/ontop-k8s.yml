@@ -10,14 +10,6 @@ on:
     branches:
       - main
 
-env:
-  PROJECT_ID: 'golden-tenure-196110'
-  GAR_LOCATION: 'europe-west1'
-  GKE_CLUSTER: 'idorg-production'
-  GKE_ZONE: 'europe-west1'
-  IMAGE: 'static-site'
-  WORKLOAD_IDENTITY_PROVIDER: 'projects/61618937397/locations/global/workloadIdentityPools/github/providers/my-repo'
-
 jobs:
   setup-build-publish-deploy:
     name: 'Setup and trigger job'
@@ -40,19 +32,25 @@ jobs:
         name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@f112390a2df9932162083945e46d439060d66ec2' # google-github-actions/auth@v2
         with:
-          project_id: '${{ env.PROJECT_ID }}'
-          workload_identity_provider: '${{ env.WORKLOAD_IDENTITY_PROVIDER }}'
+          project_id: '${{ secrets.GCP_PROJECT_ID }}'
+          workload_identity_provider: '${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}'
 
 
       # Get the GKE credentials so we can deploy to the cluster
       - name: 'Set up GKE credentials'
         uses: 'google-github-actions/get-gke-credentials@6051de21ad50fbb1767bc93c11357a49082ad116' # google-github-actions/get-gke-credentials@v2
         with:
-          cluster_name: '${{ env.GKE_CLUSTER }}'
-          location: '${{ env.GKE_ZONE }}'
+          cluster_name: '${{ secrets.GKE_CLUSTER }}'
+          location: '${{ secrets.GCP_CLUSTER_LOCATION }}'
 
 
       # Deploy the Docker image to the GKE cluster
-      - name: 'Trigger the ontop-materialize job'
-        run: |-
-          kubectl get pods
+      - name: 'Update materialized triples job'
+        run: >-
+          kubectl -n hq delete -f ontop-k8s-job.yaml && 
+          kubectl -n hq apply  -f ontop-k8s-job.yaml && 
+          kubectl -n hq wait --for=condition=complete --timeout=60s -f ontop-k8s-job.yaml"
+
+      - name: 'Restart SPARQL server'
+        run: kubectl -n satellite rollout restart deployment/sparql
+

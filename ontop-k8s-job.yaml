@@ -1,0 +1,44 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ontop-materializer
+  labels:
+    component: ontop
+    tier: api
+    app: idorg
+    deployment: hq
+    environment: staging
+spec:
+  template:
+    spec:
+      containers:
+      - name: ontop
+        image: identifiersorg/ontop:1.1.0 #ontop + postgresql jdbc driver + curl
+        workingDir: "/tmp"
+        command: ["/bin/sh", "-c"]
+        args: 
+          - >-
+            wget --no-check-certificate -q https://raw.githubusercontent.com/identifiers-org/ontop/refs/heads/main/update-triples-script.sh &&
+            bash update-triples-script.sh
+        env:
+          - name: ONTOP_DB_URL
+            value: "jdbc:postgresql://hq-postgresql:5432/dbhqregistry"
+          - name: ONTOP_DB_USER
+            valueFrom:
+              secretKeyRef:
+                name: hq-registry-database-credentials
+                key: username
+          - name: ONTOP_DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: hq-registry-database-credentials
+                key: password
+          - name: ONTOP_GH_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: github-credentials
+                key: auth-token
+          - name: ONTOP_LOG_LEVEL
+            value: ERROR
+      restartPolicy: Never
+  backoffLimit: 4
