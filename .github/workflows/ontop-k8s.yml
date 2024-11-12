@@ -12,7 +12,7 @@ on:
 
 jobs:
   setup-build-publish-deploy:
-    name: 'Setup and trigger job'
+    name: 'Update triples and server'
     runs-on: 'ubuntu-latest'
     environment: 'production'
 
@@ -52,5 +52,7 @@ jobs:
           kubectl -n hq wait --for=condition=complete --timeout=60s -f ontop-k8s-job.yaml
 
       - name: 'Restart SPARQL server'
-        run: kubectl -n satellite rollout restart deployment/sparql
+        run: >-
+          kubectl -n satellite rollout restart deployment/sparql &&
+          kubectl -n satellite rollout status deployment/sparql --timeout=60s
 
