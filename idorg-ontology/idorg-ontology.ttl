@@ -232,7 +232,6 @@ idot:Resource rdf:type owl:Class ;
 idot:Registry rdf:type owl:NamedIndividual ,
                        void:Dataset ,
                        dcat:Catalog ;
-              void:dataDump idot:v0.2 ;
               void:exampleResource idorg:taxonomy ;
               void:feature <http://www.w3.org/ns/formats/Turtle> ;
               void:sparqlEndpoint <http://sparql.api.identifiers.org/sparql> ;
