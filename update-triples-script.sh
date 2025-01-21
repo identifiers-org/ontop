@@ -4,7 +4,7 @@ wget --no-check-certificate -q https://raw.githubusercontent.com/identifiers-org
 wget --no-check-certificate -q https://raw.githubusercontent.com/identifiers-org/ontop/refs/heads/main/idorg-ontology/idorg-ontology.ttl
 wget --no-check-certificate -q https://raw.githubusercontent.com/identifiers-org/ontop/refs/heads/main/idorg-ontology/idorg-ontology.obda
 ontop materialize --db-user "$ONTOP_DB_USER" --db-password "$ONTOP_DB_PASSWORD" --db-url "$ONTOP_DB_URL" -m ./idorg-ontology.obda -t ./idorg-ontology.ttl -o ./new-idorg-ontology-materialized.rdf -p /dev/null
-if diff -q new-idorg-ontology-materialized.rdf idorg-ontology-materialized.rdf > /dev/null; then
+if ! diff -q new-idorg-ontology-materialized.rdf idorg-ontology-materialized.rdf > /dev/null; then
     echo Updating materialized file
 
     echo -n "{\"message\":\"Sync triples with database [skip ci]\", \"committer\":{\"name\":\"Sync bot\", \"email\":\"identifiers-org@ebi.ac.uk\"}, \"content\":\"" > datafile
