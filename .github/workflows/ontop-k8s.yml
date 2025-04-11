@@ -49,10 +49,10 @@ jobs:
         run: >-
           kubectl -n hq delete -f ontop-k8s-job.yaml && 
           kubectl -n hq apply  -f ontop-k8s-job.yaml && 
-          kubectl -n hq wait --for=condition=complete --timeout=60s -f ontop-k8s-job.yaml
+          kubectl -n hq wait --for=condition=complete --timeout=300s -f ontop-k8s-job.yaml
 
       - name: 'Restart SPARQL server'
         run: >-
           kubectl -n satellite rollout restart deployment/sparql &&
-          kubectl -n satellite rollout status deployment/sparql --timeout=60s
+          kubectl -n satellite rollout status deployment/sparql --timeout=300s
 
