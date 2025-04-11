@@ -1,25 +1,30 @@
 # The Identifiers.org Ontology Terms
 
 Below you will find an overview of the terms created for the identifiers.org ontology. Formal definitions of these can be found at the [idorg-ontology.ttl](./idorg-ontology.ttl) file.
-Aside from these files, the ontology also uses terms from 
+Aside from these terms, these files also uses terms from 
 [RDF Schema](https://www.w3.org/TR/rdf-schema/), 
 [VoID](https://www.w3.org/TR/void/), 
 [DCAT](https://www.w3.org/TR/vocab-dcat-3/), and 
 [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/).
 
-The namespace for the identifiers.org ontology terms is <http://identifiers.org/idot/>, and the suggested prefix is `idot`.
+
+> [!TIP]
+> The namespace for the identifiers.org ontology terms is <http://identifiers.org/idot/>.
+>
+> The suggested prefix is `idot`.
+
 
 
 ## Classes
 
-### Registry
+### idot:Registry
 This class is destined to the registry itself.
 
-### Namespace
+### idot:Namespace
 Class for namespace entries in the identifiers.org registry. Namespaces are identified by curie prefixes.
 Each namespace references a set of identifiers that can be a full or part of a online database.
 
-### Resource
+### idot:Resource
 Class for resource entries in the identifiers.org registry.
 These are web resources that serve data for objects under the associated namespace.
 A namespace can have multiple resources for the same objects, but a resource only serves one namespace.
