@@ -5454,14 +5454,14 @@ ICE supports the following: (i) Data integration: brings together available data
 
 <http://identifiers.org/idot>
     :isDeprecated false ;
-    :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100670> ;
+    :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001090>, <http://identifiers.org/miriam.resource:MIR%3A00100670> ;
     :luiPattern "^[A-Za-z]+$" ;
     :mirid "MIR:00000519" ;
     :prefix "idot" ;
-    :sampleID "identifierPattern" ;
+    :sampleID "Namespace" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:39.487"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Identifiers.org Terms (idot) is an RDF vocabulary providing useful terms for describing datasets." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:39.487"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-11T15:02:23.103"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Identifiers.org Terms" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Identifiers.org Terms" .
@@ -10741,6 +10741,25 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
     <http://www.w3.org/2000/01/rdf-schema#label> "Monarch Initiative" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/mondo> ;
     <http://xmlns.com/foaf/0.1/page> "https://monarchinitiative.org" .
+
+<http://identifiers.org/miriam.resource:MIR%3A00001090>
+    :countryCode "GB" ;
+    :hasProtectedUrls false ;
+    :homepage "https://github.com/identifiers-org/ontop" ;
+    :isDeprecated false ;
+    :isOfficial false ;
+    :isResourceOf <http://identifiers.org/idot> ;
+    :providerCode "gh" ;
+    :urlPattern "https://github.com/identifiers-org/ontop/tree/main/idorg-ontology#idot{$id}" ;
+    <http://purl.org/dc/terms/created> "2025-04-11T15:01:43.961"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> "identifiers.org ontology terms via github repository" ;
+    <http://purl.org/dc/terms/modified> "2025-04-11T15:01:43.961"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/publisher> <https://ror.org/02catss52> ;
+    <http://purl.org/dc/terms/title> "idot via github" ;
+    a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "idot via github" ;
+    <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/idot> ;
+    <http://xmlns.com/foaf/0.1/page> "https://github.com/identifiers-org/ontop" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100001>
     :countryCode "GB" ;
@@ -21138,15 +21157,17 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 
 <http://identifiers.org/miriam.resource:MIR%3A00100670>
     :countryCode "GB" ;
+    :deprecationDate "2025-04-11T14:56:49.071"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     :hasProtectedUrls false ;
     :homepage "https://identifiers.org/" ;
-    :isDeprecated false ;
+    :isDeprecated true ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/idot> ;
     :urlPattern "https://biomodels.net/vocab/idot.rdf#{$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:39.625"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-04-11T14:56:49.071"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "IdoT via biomodels.net" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:39.625"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-11T14:56:49.078"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/02catss52> ;
     <http://purl.org/dc/terms/title> "IdoT via biomodels.net" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
