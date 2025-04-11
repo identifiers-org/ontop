@@ -4,6 +4,7 @@
 name: 'Trigger ontop-materialize job in k8s'
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 7 * * *'  # Run at 7:00 AM every day
   push:
