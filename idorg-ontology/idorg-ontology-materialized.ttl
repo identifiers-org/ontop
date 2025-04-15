@@ -20639,19 +20639,19 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/miriam.resource:MIR%3A00100639>
     :countryCode "FR" ;
     :hasProtectedUrls false ;
-    :homepage "http://bioinfo.lifl.fr/norine/" ;
+    :homepage "https://bioinfo.cristal.univ-lille.fr/norine/" ;
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/norine> ;
-    :urlPattern "http://bioinfo.lifl.fr/norine/result.jsp?ID={$id}" ;
+    :urlPattern "https://bioinfo.cristal.univ-lille.fr/norine/result.jsp?ID={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:34.027"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "NORINE at Computer Science Laboratory of Lille" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:34.027"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-14T09:59:22.116"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "NORINE at Computer Science Laboratory of Lille" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "NORINE at Computer Science Laboratory of Lille" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/norine> ;
-    <http://xmlns.com/foaf/0.1/page> "http://bioinfo.lifl.fr/norine/" .
+    <http://xmlns.com/foaf/0.1/page> "https://bioinfo.cristal.univ-lille.fr/norine/" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100640>
     :countryCode "US" ;
@@ -25568,15 +25568,17 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
     <http://www.w3.org/2000/01/rdf-schema#label> "miRNEST" .
 
 <http://identifiers.org/mirtarbase>
-    :isDeprecated false ;
+    :deprecationDate "2025-04-14T09:37:58.872"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100739> ;
     :luiPattern "^MIRT\\d{6}$" ;
     :mirid "MIR:00000562" ;
     :prefix "mirtarbase" ;
     :sampleID "MIRT000002" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:49.171"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-04-14T09:37:58.872"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "miRTarBase is a database of miRNA-target interactions (MTIs), collected manually from relevant literature, following Natural Language Processing of the text to identify research articles related to functional studies of miRNAs. Generally, the collected MTIs are validated experimentally by reporter assay, western blot, microarray and next-generation sequencing experiments." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:49.171"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-14T09:38:37.217"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "miRTarBase" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "miRTarBase" .
@@ -26409,43 +26411,52 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
     <http://www.w3.org/2000/01/rdf-schema#label> "NMR Shift Database" .
 
 <http://identifiers.org/noncodev3>
-    :isDeprecated false ;
+    :deprecationDate "2025-04-14T08:48:51.634"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "NONCODE v3 is not available anymore. Current is version 6 and can be found at http://www.noncode.org/." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100319> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000248" ;
     :prefix "noncodev3" ;
     :sampleID "377550" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:36.9"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-04-14T08:48:51.634"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "NONCODE is a database of expression and functional lncRNA (long noncoding RNA) data obtained from microarray studies. LncRNAs have been shown to play key roles in various biological processes such as imprinting control, circuitry controlling pluripotency and differentiation, immune responses and chromosome dynamics. The collection references NONCODE version 3. This was replaced in 2013 by version 4." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:36.9"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-14T08:49:25.504"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "NONCODE v3" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "NONCODE v3" .
 
 <http://identifiers.org/noncodev4.gene>
-    :isDeprecated false ;
+    :deprecationDate "2025-04-14T08:50:01.112"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "NONCODE v4 is not available anymore. Current is version 6 and can be found at http://www.noncode.org/." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100616> ;
     :luiPattern "^NONHSAG\\d{5}$" ;
     :mirid "MIR:00000480" ;
     :prefix "noncodev4.gene" ;
     :sampleID "NONHSAG00001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:29.649"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-04-14T08:50:01.112"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "NONCODE is a database of expression and functional lncRNA (long noncoding RNA) data obtained from microarray studies. LncRNAs have been shown to play key roles in various biological processes such as imprinting control, circuitry controlling pluripotency and differentiation, immune responses and chromosome dynamics. The collection references NONCODE version 4 and relates to gene regions." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:29.649"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-14T08:50:12.469"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "NONCODE v4 Gene" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "NONCODE v4 Gene" .
 
 <http://identifiers.org/noncodev4.rna>
-    :isDeprecated false ;
+    :deprecationDate "2025-04-14T08:49:41.833"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "NONCODE v4 is not available anymore. Current is version 6 and can be found at http://www.noncode.org/." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100617> ;
     :luiPattern "^NONHSAT\\d{6}$" ;
     :mirid "MIR:00000481" ;
     :prefix "noncodev4.rna" ;
     :sampleID "NONHSAT000001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:29.833"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-04-14T08:49:41.833"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "NONCODE is a database of expression and functional lncRNA (long noncoding RNA) data obtained from microarray studies. LncRNAs have been shown to play key roles in various biological processes such as imprinting control, circuitry controlling pluripotency and differentiation, immune responses and chromosome dynamics. The collection references NONCODE version 4 and relates to individual transcripts." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:29.833"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-14T08:49:50.398"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "NONCODE v4 Transcript" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "NONCODE v4 Transcript" .
@@ -27157,15 +27168,17 @@ components may be proteins, genes/DNA, RNA, or simple molecules. Where the ident
     <http://www.w3.org/2000/01/rdf-schema#label> "PaxDb Protein" .
 
 <http://identifiers.org/pazar>
-    :isDeprecated false ;
+    :deprecationDate "2025-04-14T11:01:07.682"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100388> ;
     :luiPattern "^TF\\w+$" ;
     :mirid "MIR:00000306" ;
     :prefix "pazar" ;
     :sampleID "TF0001053" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:49.605"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-04-14T11:01:07.682"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The PAZAR database unites independently created and maintained data collections of transcription factor and regulatory sequence annotation. It provides information on the sequence and target of individual transcription factors." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:49.605"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-14T11:01:07.688"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Pazar Transcription Factor" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Pazar Transcription Factor" .
@@ -27793,15 +27806,17 @@ PharmGKB Pathways are drug centric, gene based, interactive pathways which focus
     <http://www.w3.org/2000/01/rdf-schema#label> "PRIDE Project" .
 
 <http://identifiers.org/prints>
-    :isDeprecated false ;
+    :deprecationDate "2025-04-14T10:26:37.184"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100089> ;
     :luiPattern "^PR\\d{5}$" ;
     :mirid "MIR:00000061" ;
     :prefix "prints" ;
     :sampleID "PR00001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:49.123"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-04-14T10:26:37.184"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "PRINTS is a compendium of protein fingerprints. A fingerprint is a group of conserved motifs used to characterise a protein family; its diagnostic power is refined by iterative scanning of a SWISS-PROT/TrEMBL composite. Usually the motifs do not overlap, but are separated along a sequence, though they may be contiguous in 3D-space. Fingerprints can encode protein folds and functionalities more flexibly and powerfully than can single motifs, full diagnostic potency deriving from the mutual context provided by motif neighbours." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:49.123"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-14T10:26:37.185"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "PRINTS" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "PRINTS" .
