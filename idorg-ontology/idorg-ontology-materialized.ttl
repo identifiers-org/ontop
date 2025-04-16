@@ -29075,15 +29075,17 @@ The initiative works with participating journals to intercept manuscripts in the
     <http://www.w3.org/2000/01/rdf-schema#label> "Signaling Pathways Project" .
 
 <http://identifiers.org/stap>
-    :isDeprecated false ;
+    :deprecationDate "2025-04-15T12:28:16.634"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100519> ;
     :luiPattern "^[0-9][A-Za-z0-9]{3}$" ;
     :mirid "MIR:00000399" ;
     :prefix "stap" ;
     :sampleID "1a24" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:11.871"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-04-15T12:28:16.634"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "STAP (Statistical Torsional Angles Potentials) was developed since, according to several studies, some nuclear magnetic resonance (NMR) structures are of lower quality, are less reliable and less suitable for structural analysis than high-resolution X-ray crystallographic structures. The refined NMR solution structures (statistical torsion angle potentials; STAP) in the database are refined from the Protein Data Bank (PDB)." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:11.871"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-15T12:28:23.228"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "STAP" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "STAP" .
