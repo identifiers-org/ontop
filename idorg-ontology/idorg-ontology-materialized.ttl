@@ -9868,21 +9868,21 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
 <http://identifiers.org/miriam.resource:MIR%3A00000975>
     :countryCode "US" ;
     :hasProtectedUrls false ;
-    :homepage "https://www.arabidopsis.org/index.jsp" ;
+    :homepage "https://www.arabidopsis.org/" ;
     :isDeprecated false ;
     :isOfficial true ;
     :isResourceOf <http://identifiers.org/tair.name> ;
     :providerCode "tair" ;
-    :urlPattern "https://www.arabidopsis.org/servlets/TairObject?type=locus&name={$id}" ;
+    :urlPattern "https://www.arabidopsis.org/locus?name={$id}" ;
     <http://purl.org/dc/terms/created> "2023-01-12T10:08:07.985"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Arabidopsis Information Resource (TAIR) collects information and maintains a database of genetic and molecular biology data for Arabidopsis thaliana, a widely used model plant." ;
-    <http://purl.org/dc/terms/modified> "2023-01-12T10:08:07.985"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-28T15:50:40.643"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/0018yg518> ;
     <http://purl.org/dc/terms/title> "TAIR" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "TAIR" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/tair.name> ;
-    <http://xmlns.com/foaf/0.1/page> "https://www.arabidopsis.org/index.jsp" .
+    <http://xmlns.com/foaf/0.1/page> "https://www.arabidopsis.org/" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00000978>
     :countryCode "US" ;
@@ -11696,19 +11696,20 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/miriam.resource:MIR%3A00100078>
     :countryCode "US" ;
     :hasProtectedUrls false ;
-    :homepage "http://arabidopsis.org/index.jsp" ;
+    :homepage "http://arabidopsis.org/" ;
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/tair.locus> ;
-    :urlPattern "http://www.arabidopsis.org/servlets/TairObject?accession=Locus:{$id}" ;
+    :urlPattern "https://www.arabidopsis.org/locus?accession={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:46.404"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Arabidopsis Information Resource (TAIR) Locus" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:46.404"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-28T15:52:13.331"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/publisher> <https://ror.org/0018yg518> ;
     <http://purl.org/dc/terms/title> "The Arabidopsis Information Resource (TAIR) Locus" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "The Arabidopsis Information Resource (TAIR) Locus" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/tair.locus> ;
-    <http://xmlns.com/foaf/0.1/page> "http://arabidopsis.org/index.jsp" .
+    <http://xmlns.com/foaf/0.1/page> "http://arabidopsis.org/" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100079>
     :countryCode "CA" ;
@@ -18113,10 +18114,10 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/nbn> ;
-    :urlPattern "http://nbn-resolving.org/resolver?identifier={$id}&verb=redirect" ;
+    :urlPattern "http://nbn-resolving.org/{$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:06.932"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "NBN through URN Resolver at German National Library" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:06.932"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-28T09:02:39.024"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/01n7gem85> ;
     <http://purl.org/dc/terms/title> "NBN through URN Resolver at German National Library" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
@@ -21034,12 +21035,12 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
     :hasProtectedUrls false ;
     :homepage "https://www.ebi.ac.uk/intact/" ;
     :isDeprecated false ;
-    :isOfficial false ;
+    :isOfficial true ;
     :isResourceOf <http://identifiers.org/imex> ;
-    :urlPattern "https://imexcentral.org/icentral/imex/rec/{$id}" ;
+    :urlPattern "https://www.ebi.ac.uk/intact/search?query={$id}#interaction" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:05.534"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "IMEx Consortium though Intact" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:05.534"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-28T09:12:08.437"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/02catss52> ;
     <http://purl.org/dc/terms/title> "IMEx Consortium though Intact" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
@@ -22332,15 +22333,17 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 
 <http://identifiers.org/miriam.resource:MIR%3A00100745>
     :countryCode "BG" ;
+    :deprecationDate "2025-04-28T09:17:05.836"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     :hasProtectedUrls false ;
     :homepage "http://linkedlifedata.com/" ;
-    :isDeprecated false ;
+    :isDeprecated true ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/pubmed> ;
     :urlPattern "http://linkedlifedata.com/resource/pubmed/id/{$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:33.81"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-04-28T09:17:05.836"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "PubMed through Linkedlife data" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:33.81"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-04-28T09:17:05.84"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "PubMed through Linkedlife data" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "PubMed through Linkedlife data" ;
