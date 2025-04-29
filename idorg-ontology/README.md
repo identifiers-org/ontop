@@ -1,3 +1,6 @@
+> [!CAUTION]
+> The `idorg-ontology-materialized.rdf` file is deprecated and won't be further updated, please use `idorg-ontology-materialized.ttl`
+
 # The Identifiers.org Ontology Terms
 
 Below you will find an overview of the terms created for the identifiers.org ontology. Formal definitions of these can be found at the [idorg-ontology.ttl](./idorg-ontology.ttl) file.
@@ -12,8 +15,6 @@ Aside from these terms, these files also uses terms from
 > The namespace for the identifiers.org ontology terms is <http://identifiers.org/idot/>.
 >
 > The suggested prefix is `idot`.
-
-
 
 ## Classes
 
