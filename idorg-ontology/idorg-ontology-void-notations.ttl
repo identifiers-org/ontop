@@ -22,10 +22,6 @@
         sh:namespace "http://identifiers.org/idot/"^^xsd:anyURI ;
     ] ;
     sh:declare [
-        sh:prefix "idorg" ;
-        sh:namespace "http://identifiers.org/"^^xsd:anyURI ;
-    ] ;
-    sh:declare [
         sh:prefix "dct" ;
         sh:prefix "dcterms" ;
         sh:namespace "http://purl.org/dc/terms/"^^xsd:anyURI ;
