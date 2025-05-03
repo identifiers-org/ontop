@@ -7831,10 +7831,10 @@ E.g., Ga0027275""" ;
     :isOfficial true ;
     :isResourceOf <http://identifiers.org/oma.hog> ;
     :providerCode "oma" ;
-    :urlPattern "https://omabrowser.org/oma/hog/resolve/HOG:{$id}/" ;
+    :urlPattern "https://omabrowser.org/oma/hog/{$id}/" ;
     <http://purl.org/dc/terms/created> "2020-12-14T12:57:54.571"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Organization information obtained from ROR API using ROR ID 'https://ror.org/05a28rw58' with Wikidata IDs [Q11942], and ISNI IDs [0000 0001 2156 2780]" ;
-    <http://purl.org/dc/terms/modified> "2020-12-14T12:57:54.571"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-02T13:09:34.605"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/05a28rw58> ;
     <http://purl.org/dc/terms/title> "ETH Zurich" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
@@ -26636,13 +26636,13 @@ For more information/explanation, see ODAM User's Guide : https://inrae.github.i
 <http://identifiers.org/oma.hog>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000761> ;
-    :luiPattern "^HOG:[0-9]{7}(\\.[0-9a-z.]+)?(_[0-9]+)?$" ;
+    :luiPattern "^HOG:[0-9A-Z._]+$" ;
     :mirid "MIR:00000785" ;
     :prefix "oma.hog" ;
-    :sampleID "0459895" ;
+    :sampleID "HOG:E0666575" ;
     <http://purl.org/dc/terms/created> "2020-12-14T12:57:54.56"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Hierarchical orthologous groups predicted by OMA (Orthologous MAtrix) database. Hierarchical orthologous groups are sets of genes that have started diverging from a single common ancestor gene at a certain taxonomic level of reference. " ;
-    <http://purl.org/dc/terms/modified> "2023-01-10T16:04:39.504"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-02T14:13:45.774"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "OMA HOGs" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "OMA HOGs" .
