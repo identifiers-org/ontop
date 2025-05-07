@@ -21,13 +21,13 @@
 <http://identifiers.org/4503>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000921> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00001020" ;
     :prefix "4503" ;
     :sampleID "3dab719c-1fa0-461b-a543-5f0e564a9be4" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:31:54.933"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "NHLBI BioData Catalyst supports the management, analysis and sharing of human disease data for the research community and aims to advance basic understanding of the genetic basis of complex traits and accelerate discovery and development of therapies, diagnostic tests, and other technologies for diseases like cancer. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:31:54.933"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:40:22.043"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BioData Catalyst" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BioData Catalyst" .
@@ -49,13 +49,13 @@
 <http://identifiers.org/6vts>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000933> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000934" ;
     :prefix "6vts" ;
     :sampleID "005bf193-fa93-44c0-9b2b-9b039f94d692" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:34:03.581"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Helping to End Addiction Long-termSM Initiative, or NIH HEAL InitiativeSM, will support the Justice Community Opioid Innovation Network (JCOIN) to study approaches to increase high-quality care for people with opioid misuse and OUD in justice settings. JCOIN will test strategies to expand effective treatment and care in partnership with local and state justice systems and community-based treatment providers." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:34:03.581"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:41:51.109"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "JCOIN Portal" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "JCOIN Portal" .
@@ -119,13 +119,13 @@
 <http://identifiers.org/affy.probeset>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100514>, <http://identifiers.org/miriam.resource:MIR%3A00100672> ;
-    :luiPattern "\\d{4,}((_[asx])?_at)?" ;
+    :luiPattern "^\\d{4,}((_[asx])?_at)?$" ;
     :mirid "MIR:00000394" ;
     :prefix "affy.probeset" ;
     :sampleID "243002_at" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:10.647"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "An Affymetrix ProbeSet is a collection of up to 11 short (~22 nucleotide) microarray probes designed to measure a single gene or a family of genes as a unit. Multiple probe sets may be available for each gene under consideration." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:10.647"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:25:02.286"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Affymetrix Probeset" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Affymetrix Probeset" .
@@ -639,15 +639,17 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Blue Brain Project Knowledge Graph" .
 
 <http://identifiers.org/bbtp>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-06T13:21:47.261"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000888> ;
-    :luiPattern "\\b[0-9a-f]{8}\\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\\b[0-9a-f]{12}\\b" ;
+    :luiPattern "^\\b[0-9a-f]{8}\\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\\b[0-9a-f]{12}\\b$" ;
     :mirid "MIR:00000889" ;
     :prefix "bbtp" ;
     :sampleID "f0ba2f3e-aa6f-4264-8d18-8ee65cf6f61a" ;
     <http://purl.org/dc/terms/created> "2022-01-09T18:52:31.186"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-06T13:21:47.261"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Input data and analysis results for the paper \"Topology of synaptic connectivity constrains neuronal stimulus representation, predicting two complementary coding strategies (https://www.biorxiv.org/content/10.1101/2020.11.02.363929v2 )." ;
-    <http://purl.org/dc/terms/modified> "2022-01-09T18:52:31.186"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T13:21:53.233"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Blue Brain Project Topological sampling Knowledge Graph" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Blue Brain Project Topological sampling Knowledge Graph" .
@@ -945,13 +947,13 @@
 <http://identifiers.org/biokc>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000994> ;
-    :luiPattern "bkc[0-9]*" ;
+    :luiPattern "^bkc[0-9]*$" ;
     :mirid "MIR:00000995" ;
     :prefix "biokc" ;
     :sampleID "bkc640" ;
     <http://purl.org/dc/terms/created> "2023-03-01T11:40:49.456"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "BioKC (Biological Knowledge Curation), is a web-based collaborative platform for the curation and annotation of biomedical knowledge following the standard data model from Systems Biology Markup Language (SBML)." ;
-    <http://purl.org/dc/terms/modified> "2023-03-01T11:40:49.456"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:43:37.786"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BioKC" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BioKC" .
@@ -1113,13 +1115,13 @@
 <http://identifiers.org/biosimulators>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000746> ;
-    :luiPattern "[a-zA-Z0-9-_]+" ;
+    :luiPattern "^[a-zA-Z0-9-_]+$" ;
     :mirid "MIR:00000767" ;
     :prefix "biosimulators" ;
     :sampleID "vcell" ;
     <http://purl.org/dc/terms/created> "2020-10-22T01:16:20.744"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "BioSimulators is a registry of containerized simulation tools that support a common interface. The containers in BioSimulators support a range of modeling frameworks (e.g., logical, constraint-based, continuous kinetic, discrete kinetic), simulation algorithms (e.g., CVODE, FBA, SSA), and modeling formats (e.g., BGNL, SBML, SED-ML)." ;
-    <http://purl.org/dc/terms/modified> "2020-10-22T01:16:20.744"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:29:53.732"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BioSimulators" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BioSimulators" .
@@ -2240,13 +2242,13 @@
 <http://identifiers.org/cryptodb>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100194> ;
-    :luiPattern "^\\w+" ;
+    :luiPattern "^\\w+$" ;
     :mirid "MIR:00000149" ;
     :prefix "cryptodb" ;
     :sampleID "cgd7_230" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:13.024"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "CryptoDB is one of the databases that can be accessed through the EuPathDB (http://EuPathDB.org; formerly ApiDB) portal, covering eukaryotic pathogens of the genera Cryptosporidium, Giardia, Leishmania, Neospora, Plasmodium, Toxoplasma, Trichomonas and Trypanosoma. While each of these groups is supported by a taxon-specific database built upon the same infrastructure, the EuPathDB portal offers an entry point to all these resources, and the opportunity to leverage orthology for searches across genera." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:13.024"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:21:53.636"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "CryptoDB" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "CryptoDB" .
@@ -2380,13 +2382,13 @@
 <http://identifiers.org/d1id>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100815> ;
-    :luiPattern "\\S+" ;
+    :luiPattern "^\\S+$" ;
     :mirid "MIR:00000611" ;
     :prefix "d1id" ;
     :sampleID "00030692-0FE1-4A1B-955E-A2E55D659267" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:18:02.239"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DataONE provides infrastructure facilitating long-term access to scientific research data of relevance to the earth sciences." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:18:02.239"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:27:17.217"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DataONE" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DataONE" .
@@ -2394,13 +2396,13 @@
 <http://identifiers.org/dailymed>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100558> ;
-    :luiPattern "^[A-Za-z0-9-]+" ;
+    :luiPattern "^[A-Za-z0-9-]+$" ;
     :mirid "MIR:00000434" ;
     :prefix "dailymed" ;
     :sampleID "973a9333-fec7-46dd-8eb5-25738f06ee54" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:19.532"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DailyMed provides information about marketed drugs. This information includes FDA labels (package inserts). The Web site provides a standard, comprehensive, up-to-date, look-up and download resource of medication content and labeling as found in medication package inserts. Drug labeling is the most recent submitted to the Food and Drug Administration (FDA) and currently in use; it may include, for example, strengthened warnings undergoing FDA review or minor editorial changes. These labels have been reformatted to make them easier to read." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:19.532"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:26:17.522"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DailyMed" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DailyMed" .
@@ -2650,13 +2652,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.373f>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000913> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000922" ;
     :prefix "dg.373f" ;
     :sampleID "6f2f1d6c-c5b5-4171-8b5f-9b1ac8c8a8ca" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:32:23.416"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The AnVIL supports the management, analysis and sharing of human disease data for the research community and aims to advance basic understanding of the genetic basis of complex traits and accelerate discovery and development of therapies, diagnostic tests, and other technologies for diseases like cancer. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:32:23.416"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:40:46.214"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "The AnVIL" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "The AnVIL" .
@@ -2664,13 +2666,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.4503>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000868> ;
-    :luiPattern "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000869" ;
     :prefix "dg.4503" ;
     :sampleID "0000ffeb-36e0-4a29-b21d-84423bda979d" ;
     <http://purl.org/dc/terms/created> "2021-09-29T19:10:32.057"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Full implementation of the DRS 1.1 standard with support for persistent identifiers. Open source DRS server that follows the Gen3 implementation. Gen3 is a GA4GH compliant open source platform for developing framework services and data commons. Data commons accelerate and democratize the process of scientific discovery, especially over large or complex datasets. Gen3 is maintained by the Center for Translational Data Science at the University of Chicago. https://gen3.org" ;
-    <http://purl.org/dc/terms/modified> "2021-09-29T19:10:32.057"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:37:10.956"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BioData Catalyst" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BioData Catalyst" .
@@ -2678,13 +2680,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.4825>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001013> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00001019" ;
     :prefix "dg.4825" ;
     :sampleID "e322c7d9-a0fa-4a1d-83f0-0f06bda87fe8" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:30:53.595"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "This website provides a centralized, cloud-based discovery portal for African American pharmacogenomics data and aims to accelerate discovery of novel genetic variants in African Americans related to clinically actionable cardiovascular phenotypes." ;
-    <http://purl.org/dc/terms/modified> "2024-01-09T16:21:12.604"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:36:27.855"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "ACCOuNT Data Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "ACCOuNT Data Commons" .
@@ -2692,13 +2694,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.4dfc>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000856> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000857" ;
     :prefix "dg.4dfc" ;
     :sampleID "81944ba1-81d0-436e-8552-33d77a27834b" ;
     <http://purl.org/dc/terms/created> "2021-08-09T15:20:17.184"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DRS server that follows the Gen3 implementation. Gen3 is a GA4GH compliant open source platform for developing framework services and data commons. Data commons accelerate and democratize the process of scientific discovery, especially over large or complex datasets. Gen3 is maintained by the Center for Translational Data Science at the University of Chicago. https://gen3.org" ;
-    <http://purl.org/dc/terms/modified> "2021-08-09T15:20:17.184"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:36:55.613"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "NCI Data Commons Framework Services" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "NCI Data Commons Framework Services" .
@@ -2706,13 +2708,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.5b0d>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000894> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000895" ;
     :prefix "dg.5b0d" ;
     :sampleID "00000d53-99bc-4d3e-8ed7-6dc358baccb7" ;
     <http://purl.org/dc/terms/created> "2022-01-09T18:59:10.775"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Blood Profiling Atlas in Cancer (BloodPAC) supports the management, analysis and sharing of liquid biopsy data for the oncology research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for cancer treatment and prevention. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources." ;
-    <http://purl.org/dc/terms/modified> "2022-01-09T18:59:10.775"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:38:42.893"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BloodPAC" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BloodPAC" .
@@ -2720,13 +2722,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.63d5>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000929> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00001026" ;
     :prefix "dg.63d5" ;
     :sampleID "00002b0f-0adf-4015-b2b7-b38f9337044a" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:33:18.862"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Chicago Pandemic Response Commons known as CCC is the first regional data commons launched under the Pandemic Response Commons Consortium. Born out of a consortium of Chicago-area civic and healthcare organizations with support from several technology partners, the PRC represents a persistent data resource for the research community engaging with COVID-19." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:33:18.862"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:41:39.635"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Chicago Pandemic Response Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Chicago Pandemic Response Commons" .
@@ -2734,13 +2736,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.6vts>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000875> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000876" ;
     :prefix "dg.6vts" ;
     :sampleID "2afacf00-9a1d-4d80-8c32-69d3923d3913" ;
     <http://purl.org/dc/terms/created> "2021-09-29T19:13:19.448"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Full implementation of the DRS 1.1 standard with support for persistent identifiers. Open source DRS server that follows the Gen3 implementation. Gen3 is a GA4GH compliant open source platform for developing framework services and data commons. Data commons accelerate and democratize the process of scientific discovery, especially over large or complex datasets. Gen3 is maintained by the Center for Translational Data Science at the University of Chicago. https://gen3.org" ;
-    <http://purl.org/dc/terms/modified> "2021-09-29T19:13:19.448"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:37:40.117"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "JCOIN" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "JCOIN" .
@@ -2748,14 +2750,14 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.712c>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000927> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000928" ;
     :prefix "dg.712c" ;
     :sampleID "0129cb63-1cc7-4151-b119-5e3ba3a8eb07" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:33:06.143"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> """NHLBI BioData Catalyst supports the management, analysis and sharing of human disease data for the research community and aims to advance basic understanding of the genetic basis of complex traits and accelerate discovery and development of therapies, diagnostic tests, and other technologies for diseases like cancer. The data commons supports cross-project analyses by harmonizing data from different projects through the collaborative development of a data dictionary, providing an API for data queries and download, and providing a cloud-based analysis workspace with rich tools and resources.
 """ ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:33:06.143"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:41:26.28"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "NHLBI BioData Catalyst" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "NHLBI BioData Catalyst" .
@@ -2763,13 +2765,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.7c5b>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000923> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000925" ;
     :prefix "dg.7c5b" ;
     :sampleID "00000014-990c-48f2-b0a8-fbb533860512" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:32:37.384"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "This website provides a centralized, cloud-based portal for the open redistribution and analysis of environmental datasets and satellite imagery from OCC stakeholders like NASA and NOAA and aims to support the earth science research community as well as human assisted disaster relief." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:32:37.384"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:40:59.793"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Environmental Data Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Data Commons" .
@@ -2777,13 +2779,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.80b6>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000918> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000919" ;
     :prefix "dg.80b6" ;
     :sampleID "000e5d06-1326-4b6f-8d8a-95c63374c7c1" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:31:14.555"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The GenoMEL data commons supports the management, analysis and sharing of next generation sequencing data for the GenoMEL research community and aims to accelerate opportunities for discovery of susceptibility genes for melanoma. The data commons supports cross-project analyses by harmonizing data from different projects through the development of a data dictionary and utilization of common workflows, providing an API for data queries, and providing a cloud-based analysis workspace with rich tools and resources." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:31:14.555"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:38:55.252"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "GenoMEL Data Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "GenoMEL Data Commons" .
@@ -2791,13 +2793,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.anv0>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000870> ;
-    :luiPattern "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000871" ;
     :prefix "dg.anv0" ;
     :sampleID "00077f1c-c45a-47ba-8e6c-1bf6b6b43fce" ;
     <http://purl.org/dc/terms/created> "2021-09-29T19:11:14.294"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DRS server that follows the Gen3 implementation. Gen3 is a GA4GH compliant open source platform for developing framework services and data commons. Data commons accelerate and democratize the process of scientific discovery, especially over large or complex datasets. Gen3 is maintained by the Center for Translational Data Science at the University of Chicago. https://gen3.org" ;
-    <http://purl.org/dc/terms/modified> "2021-09-29T19:11:14.294"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:37:27.19"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Anvil" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Anvil" .
@@ -2805,13 +2807,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.c78ne>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000939> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000940" ;
     :prefix "dg.c78ne" ;
     :sampleID "0002346e-5ee7-45fb-8c92-8333f8e13854" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:38:48.115"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "This website analyzes and shares genomic architecture of modern dog breeds and runs analysis for canine cancer to create clean, easy to navigate visualizations for data-driven discovery for canine cancer." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:38:48.115"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:42:16.075"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Canine Data Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Canine Data Commons" .
@@ -2819,13 +2821,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.ea80>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000920> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00001021" ;
     :prefix "dg.ea80" ;
     :sampleID "00083977-d4d7-4593-a216-2b9c931b8b03" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:31:33.33"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Inflammatory Bowel Disease Genetics Consortium Data Commons supports the management, analysis, and sharing of genetic data to support the vision and mission of the IBD genetics consortium." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:31:33.33"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:40:10.627"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "NIDDK IBD Genetics Consortium Portal" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "NIDDK IBD Genetics Consortium Portal" .
@@ -2833,13 +2835,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.f738>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001017> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000916" ;
     :prefix "dg.f738" ;
     :sampleID "000bf826-73ba-4685-aa6c-3e0971a2f260" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:29:04.474"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Veterans Data Commons supports the management, analysis and sharing of veteran oncologic data for the research community and aims to accelerate the discovery and development of therapies, diagnostic tests, and other technologies for precision oncology." ;
-    <http://purl.org/dc/terms/modified> "2023-04-28T10:52:16.46"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:39:26.059"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Veterans Precision Oncology Data Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Veterans Precision Oncology Data Commons" .
@@ -2847,13 +2849,13 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.f82a1a>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000886> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000887" ;
     :prefix "dg.f82a1a" ;
     :sampleID "00026f50-858a-446b-8ed9-b0e3ecd7b20e" ;
     <http://purl.org/dc/terms/created> "2021-11-01T17:49:13.981"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Full implementation of the DRS 1.1 standard with support for persistent identifiers. Open source DRS server that follows the Gen3 implementation. Gen3 is a GA4GH compliant open source platform for developing framework services and data commons. Data commons accelerate and democratize the process of scientific discovery, especially over large or complex datasets. Gen3 is maintained by the Center for Translational Data Science at the University of Chicago. https://gen3.org" ;
-    <http://purl.org/dc/terms/modified> "2021-11-01T17:49:13.981"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:38:05.853"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Kids First" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Kids First" .
@@ -2861,7 +2863,7 @@ These data will help scientists uncover and understand cellular level mechanisms
 <http://identifiers.org/dg.h34l>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000941> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000942" ;
     :prefix "dg.h34l" ;
     :sampleID "022911d6-af91-4b02-8f96-9107c77c98b8" ;
@@ -2873,7 +2875,7 @@ The HEAL Platform represents a dynamic Data Ecosystem that aggregates and hosts 
 The platform provides a way to search and query over study metadata and diverse data types, generated by different projects and organizations and stored across multiple secure repositories.
 
 The HEAL platform also offers a secure and cost-effective cloud-computing environment for data analysis, empowering collaborative research and development of new analytical tools. New workflows and results of analyses can be shared with the HEAL community to enable collaborative, high-impact publications that address the opioid crisis.""" ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:39:04.388"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:42:26.882"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "The HEAL platform" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "The HEAL platform" .
@@ -2881,13 +2883,13 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
 <http://identifiers.org/dg.h35l>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000943> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000944" ;
     :prefix "dg.h35l" ;
     :sampleID "007e4996-c902-49a0-8fe8-b363f1d3fb23" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:40:41.328"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "This website supports the management, analysis and sharing of data for the research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:40:41.328"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:42:37.927"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "HEAL Data Platform" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "HEAL Data Platform" .
@@ -2895,13 +2897,13 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
 <http://identifiers.org/dg.md1r>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000931> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000932" ;
     :prefix "dg.md1r" ;
     :sampleID "000007c3-356a-4d59-a6c0-0ee920b60305" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:33:39.208"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Medical Imaging & Data Resource Center (MIDRC) Data Commons supports the management, analysis and sharing of medical imaging data for the improvement of patient outcomes." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:33:39.208"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:40:34.838"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "MIDRC Data Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "MIDRC Data Commons" .
@@ -2909,13 +2911,13 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
 <http://identifiers.org/dg.nacd>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000999> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000917" ;
     :prefix "dg.nacd" ;
     :sampleID "2096a0d6-1846-4b98-9ba3-e4065d82111d" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:30:23.278"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "AccessClinicalData@NIAID is a NIAID cloud-based, secure data platform that enables sharing of and access to reports and data sets from NIAID COVID-19 and other sponsored clinical trials for the basic and clinical research community." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:30:23.278"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:39:53.073"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "https://accessclinicaldata.niaid.nih.gov/" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "https://accessclinicaldata.niaid.nih.gov/" .
@@ -2923,13 +2925,13 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
 <http://identifiers.org/dg.nci35>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000935> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000936" ;
     :prefix "dg.nci35" ;
     :sampleID "81944ba1-81d0-436e-8552-33d77a27834b" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:37:35.848"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The vision of DCFS is to make it easier to develop, operate, and interoperate data commons, data clouds, knowledge bases, and other resources for managing, analyzing, and sharing research data that can be part of a large data commons ecosystem." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:37:35.848"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:42:05.29"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "NCI Data Commons Framework Services" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "NCI Data Commons Framework Services" .
@@ -2937,13 +2939,13 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
 <http://identifiers.org/dg.um33r90>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000945> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000946" ;
     :prefix "dg.um33r90" ;
     :sampleID "0aa770b4-66b3-4009-9f02-852236b0544f" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:40:56.446"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The UMCCR AGHA Data Commons supports the management, analysis and sharing of data for the research community." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:40:56.446"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:42:49.195"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "UMCCR AGHA Data Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "UMCCR AGHA Data Commons" .
@@ -2951,14 +2953,14 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
 <http://identifiers.org/dg.va03>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001007> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00001104" ;
     :prefix "dg.va03" ;
     :sampleID "00990747-f66a-4b1e-a6d2-3f08c5c1461f" ;
     <http://purl.org/dc/terms/created> "2023-05-02T09:56:24.768"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> """The VA Data Commons supports the research and analysis of US military Veteran medical and genomic data and aims to accelerate scientific discovery and development of therapies, diagnostic tests, and other technologies for improving the lives of Veterans and beyond.
 """ ;
-    <http://purl.org/dc/terms/modified> "2023-05-02T09:56:24.768"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:44:30.059"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "VA Data Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "VA Data Commons" .
@@ -2967,14 +2969,14 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
     :deprecationDate "2023-04-28T10:42:52.292"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000937> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000938" ;
     :prefix "dg.vp07" ;
     :sampleID "000bf826-73ba-4685-aa6c-3e0971a2f260" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:37:55.926"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/date> "2023-04-28T10:42:52.292"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Veterans Data Commons supports the management, analysis and sharing of veteran oncologic data for the research community and aims to accelerate discovery and development of therapies, diagnostic tests, and other technologies for precision oncology." ;
-    <http://purl.org/dc/terms/modified> "2023-04-28T10:42:52.298"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:44:17.294"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Veterans Precision Oncology Data Commons" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Veterans Precision Oncology Data Commons" .
@@ -3360,13 +3362,13 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
 <http://identifiers.org/eco>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100083>, <http://identifiers.org/miriam.resource:MIR%3A00100235> ;
-    :luiPattern "ECO:\\d{7}$" ;
+    :luiPattern "^ECO:\\d{7}$" ;
     :mirid "MIR:00000055" ;
     :prefix "eco" ;
     :sampleID "0000006" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:47.447"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Evidence codes can be used to specify the type of supporting evidence for a piece of knowledge. This allows inference of a 'level of support' between an entity and an annotation made to an entity." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:47.447"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:12:10.188"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Evidence Code Ontology" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Evidence Code Ontology" .
@@ -3560,13 +3562,13 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
 <http://identifiers.org/empiar>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000985> ;
-    :luiPattern "EMPIAR-\\d{5,}" ;
+    :luiPattern "^EMPIAR-\\d{5,}$" ;
     :mirid "MIR:00000986" ;
     :prefix "empiar" ;
     :sampleID "EMPIAR-10002" ;
     <http://purl.org/dc/terms/created> "2023-01-25T11:52:06.26"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "EMPIAR, the Electron Microscopy Public Image Archive, is a public resource for raw images underpinning 3D cryo-EM maps and tomograms (themselves archived in EMDB). EMPIAR also accommodates 3D datasets obtained with volume EM techniques and soft and hard X-ray tomography." ;
-    <http://purl.org/dc/terms/modified> "2023-01-25T11:52:06.26"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:43:14.617"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "EMPIAR" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "EMPIAR" .
@@ -3841,13 +3843,13 @@ It also includes trials conducted outside these areas if they form part of a pae
 <http://identifiers.org/f82a1a>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000924> ;
-    :luiPattern "[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}" ;
+    :luiPattern "^[0-9a-fA-F]{8}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{4}\\-[0-9a-fA-F]{12}$" ;
     :mirid "MIR:00000926" ;
     :prefix "f82a1a" ;
     :sampleID "0000324e-e2d9-4ccd-b25b-2d16c8a87b28" ;
     <http://purl.org/dc/terms/created> "2022-02-27T20:32:53.923"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Kids First Data Catalog supports the Kids First Data Resource Center by providing a digital object services that allow interoperability between data commons, including authentication and authorization for controlled access data." ;
-    <http://purl.org/dc/terms/modified> "2022-02-27T20:32:53.923"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:41:09.976"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Kids First Data Catalog" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Kids First Data Catalog" .
@@ -3911,7 +3913,7 @@ It also includes trials conducted outside these areas if they form part of a pae
 <http://identifiers.org/fcb>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000890> ;
-    :luiPattern "^FCB\\d{3}" ;
+    :luiPattern "^FCB\\d{3}$" ;
     :mirid "MIR:00000891" ;
     :prefix "fcb" ;
     :sampleID "FCB005" ;
@@ -3919,7 +3921,7 @@ It also includes trials conducted outside these areas if they form part of a pae
     <http://purl.org/dc/terms/description> """Created by researchers and data managers professionals, the FAIR Cookbook is an online resource for the Life Sciences with recipes that help you to make and keep data Findable, Accessible, Interoperable, and Reusable (FAIR).
 
 """ ;
-    <http://purl.org/dc/terms/modified> "2022-01-09T18:54:14.401"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T13:34:37.66"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "the FAIR Cookbook" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "the FAIR Cookbook" .
@@ -4532,13 +4534,13 @@ It also includes trials conducted outside these areas if they form part of a pae
 <http://identifiers.org/gnd>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001001> ;
-    :luiPattern "[0-9X\\-]+" ;
+    :luiPattern "^[0-9X\\-]+$" ;
     :mirid "MIR:00001002" ;
     :prefix "gnd" ;
     :sampleID "117145750" ;
     <http://purl.org/dc/terms/created> "2023-04-14T08:41:21.064"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Gemeinsame Normdatei (Integrated Authority File) or GND is an international authority file for person names, subject headings and corporate bodies. It is used mainly for documentation in libraries and increasingly also by archives and museums. The GND is managed by the German National Library in cooperation with various regional library networks in German-speaking Europe and other partners." ;
-    <http://purl.org/dc/terms/modified> "2023-04-14T08:41:21.064"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:44:06.626"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Gemeinsame Normdatei" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Gemeinsame Normdatei" .
@@ -5356,14 +5358,14 @@ The GOLD (Genomes OnLine Database)is a resource for centralized monitoring of ge
 <http://identifiers.org/ice.chem>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001081> ;
-    :luiPattern "\\d{2,7}-\\d{2}-\\d|DTXSID\\d{7,9}|[A-Z]{14}-[A-Z]{8}[SN][A-Z]-[A-Z]$" ;
+    :luiPattern "^\\d{2,7}-\\d{2}-\\d|DTXSID\\d{7,9}|[A-Z]{14}-[A-Z]{8}[SN][A-Z]-[A-Z]$" ;
     :mirid "MIR:00001082" ;
     :prefix "ice.chem" ;
     :sampleID "DTXSID7032004" ;
     <http://purl.org/dc/terms/created> "2024-09-10T12:53:16.243"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> """The Integrated Chemical Environment (ICE) provides high-quality curated data and appropriate tools to support development and evaluation of new, revised, and alternative methods. ICE provides free online access to curated in vivo and in vitro test data, in silico toxicity predictions and chemical property data, reference chemical lists, and computational tools for chemical characterization and predicting toxicity.
 ICE supports the following: (i) Data integration: brings together available data, including data on formulations; (ii) Results exploration: enables dynamic, graphical exploration with publication-quality graphics; (iii) Data analysis: allows characterization of data using online workflows, and (iv) FAIR data access: data are findable, accessible, interoperable, and reusable.""" ;
-    <http://purl.org/dc/terms/modified> "2024-09-10T12:53:16.243"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:36:14.229"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Integrated Chemical Environment - Chemical data" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Integrated Chemical Environment - Chemical data" .
@@ -5481,7 +5483,7 @@ ICE supports the following: (i) Data integration: brings together available data
     <http://rdfs.org/ns/void#vocabulary> "http://xmlns.com/foaf/0.1/", "https://www.w3.org/TR/vocab-dcat-3" ;
     a <http://rdfs.org/ns/void#Dataset>, <http://www.w3.org/ns/dcat#Catalog> ;
     <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://docs.identifiers.org/pages/sparql.html> ;
-    <http://www.w3.org/ns/dcat#dataset> <http://identifiers.org/3dmet>, <http://identifiers.org/4503>, <http://identifiers.org/4dn>, <http://identifiers.org/6vts>, <http://identifiers.org/abs>, <http://identifiers.org/aceview.worm>, <http://identifiers.org/addgene>, <http://identifiers.org/adw>, <http://identifiers.org/affy.probeset>, <http://identifiers.org/aftol.taxonomy>, <http://identifiers.org/agricola>, <http://identifiers.org/allergome>, <http://identifiers.org/amoebadb>, <http://identifiers.org/antibodyregistry>, <http://identifiers.org/antweb>, <http://identifiers.org/aop>, <http://identifiers.org/aop.events>, <http://identifiers.org/aop.relationships>, <http://identifiers.org/aop.stressor>, <http://identifiers.org/apd>, <http://identifiers.org/aphidbase.transcript>, <http://identifiers.org/apid.interactions>, <http://identifiers.org/arachnoserver>, <http://identifiers.org/ardb>, <http://identifiers.org/ark>, <http://identifiers.org/arrayexpress>, <http://identifiers.org/arrayexpress.platform>, <http://identifiers.org/arraymap>, <http://identifiers.org/arxiv>, <http://identifiers.org/asap>, <http://identifiers.org/ascl>, <http://identifiers.org/asin>, <http://identifiers.org/aspgd.locus>, <http://identifiers.org/aspgd.protein>, <http://identifiers.org/assembly>, <http://identifiers.org/atc>, <http://identifiers.org/atcc>, <http://identifiers.org/atcvet>, <http://identifiers.org/atfdb.family>, <http://identifiers.org/autdb>, <http://identifiers.org/bacdive>, <http://identifiers.org/bacmap.biog>, <http://identifiers.org/bacmap.map>, <http://identifiers.org/bao>, <http://identifiers.org/bbkg>, <http://identifiers.org/bbtp>, <http://identifiers.org/bdgp.est>, <http://identifiers.org/bdgp.insertion>, <http://identifiers.org/bdsc>, <http://identifiers.org/beetlebase>, <http://identifiers.org/begdb>, <http://identifiers.org/bgee.family>, <http://identifiers.org/bgee.gene>, <http://identifiers.org/bgee.organ>, <http://identifiers.org/bgee.stage>, <http://identifiers.org/bigg.compartment>, <http://identifiers.org/bigg.metabolite>, <http://identifiers.org/bigg.model>, <http://identifiers.org/bigg.reaction>, <http://identifiers.org/bindingdb>, <http://identifiers.org/biocarta.pathway>, <http://identifiers.org/biocatalogue.service>, <http://identifiers.org/biocyc>, <http://identifiers.org/biodeep>, <http://identifiers.org/biofactoid>, <http://identifiers.org/biogrid>, <http://identifiers.org/biokc>, <http://identifiers.org/biolink>, <http://identifiers.org/biominder>, <http://identifiers.org/biomodels.db>, <http://identifiers.org/biomodels.kisao>, <http://identifiers.org/biomodels.teddy>, <http://identifiers.org/biomodels.vocabulary>, <http://identifiers.org/bionumbers>, <http://identifiers.org/bioportal>, <http://identifiers.org/bioproject>, <http://identifiers.org/biosample>, <http://identifiers.org/biosimulations>, <http://identifiers.org/biosimulators>, <http://identifiers.org/biostudies>, <http://identifiers.org/biosystems>, <http://identifiers.org/biotools>, <http://identifiers.org/bitbucket>, <http://identifiers.org/bitterdb.cpd>, <http://identifiers.org/bitterdb.rec>, <http://identifiers.org/bmrb>, <http://identifiers.org/bold.taxonomy>, <http://identifiers.org/brenda>, <http://identifiers.org/broad>, <http://identifiers.org/bto>, <http://identifiers.org/bugbase.expt>, <http://identifiers.org/bugbase.protocol>, <http://identifiers.org/bykdb>, <http://identifiers.org/cabri>, <http://identifiers.org/cadsr>, <http://identifiers.org/cameo>, <http://identifiers.org/caps>, <http://identifiers.org/cas>, <http://identifiers.org/cath>, <http://identifiers.org/cath.domain>, <http://identifiers.org/cath.superfamily>, <http://identifiers.org/cattleqtldb>, <http://identifiers.org/cazy>, <http://identifiers.org/cbioportal>, <http://identifiers.org/ccdc>, <http://identifiers.org/ccds>, <http://identifiers.org/cco>, <http://identifiers.org/cdd>, <http://identifiers.org/cdpd>, <http://identifiers.org/cellimage>, <http://identifiers.org/cellosaurus>, <http://identifiers.org/cellrepo>, <http://identifiers.org/cgd>, <http://identifiers.org/cgsc>, <http://identifiers.org/charprot>, <http://identifiers.org/chebi>, <http://identifiers.org/chembl>, <http://identifiers.org/chembl.compound>, <http://identifiers.org/chembl.target>, <http://identifiers.org/chemdb>, <http://identifiers.org/chemidplus>, <http://identifiers.org/cheminf>, <http://identifiers.org/chemspider>, <http://identifiers.org/chickenqtldb>, <http://identifiers.org/civic.aid>, <http://identifiers.org/civic.did>, <http://identifiers.org/civic.eid>, <http://identifiers.org/civic.gid>, <http://identifiers.org/civic.mpid>, <http://identifiers.org/civic.sid>, <http://identifiers.org/civic.tid>, <http://identifiers.org/civic.vgid>, <http://identifiers.org/civic.vid>, <http://identifiers.org/cl>, <http://identifiers.org/classyfire>, <http://identifiers.org/clb>, <http://identifiers.org/cldb>, <http://identifiers.org/clinicaltrials>, <http://identifiers.org/clinvar>, <http://identifiers.org/clinvar.record>, <http://identifiers.org/clinvar.submission>, <http://identifiers.org/clinvar.submitter>, <http://identifiers.org/clo>, <http://identifiers.org/cog>, <http://identifiers.org/col>, <http://identifiers.org/combine.specifications>, <http://identifiers.org/complexportal>, <http://identifiers.org/comptox>, <http://identifiers.org/compulyeast>, <http://identifiers.org/conoserver>, <http://identifiers.org/coriell>, <http://identifiers.org/corrdb>, <http://identifiers.org/corum>, <http://identifiers.org/cosmic>, <http://identifiers.org/covid19>, <http://identifiers.org/cpc>, <http://identifiers.org/crisprdb>, <http://identifiers.org/crop2ml>, <http://identifiers.org/cryptodb>, <http://identifiers.org/csa>, <http://identifiers.org/csd>, <http://identifiers.org/cst>, <http://identifiers.org/cst.ab>, <http://identifiers.org/cstr>, <http://identifiers.org/ctd.chemical>, <http://identifiers.org/ctd.disease>, <http://identifiers.org/ctd.gene>, <http://identifiers.org/cubedb>, <http://identifiers.org/d1id>, <http://identifiers.org/dailymed>, <http://identifiers.org/dandi>, <http://identifiers.org/darc>, <http://identifiers.org/dashr>, <http://identifiers.org/dashr.expression>, <http://identifiers.org/datanator.gene>, <http://identifiers.org/datanator.metabolite>, <http://identifiers.org/datanator.reaction>, <http://identifiers.org/datf>, <http://identifiers.org/dbd>, <http://identifiers.org/dbest>, <http://identifiers.org/dbg2introns>, <http://identifiers.org/dbgap>, <http://identifiers.org/dbprobe>, <http://identifiers.org/dbsnp>, <http://identifiers.org/degradome>, <http://identifiers.org/depod>, <http://identifiers.org/dev.ga4ghdos>, <http://identifiers.org/dg.373f>, <http://identifiers.org/dg.4503>, <http://identifiers.org/dg.4825>, <http://identifiers.org/dg.4dfc>, <http://identifiers.org/dg.5b0d>, <http://identifiers.org/dg.63d5>, <http://identifiers.org/dg.6vts>, <http://identifiers.org/dg.712c>, <http://identifiers.org/dg.7c5b>, <http://identifiers.org/dg.80b6>, <http://identifiers.org/dg.anv0>, <http://identifiers.org/dg.c78ne>, <http://identifiers.org/dg.ea80>, <http://identifiers.org/dg.f738>, <http://identifiers.org/dg.f82a1a>, <http://identifiers.org/dg.h34l>, <http://identifiers.org/dg.h35l>, <http://identifiers.org/dg.md1r>, <http://identifiers.org/dg.nacd>, <http://identifiers.org/dg.nci35>, <http://identifiers.org/dg.um33r90>, <http://identifiers.org/dg.va03>, <http://identifiers.org/dg.vp07>, <http://identifiers.org/dictybase.est>, <http://identifiers.org/dictybase.gene>, <http://identifiers.org/did>, <http://identifiers.org/dip>, <http://identifiers.org/disprot>, <http://identifiers.org/disprot.region>, <http://identifiers.org/dlxb>, <http://identifiers.org/dlxc>, <http://identifiers.org/doi>, <http://identifiers.org/doid>, <http://identifiers.org/dome>, <http://identifiers.org/dommino>, <http://identifiers.org/door>, <http://identifiers.org/doqcs.model>, <http://identifiers.org/doqcs.pathway>, <http://identifiers.org/dpv>, <http://identifiers.org/dragondb.allele>, <http://identifiers.org/dragondb.dna>, <http://identifiers.org/dragondb.locus>, <http://identifiers.org/dragondb.protein>, <http://identifiers.org/drs.anv0>, <http://identifiers.org/drsc>, <http://identifiers.org/drugbank>, <http://identifiers.org/drugbankv4.target>, <http://identifiers.org/drugcentral>, <http://identifiers.org/ec-code>, <http://identifiers.org/echobase>, <http://identifiers.org/eco>, <http://identifiers.org/ecogene>, <http://identifiers.org/ecoliwiki>, <http://identifiers.org/ecyano.entity>, <http://identifiers.org/ecyano.experiment>, <http://identifiers.org/ecyano.model>, <http://identifiers.org/ecyano.rule>, <http://identifiers.org/edam>, <http://identifiers.org/efo>, <http://identifiers.org/ega.dataset>, <http://identifiers.org/ega.study>, <http://identifiers.org/eggnog>, <http://identifiers.org/elm>, <http://identifiers.org/emdb>, <http://identifiers.org/empiar>, <http://identifiers.org/ena.embl>, <http://identifiers.org/encode>, <http://identifiers.org/ensembl>, <http://identifiers.org/ensembl.bacteria>, <http://identifiers.org/ensembl.fungi>, <http://identifiers.org/ensembl.metazoa>, <http://identifiers.org/ensembl.plant>, <http://identifiers.org/ensembl.protist>, <http://identifiers.org/envipath>, <http://identifiers.org/envo>, <http://identifiers.org/eo>, <http://identifiers.org/epd>, <http://identifiers.org/erm>, <http://identifiers.org/erv>, <http://identifiers.org/eu89h>, <http://identifiers.org/euclinicaltrials>, <http://identifiers.org/exac.gene>, <http://identifiers.org/exac.transcript>, <http://identifiers.org/exac.variant>, <http://identifiers.org/f82a1a>, <http://identifiers.org/facebase>, <http://identifiers.org/fairsharing>, <http://identifiers.org/fb>, <http://identifiers.org/fbol>, <http://identifiers.org/fcb>, <http://identifiers.org/flowrepository>, <http://identifiers.org/fma>, <http://identifiers.org/foodb.compound>, <http://identifiers.org/foodon>, <http://identifiers.org/fplx>, <http://identifiers.org/fsnp>, <http://identifiers.org/funcbase.fly>, <http://identifiers.org/funcbase.human>, <http://identifiers.org/funcbase.mouse>, <http://identifiers.org/funcbase.yeast>, <http://identifiers.org/funderregistry>, <http://identifiers.org/fungidb>, <http://identifiers.org/ga4ghdos>, <http://identifiers.org/gabi>, <http://identifiers.org/gateway>, <http://identifiers.org/gcst>, <http://identifiers.org/gdc>, <http://identifiers.org/gdsc>, <http://identifiers.org/genatlas>, <http://identifiers.org/genecards>, <http://identifiers.org/genedb>, <http://identifiers.org/genefarm>, <http://identifiers.org/genetree>, <http://identifiers.org/genewiki>, <http://identifiers.org/genpept>, <http://identifiers.org/genprop>, <http://identifiers.org/geo>, <http://identifiers.org/geogeo>, <http://identifiers.org/giardiadb>, <http://identifiers.org/github>, <http://identifiers.org/gitlab>, <http://identifiers.org/glida.gpcr>, <http://identifiers.org/glida.ligand>, <http://identifiers.org/glycoepitope>, <http://identifiers.org/glycomedb>, <http://identifiers.org/glyconavi>, <http://identifiers.org/glycopost>, <http://identifiers.org/glytoucan>, <http://identifiers.org/gmd>, <http://identifiers.org/gmd.analyte>, <http://identifiers.org/gmd.gcms>, <http://identifiers.org/gmd.profile>, <http://identifiers.org/gmd.ref>, <http://identifiers.org/gnd>, <http://identifiers.org/gnpis>, <http://identifiers.org/go>, <http://identifiers.org/go_ref>, <http://identifiers.org/goa>, <http://identifiers.org/gold>, <http://identifiers.org/gold.genome>, <http://identifiers.org/gold.meta>, <http://identifiers.org/google.patent>, <http://identifiers.org/gpcrdb>, <http://identifiers.org/gpmdb>, <http://identifiers.org/gramene.gene>, <http://identifiers.org/gramene.protein>, <http://identifiers.org/gramene.qtl>, <http://identifiers.org/gramene.taxonomy>, <http://identifiers.org/greengenes>, <http://identifiers.org/grid>, <http://identifiers.org/grin.taxonomy>, <http://identifiers.org/gro>, <http://identifiers.org/grsdb>, <http://identifiers.org/gsso>, <http://identifiers.org/gtex>, <http://identifiers.org/gudmap>, <http://identifiers.org/gwascentral.marker>, <http://identifiers.org/gwascentral.phenotype>, <http://identifiers.org/gwascentral.study>, <http://identifiers.org/gxa.expt>, <http://identifiers.org/gxa.gene>, <http://identifiers.org/hamap>, <http://identifiers.org/hco>, <http://identifiers.org/hcvdb>, <http://identifiers.org/hdr>, <http://identifiers.org/hgmd>, <http://identifiers.org/hgnc>, <http://identifiers.org/hgnc.family>, <http://identifiers.org/hgnc.genefamily>, <http://identifiers.org/hgnc.genegroup>, <http://identifiers.org/hgnc.symbol>, <http://identifiers.org/hinv.locus>, <http://identifiers.org/hinv.protein>, <http://identifiers.org/hinv.transcript>, <http://identifiers.org/hmdb>, <http://identifiers.org/hogenom>, <http://identifiers.org/homd.seq>, <http://identifiers.org/homd.taxon>, <http://identifiers.org/homologene>, <http://identifiers.org/hovergen>, <http://identifiers.org/hp>, <http://identifiers.org/hpa>, <http://identifiers.org/hpm.peptide>, <http://identifiers.org/hpm.protein>, <http://identifiers.org/hprd>, <http://identifiers.org/hpscreg>, <http://identifiers.org/hssp>, <http://identifiers.org/huge>, <http://identifiers.org/iao>, <http://identifiers.org/icd>, <http://identifiers.org/icdc>, <http://identifiers.org/ice.chem>, <http://identifiers.org/iceberg.element>, <http://identifiers.org/iceberg.family>, <http://identifiers.org/ideal>, <http://identifiers.org/identifiers.namespace>, <http://identifiers.org/ido>, <http://identifiers.org/idoo>, <http://identifiers.org/idot>, <http://identifiers.org/idr>, <http://identifiers.org/iedb>, <http://identifiers.org/igsn>, <http://identifiers.org/ilx>, <http://identifiers.org/imex>, <http://identifiers.org/img.gene>, <http://identifiers.org/img.taxon>, <http://identifiers.org/imgt.hla>, <http://identifiers.org/imgt.ligm>, <http://identifiers.org/inchi>, <http://identifiers.org/inchikey>, <http://identifiers.org/insdc>, <http://identifiers.org/insdc.cds>, <http://identifiers.org/insdc.gca>, <http://identifiers.org/insdc.sra>, <http://identifiers.org/intact>, <http://identifiers.org/intact.molecule>, <http://identifiers.org/interpro>, <http://identifiers.org/ird.segment>, <http://identifiers.org/irefweb>, <http://identifiers.org/isbn>, <http://identifiers.org/isfinder>, <http://identifiers.org/isni>, <http://identifiers.org/issn>, <http://identifiers.org/ito>, <http://identifiers.org/iuphar.family>, <http://identifiers.org/iuphar.ligand>, <http://identifiers.org/iuphar.receptor>, <http://identifiers.org/jaxmice>, <http://identifiers.org/jcggdb>, <http://identifiers.org/jcm>, <http://identifiers.org/jcsd>, <http://identifiers.org/jstor>, <http://identifiers.org/jws>, <http://identifiers.org/kaggle>, <http://identifiers.org/kegg>, <http://identifiers.org/kegg.compound>, <http://identifiers.org/kegg.disease>, <http://identifiers.org/kegg.drug>, <http://identifiers.org/kegg.environ>, <http://identifiers.org/kegg.genes>, <http://identifiers.org/kegg.genome>, <http://identifiers.org/kegg.glycan>, <http://identifiers.org/kegg.metagenome>, <http://identifiers.org/kegg.module>, <http://identifiers.org/kegg.orthology>, <http://identifiers.org/kegg.pathway>, <http://identifiers.org/kegg.reaction>, <http://identifiers.org/knapsack>, <http://identifiers.org/lei>, <http://identifiers.org/lgai.cede>, <http://identifiers.org/lgic>, <http://identifiers.org/licebase>, <http://identifiers.org/ligandbook>, <http://identifiers.org/ligandbox>, <http://identifiers.org/ligandexpo>, <http://identifiers.org/lincs.cell>, <http://identifiers.org/lincs.data>, <http://identifiers.org/lincs.protein>, <http://identifiers.org/lincs.smallmolecule>, <http://identifiers.org/linguist>, <http://identifiers.org/lipidbank>, <http://identifiers.org/lipidmaps>, <http://identifiers.org/lrg>, <http://identifiers.org/lw>, <http://identifiers.org/ma>, <http://identifiers.org/macie>, <http://identifiers.org/maggot>, <http://identifiers.org/maizegdb.locus>, <http://identifiers.org/mamo>, <http://identifiers.org/massbank>, <http://identifiers.org/massive>, <http://identifiers.org/matrixdb.association>, <http://identifiers.org/maxo>, <http://identifiers.org/mcro>, <http://identifiers.org/mdm>, <http://identifiers.org/meddra>, <http://identifiers.org/medgen>, <http://identifiers.org/mediadive.medium>, <http://identifiers.org/medlineplus>, <http://identifiers.org/merops>, <http://identifiers.org/merops.family>, <http://identifiers.org/merops.inhibitor>, <http://identifiers.org/mesh>, <http://identifiers.org/mesh.2012>, <http://identifiers.org/mesh.2013>, <http://identifiers.org/metabolights>, <http://identifiers.org/metacyc.compound>, <http://identifiers.org/metacyc.reaction>, <http://identifiers.org/metanetx.chemical>, <http://identifiers.org/metanetx.compartment>, <http://identifiers.org/metanetx.reaction>, <http://identifiers.org/metatlas>, <http://identifiers.org/metlin>, <http://identifiers.org/mex>, <http://identifiers.org/mge>, <http://identifiers.org/mgi>, <http://identifiers.org/mgnify.proj>, <http://identifiers.org/mgnify.samp>, <http://identifiers.org/mi>, <http://identifiers.org/microscope>, <http://identifiers.org/microsporidia>, <http://identifiers.org/mim>, <http://identifiers.org/mimodb>, <http://identifiers.org/minid>, <http://identifiers.org/minid.test>, <http://identifiers.org/mint>, <http://identifiers.org/mipmod>, <http://identifiers.org/mir>, <http://identifiers.org/mirbase>, <http://identifiers.org/mirbase.mature>, <http://identifiers.org/mirex>, <http://identifiers.org/miriam.collection>, <http://identifiers.org/miriam.resource>, <http://identifiers.org/mirnest>, <http://identifiers.org/mirtarbase>, <http://identifiers.org/mlc>, <http://identifiers.org/mmdb>, <http://identifiers.org/mmmp.biomaps>, <http://identifiers.org/mmp.cat>, <http://identifiers.org/mmp.db>, <http://identifiers.org/mmp.fun>, <http://identifiers.org/mmp.ref>, <http://identifiers.org/mmrrc>, <http://identifiers.org/mo>, <http://identifiers.org/mobidb>, <http://identifiers.org/mod>, <http://identifiers.org/modeldb>, <http://identifiers.org/modeldb.concept>, <http://identifiers.org/moid>, <http://identifiers.org/molbase>, <http://identifiers.org/molmedb>, <http://identifiers.org/mondo>, <http://identifiers.org/morpheus>, <http://identifiers.org/mp>, <http://identifiers.org/mpid>, <http://identifiers.org/ms>, <http://identifiers.org/multicellds.cell_line>, <http://identifiers.org/multicellds.collection>, <http://identifiers.org/multicellds.snapshot>, <http://identifiers.org/mw.project>, <http://identifiers.org/mw.study>, <http://identifiers.org/myco.lepra>, <http://identifiers.org/myco.marinum>, <http://identifiers.org/myco.smeg>, <http://identifiers.org/myco.tuber>, <http://identifiers.org/mycobank>, <http://identifiers.org/mzspec>, <http://identifiers.org/nando>, <http://identifiers.org/napdi>, <http://identifiers.org/napp>, <http://identifiers.org/narcis>, <http://identifiers.org/nasc>, <http://identifiers.org/nbn>, <http://identifiers.org/nbrc>, <http://identifiers.org/ncbidrs>, <http://identifiers.org/ncbigene>, <http://identifiers.org/ncbiprotein>, <http://identifiers.org/ncim>, <http://identifiers.org/ncit>, <http://identifiers.org/ndc>, <http://identifiers.org/nemo>, <http://identifiers.org/neurolex>, <http://identifiers.org/neuromorpho>, <http://identifiers.org/neurondb>, <http://identifiers.org/neurovault.collection>, <http://identifiers.org/neurovault.image>, <http://identifiers.org/nextdb>, <http://identifiers.org/nextprot>, <http://identifiers.org/ngl>, <http://identifiers.org/niaest>, <http://identifiers.org/nlfff>, <http://identifiers.org/nmdc>, <http://identifiers.org/nmr>, <http://identifiers.org/nmrshiftdb2>, <http://identifiers.org/noncodev3>, <http://identifiers.org/noncodev4.gene>, <http://identifiers.org/noncodev4.rna>, <http://identifiers.org/norine>, <http://identifiers.org/nuclearbd>, <http://identifiers.org/nucleotide>, <http://identifiers.org/obcs>, <http://identifiers.org/obi>, <http://identifiers.org/obv>, <http://identifiers.org/occ>, <http://identifiers.org/oci>, <http://identifiers.org/ocid>, <http://identifiers.org/oclc>, <http://identifiers.org/odam>, <http://identifiers.org/odam.explorer>, <http://identifiers.org/odc.sci>, <http://identifiers.org/odc.tbi>, <http://identifiers.org/odor>, <http://identifiers.org/oid>, <http://identifiers.org/oma.grp>, <http://identifiers.org/oma.hog>, <http://identifiers.org/oma.protein>, <http://identifiers.org/omia>, <http://identifiers.org/omid>, <http://identifiers.org/omit>, <http://identifiers.org/opb>, <http://identifiers.org/opl>, <http://identifiers.org/opm>, <http://identifiers.org/orcid>, <http://identifiers.org/ordb>, <http://identifiers.org/oridb.sacch>, <http://identifiers.org/oridb.schizo>, <http://identifiers.org/orphanet>, <http://identifiers.org/orphanet.ordo>, <http://identifiers.org/orthodb>, <http://identifiers.org/oryzabase.gene>, <http://identifiers.org/oryzabase.mutant>, <http://identifiers.org/oryzabase.reference>, <http://identifiers.org/oryzabase.stage>, <http://identifiers.org/oryzabase.strain>, <http://identifiers.org/otl>, <http://identifiers.org/p3db.protein>, <http://identifiers.org/p3db.site>, <http://identifiers.org/paleodb>, <http://identifiers.org/panther.family>, <http://identifiers.org/panther.node>, <http://identifiers.org/panther.pathway>, <http://identifiers.org/panther.pthcmp>, <http://identifiers.org/pass2>, <http://identifiers.org/pathwaycommons>, <http://identifiers.org/pato>, <http://identifiers.org/paxdb.organism>, <http://identifiers.org/paxdb.protein>, <http://identifiers.org/pazar>, <http://identifiers.org/pdb>, <http://identifiers.org/pdb-ccd>, <http://identifiers.org/pdb.ligand>, <http://identifiers.org/ped>, <http://identifiers.org/ped.ensemble>, <http://identifiers.org/peptideatlas>, <http://identifiers.org/peptideatlas.dataset>, <http://identifiers.org/peroxibase>, <http://identifiers.org/pfam>, <http://identifiers.org/pgs>, <http://identifiers.org/pgx>, <http://identifiers.org/pharmgkb.disease>, <http://identifiers.org/pharmgkb.drug>, <http://identifiers.org/pharmgkb.gene>, <http://identifiers.org/pharmgkb.pathways>, <http://identifiers.org/phenolexplorer>, <http://identifiers.org/phosphopoint.kinase>, <http://identifiers.org/phosphopoint.protein>, <http://identifiers.org/phosphosite.protein>, <http://identifiers.org/phosphosite.residue>, <http://identifiers.org/phylomedb>, <http://identifiers.org/phytozome.locus>, <http://identifiers.org/pid.pathway>, <http://identifiers.org/pigqtldb>, <http://identifiers.org/pina>, <http://identifiers.org/piroplasma>, <http://identifiers.org/pirsf>, <http://identifiers.org/pkdb>, <http://identifiers.org/planttfdb>, <http://identifiers.org/plasmodb>, <http://identifiers.org/pmap.cutdb>, <http://identifiers.org/pmap.substratedb>, <http://identifiers.org/pmc>, <http://identifiers.org/pmdb>, <http://identifiers.org/pmp>, <http://identifiers.org/pmr>, <http://identifiers.org/pmr.workspace>, <http://identifiers.org/po>, <http://identifiers.org/pocketome>, <http://identifiers.org/polbase>, <http://identifiers.org/pombase>, <http://identifiers.org/pr>, <http://identifiers.org/pride>, <http://identifiers.org/pride.project>, <http://identifiers.org/prints>, <http://identifiers.org/probonto>, <http://identifiers.org/prodom>, <http://identifiers.org/proglyc>, <http://identifiers.org/prosite>, <http://identifiers.org/protclustdb>, <http://identifiers.org/proteomicsdb.peptide>, <http://identifiers.org/proteomicsdb.protein>, <http://identifiers.org/protonet.cluster>, <http://identifiers.org/protonet.proteincard>, <http://identifiers.org/ps>, <http://identifiers.org/pscdb>, <http://identifiers.org/pseudomonas>, <http://identifiers.org/psipar>, <http://identifiers.org/pubchem.bioassay>, <http://identifiers.org/pubchem.compound>, <http://identifiers.org/pubchem.substance>, <http://identifiers.org/pubmed>, <http://identifiers.org/pw>, <http://identifiers.org/px>, <http://identifiers.org/pypi>, <http://identifiers.org/qtldb>, <http://identifiers.org/rapdb.locus>, <http://identifiers.org/rapdb.transcript>, <http://identifiers.org/rbk>, <http://identifiers.org/re3data>, <http://identifiers.org/reactome>, <http://identifiers.org/rebase>, <http://identifiers.org/refseq>, <http://identifiers.org/refseq.gcf>, <http://identifiers.org/repeatsdb.protein>, <http://identifiers.org/repeatsdb.structure>, <http://identifiers.org/resid>, <http://identifiers.org/rfam>, <http://identifiers.org/rgd>, <http://identifiers.org/rgd.qtl>, <http://identifiers.org/rgd.strain>, <http://identifiers.org/rhea>, <http://identifiers.org/ricegap>, <http://identifiers.org/ricenetdb.compound>, <http://identifiers.org/ricenetdb.gene>, <http://identifiers.org/ricenetdb.mirna>, <http://identifiers.org/ricenetdb.protein>, <http://identifiers.org/ricenetdb.reaction>, <http://identifiers.org/rism>, <http://identifiers.org/rnacentral>, <http://identifiers.org/rnamods>, <http://identifiers.org/ro>, <http://identifiers.org/ror>, <http://identifiers.org/rouge>, <http://identifiers.org/rrid>, <http://identifiers.org/runbiosimulations>, <http://identifiers.org/sabiork.compound>, <http://identifiers.org/sabiork.ec>, <http://identifiers.org/sabiork.kineticrecord>, <http://identifiers.org/sabiork.reaction>, <http://identifiers.org/sasbdb>, <http://identifiers.org/sbo>, <http://identifiers.org/sciflection>, <http://identifiers.org/scop>, <http://identifiers.org/scretf>, <http://identifiers.org/sdbs>, <http://identifiers.org/sedml.format>, <http://identifiers.org/sedml.language>, <http://identifiers.org/seed>, <http://identifiers.org/seed.compound>, <http://identifiers.org/seed.reaction>, <http://identifiers.org/sgd>, <http://identifiers.org/sgd.pathways>, <http://identifiers.org/sgn>, <http://identifiers.org/sheepqtldb>, <http://identifiers.org/sider.drug>, <http://identifiers.org/sider.effect>, <http://identifiers.org/signaling-gateway>, <http://identifiers.org/signor>, <http://identifiers.org/sio>, <http://identifiers.org/sisu>, <http://identifiers.org/sitex>, <http://identifiers.org/skm>, <http://identifiers.org/slm>, <http://identifiers.org/smart>, <http://identifiers.org/smpdb>, <http://identifiers.org/snomedct>, <http://identifiers.org/snp2tfbs>, <http://identifiers.org/so>, <http://identifiers.org/soybase>, <http://identifiers.org/spdx>, <http://identifiers.org/spike.map>, <http://identifiers.org/splash>, <http://identifiers.org/spp>, <http://identifiers.org/stap>, <http://identifiers.org/stato>, <http://identifiers.org/stitch>, <http://identifiers.org/storedb>, <http://identifiers.org/string>, <http://identifiers.org/subtilist>, <http://identifiers.org/subtiwiki>, <http://identifiers.org/sugarbind>, <http://identifiers.org/supfam>, <http://identifiers.org/swh>, <http://identifiers.org/swiss-model>, <http://identifiers.org/swissregulon>, <http://identifiers.org/synapse>, <http://identifiers.org/t3db>, <http://identifiers.org/tair.gene>, <http://identifiers.org/tair.locus>, <http://identifiers.org/tair.name>, <http://identifiers.org/tair.protein>, <http://identifiers.org/tarbase>, <http://identifiers.org/taxonomy>, <http://identifiers.org/tcdb>, <http://identifiers.org/tgd>, <http://identifiers.org/tigrfam>, <http://identifiers.org/tissuelist>, <http://identifiers.org/togovar>, <http://identifiers.org/tol>, <http://identifiers.org/topdb>, <http://identifiers.org/topfind>, <http://identifiers.org/toxoplasma>, <http://identifiers.org/transyt>, <http://identifiers.org/treebase>, <http://identifiers.org/treefam>, <http://identifiers.org/tricdb>, <http://identifiers.org/trichdb>, <http://identifiers.org/tritrypdb>, <http://identifiers.org/ttd.drug>, <http://identifiers.org/ttd.target>, <http://identifiers.org/uberon>, <http://identifiers.org/ubio.namebank>, <http://identifiers.org/umbbd.compound>, <http://identifiers.org/umbbd.enzyme>, <http://identifiers.org/umbbd.pathway>, <http://identifiers.org/umbbd.reaction>, <http://identifiers.org/umbbd.rule>, <http://identifiers.org/umls>, <http://identifiers.org/unigene>, <http://identifiers.org/unii>, <http://identifiers.org/unimod>, <http://identifiers.org/uniparc>, <http://identifiers.org/unipathway.compound>, <http://identifiers.org/unipathway.reaction>, <http://identifiers.org/uniprot>, <http://identifiers.org/uniprot.chain>, <http://identifiers.org/uniprot.isoform>, <http://identifiers.org/uniref>, <http://identifiers.org/unists>, <http://identifiers.org/unite>, <http://identifiers.org/uo>, <http://identifiers.org/uspto>, <http://identifiers.org/utrdb>, <http://identifiers.org/validatordb>, <http://identifiers.org/vario>, <http://identifiers.org/vbase2>, <http://identifiers.org/vbrc>, <http://identifiers.org/vcell>, <http://identifiers.org/vectorbase>, <http://identifiers.org/vegbank>, <http://identifiers.org/vfb>, <http://identifiers.org/vfdb.gene>, <http://identifiers.org/vfdb.genus>, <http://identifiers.org/vgnc>, <http://identifiers.org/viaf>, <http://identifiers.org/vipr>, <http://identifiers.org/viralzone>, <http://identifiers.org/virsirna>, <http://identifiers.org/vmhgene>, <http://identifiers.org/vmhmetabolite>, <http://identifiers.org/vmhreaction>, <http://identifiers.org/wb>, <http://identifiers.org/wb.rnai>, <http://identifiers.org/wikidata>, <http://identifiers.org/wikigenes>, <http://identifiers.org/wikipathways>, <http://identifiers.org/wikipedia.en>, <http://identifiers.org/worfdb>, <http://identifiers.org/wormpep>, <http://identifiers.org/worms>, <http://identifiers.org/xenbase>, <http://identifiers.org/ydpm>, <http://identifiers.org/yeastintron>, <http://identifiers.org/yetfasco>, <http://identifiers.org/yid>, <http://identifiers.org/yrcpdr>, <http://identifiers.org/zfin>, <http://identifiers.org/zinc> ;
+    <http://www.w3.org/ns/dcat#dataset> <http://identifiers.org/3dmet>, <http://identifiers.org/4503>, <http://identifiers.org/4dn>, <http://identifiers.org/6vts>, <http://identifiers.org/abs>, <http://identifiers.org/aceview.worm>, <http://identifiers.org/addgene>, <http://identifiers.org/adw>, <http://identifiers.org/affy.probeset>, <http://identifiers.org/aftol.taxonomy>, <http://identifiers.org/agricola>, <http://identifiers.org/allergome>, <http://identifiers.org/amoebadb>, <http://identifiers.org/antibodyregistry>, <http://identifiers.org/antweb>, <http://identifiers.org/aop>, <http://identifiers.org/aop.events>, <http://identifiers.org/aop.relationships>, <http://identifiers.org/aop.stressor>, <http://identifiers.org/apd>, <http://identifiers.org/aphidbase.transcript>, <http://identifiers.org/apid.interactions>, <http://identifiers.org/arachnoserver>, <http://identifiers.org/ardb>, <http://identifiers.org/ark>, <http://identifiers.org/arrayexpress>, <http://identifiers.org/arrayexpress.platform>, <http://identifiers.org/arraymap>, <http://identifiers.org/arxiv>, <http://identifiers.org/asap>, <http://identifiers.org/ascl>, <http://identifiers.org/asin>, <http://identifiers.org/aspgd.locus>, <http://identifiers.org/aspgd.protein>, <http://identifiers.org/assembly>, <http://identifiers.org/atc>, <http://identifiers.org/atcc>, <http://identifiers.org/atcvet>, <http://identifiers.org/atfdb.family>, <http://identifiers.org/autdb>, <http://identifiers.org/bacdive>, <http://identifiers.org/bacmap.biog>, <http://identifiers.org/bacmap.map>, <http://identifiers.org/bao>, <http://identifiers.org/bbkg>, <http://identifiers.org/bbtp>, <http://identifiers.org/bdgp.est>, <http://identifiers.org/bdgp.insertion>, <http://identifiers.org/bdsc>, <http://identifiers.org/beetlebase>, <http://identifiers.org/begdb>, <http://identifiers.org/bgee.family>, <http://identifiers.org/bgee.gene>, <http://identifiers.org/bgee.organ>, <http://identifiers.org/bgee.stage>, <http://identifiers.org/bigg.compartment>, <http://identifiers.org/bigg.metabolite>, <http://identifiers.org/bigg.model>, <http://identifiers.org/bigg.reaction>, <http://identifiers.org/bindingdb>, <http://identifiers.org/biocarta.pathway>, <http://identifiers.org/biocatalogue.service>, <http://identifiers.org/biocyc>, <http://identifiers.org/biodeep>, <http://identifiers.org/biofactoid>, <http://identifiers.org/biogrid>, <http://identifiers.org/biokc>, <http://identifiers.org/biolink>, <http://identifiers.org/biominder>, <http://identifiers.org/biomodels.db>, <http://identifiers.org/biomodels.kisao>, <http://identifiers.org/biomodels.teddy>, <http://identifiers.org/biomodels.vocabulary>, <http://identifiers.org/bionumbers>, <http://identifiers.org/bioportal>, <http://identifiers.org/bioproject>, <http://identifiers.org/biosample>, <http://identifiers.org/biosimulations>, <http://identifiers.org/biosimulators>, <http://identifiers.org/biostudies>, <http://identifiers.org/biosystems>, <http://identifiers.org/biotools>, <http://identifiers.org/bitbucket>, <http://identifiers.org/bitterdb.cpd>, <http://identifiers.org/bitterdb.rec>, <http://identifiers.org/bmrb>, <http://identifiers.org/bold.taxonomy>, <http://identifiers.org/brenda>, <http://identifiers.org/broad>, <http://identifiers.org/bto>, <http://identifiers.org/bugbase.expt>, <http://identifiers.org/bugbase.protocol>, <http://identifiers.org/bykdb>, <http://identifiers.org/cabri>, <http://identifiers.org/cadsr>, <http://identifiers.org/cameo>, <http://identifiers.org/caps>, <http://identifiers.org/cas>, <http://identifiers.org/cath>, <http://identifiers.org/cath.domain>, <http://identifiers.org/cath.superfamily>, <http://identifiers.org/cattleqtldb>, <http://identifiers.org/cazy>, <http://identifiers.org/cbioportal>, <http://identifiers.org/ccdc>, <http://identifiers.org/ccds>, <http://identifiers.org/cco>, <http://identifiers.org/cdd>, <http://identifiers.org/cdpd>, <http://identifiers.org/cellimage>, <http://identifiers.org/cellosaurus>, <http://identifiers.org/cellrepo>, <http://identifiers.org/cgd>, <http://identifiers.org/cgsc>, <http://identifiers.org/charprot>, <http://identifiers.org/chebi>, <http://identifiers.org/chembl>, <http://identifiers.org/chembl.compound>, <http://identifiers.org/chembl.target>, <http://identifiers.org/chemdb>, <http://identifiers.org/chemidplus>, <http://identifiers.org/cheminf>, <http://identifiers.org/chemspider>, <http://identifiers.org/chickenqtldb>, <http://identifiers.org/civic.aid>, <http://identifiers.org/civic.did>, <http://identifiers.org/civic.eid>, <http://identifiers.org/civic.gid>, <http://identifiers.org/civic.mpid>, <http://identifiers.org/civic.sid>, <http://identifiers.org/civic.tid>, <http://identifiers.org/civic.vgid>, <http://identifiers.org/civic.vid>, <http://identifiers.org/cl>, <http://identifiers.org/classyfire>, <http://identifiers.org/clb>, <http://identifiers.org/cldb>, <http://identifiers.org/clinicaltrials>, <http://identifiers.org/clinvar>, <http://identifiers.org/clinvar.record>, <http://identifiers.org/clinvar.submission>, <http://identifiers.org/clinvar.submitter>, <http://identifiers.org/clo>, <http://identifiers.org/cog>, <http://identifiers.org/col>, <http://identifiers.org/combine.specifications>, <http://identifiers.org/complexportal>, <http://identifiers.org/comptox>, <http://identifiers.org/compulyeast>, <http://identifiers.org/conoserver>, <http://identifiers.org/coriell>, <http://identifiers.org/corrdb>, <http://identifiers.org/corum>, <http://identifiers.org/cosmic>, <http://identifiers.org/covid19>, <http://identifiers.org/cpc>, <http://identifiers.org/crisprdb>, <http://identifiers.org/crop2ml>, <http://identifiers.org/cryptodb>, <http://identifiers.org/csa>, <http://identifiers.org/csd>, <http://identifiers.org/cst>, <http://identifiers.org/cst.ab>, <http://identifiers.org/cstr>, <http://identifiers.org/ctd.chemical>, <http://identifiers.org/ctd.disease>, <http://identifiers.org/ctd.gene>, <http://identifiers.org/cubedb>, <http://identifiers.org/d1id>, <http://identifiers.org/dailymed>, <http://identifiers.org/dandi>, <http://identifiers.org/darc>, <http://identifiers.org/dashr>, <http://identifiers.org/dashr.expression>, <http://identifiers.org/datanator.gene>, <http://identifiers.org/datanator.metabolite>, <http://identifiers.org/datanator.reaction>, <http://identifiers.org/datf>, <http://identifiers.org/dbd>, <http://identifiers.org/dbest>, <http://identifiers.org/dbg2introns>, <http://identifiers.org/dbgap>, <http://identifiers.org/dbprobe>, <http://identifiers.org/dbsnp>, <http://identifiers.org/degradome>, <http://identifiers.org/depod>, <http://identifiers.org/dev.ga4ghdos>, <http://identifiers.org/dg.373f>, <http://identifiers.org/dg.4503>, <http://identifiers.org/dg.4825>, <http://identifiers.org/dg.4dfc>, <http://identifiers.org/dg.5b0d>, <http://identifiers.org/dg.63d5>, <http://identifiers.org/dg.6vts>, <http://identifiers.org/dg.712c>, <http://identifiers.org/dg.7c5b>, <http://identifiers.org/dg.80b6>, <http://identifiers.org/dg.anv0>, <http://identifiers.org/dg.c78ne>, <http://identifiers.org/dg.ea80>, <http://identifiers.org/dg.f738>, <http://identifiers.org/dg.f82a1a>, <http://identifiers.org/dg.h34l>, <http://identifiers.org/dg.h35l>, <http://identifiers.org/dg.md1r>, <http://identifiers.org/dg.nacd>, <http://identifiers.org/dg.nci35>, <http://identifiers.org/dg.um33r90>, <http://identifiers.org/dg.va03>, <http://identifiers.org/dg.vp07>, <http://identifiers.org/dictybase.est>, <http://identifiers.org/dictybase.gene>, <http://identifiers.org/did>, <http://identifiers.org/dip>, <http://identifiers.org/disprot>, <http://identifiers.org/disprot.region>, <http://identifiers.org/dlxb>, <http://identifiers.org/dlxc>, <http://identifiers.org/doi>, <http://identifiers.org/doid>, <http://identifiers.org/dome>, <http://identifiers.org/dommino>, <http://identifiers.org/door>, <http://identifiers.org/doqcs.model>, <http://identifiers.org/doqcs.pathway>, <http://identifiers.org/dpv>, <http://identifiers.org/dragondb.allele>, <http://identifiers.org/dragondb.dna>, <http://identifiers.org/dragondb.locus>, <http://identifiers.org/dragondb.protein>, <http://identifiers.org/drs.anv0>, <http://identifiers.org/drsc>, <http://identifiers.org/drugbank>, <http://identifiers.org/drugbankv4.target>, <http://identifiers.org/drugcentral>, <http://identifiers.org/ec-code>, <http://identifiers.org/echobase>, <http://identifiers.org/eco>, <http://identifiers.org/ecogene>, <http://identifiers.org/ecoliwiki>, <http://identifiers.org/ecyano.entity>, <http://identifiers.org/ecyano.experiment>, <http://identifiers.org/ecyano.model>, <http://identifiers.org/ecyano.rule>, <http://identifiers.org/edam>, <http://identifiers.org/efo>, <http://identifiers.org/ega.dataset>, <http://identifiers.org/ega.study>, <http://identifiers.org/eggnog>, <http://identifiers.org/elm>, <http://identifiers.org/emdb>, <http://identifiers.org/empiar>, <http://identifiers.org/ena.embl>, <http://identifiers.org/encode>, <http://identifiers.org/ensembl>, <http://identifiers.org/ensembl.bacteria>, <http://identifiers.org/ensembl.fungi>, <http://identifiers.org/ensembl.metazoa>, <http://identifiers.org/ensembl.plant>, <http://identifiers.org/ensembl.protist>, <http://identifiers.org/envipath>, <http://identifiers.org/envo>, <http://identifiers.org/eo>, <http://identifiers.org/epd>, <http://identifiers.org/erm>, <http://identifiers.org/erv>, <http://identifiers.org/eu89h>, <http://identifiers.org/euclinicaltrials>, <http://identifiers.org/exac.gene>, <http://identifiers.org/exac.transcript>, <http://identifiers.org/exac.variant>, <http://identifiers.org/f82a1a>, <http://identifiers.org/facebase>, <http://identifiers.org/fairsharing>, <http://identifiers.org/fb>, <http://identifiers.org/fbol>, <http://identifiers.org/fcb>, <http://identifiers.org/flowrepository>, <http://identifiers.org/fma>, <http://identifiers.org/foodb.compound>, <http://identifiers.org/foodon>, <http://identifiers.org/fplx>, <http://identifiers.org/fsnp>, <http://identifiers.org/funcbase.fly>, <http://identifiers.org/funcbase.human>, <http://identifiers.org/funcbase.mouse>, <http://identifiers.org/funcbase.yeast>, <http://identifiers.org/funderregistry>, <http://identifiers.org/fungidb>, <http://identifiers.org/ga4ghdos>, <http://identifiers.org/gabi>, <http://identifiers.org/gateway>, <http://identifiers.org/gcst>, <http://identifiers.org/gdc>, <http://identifiers.org/gdsc>, <http://identifiers.org/genatlas>, <http://identifiers.org/genecards>, <http://identifiers.org/genedb>, <http://identifiers.org/genefarm>, <http://identifiers.org/genetree>, <http://identifiers.org/genewiki>, <http://identifiers.org/genpept>, <http://identifiers.org/genprop>, <http://identifiers.org/geo>, <http://identifiers.org/geogeo>, <http://identifiers.org/giardiadb>, <http://identifiers.org/github>, <http://identifiers.org/gitlab>, <http://identifiers.org/glida.gpcr>, <http://identifiers.org/glida.ligand>, <http://identifiers.org/glycoepitope>, <http://identifiers.org/glycomedb>, <http://identifiers.org/glyconavi>, <http://identifiers.org/glycopost>, <http://identifiers.org/glytoucan>, <http://identifiers.org/gmd>, <http://identifiers.org/gmd.analyte>, <http://identifiers.org/gmd.gcms>, <http://identifiers.org/gmd.profile>, <http://identifiers.org/gmd.ref>, <http://identifiers.org/gnd>, <http://identifiers.org/gnpis>, <http://identifiers.org/go>, <http://identifiers.org/go_ref>, <http://identifiers.org/goa>, <http://identifiers.org/gold>, <http://identifiers.org/gold.genome>, <http://identifiers.org/gold.meta>, <http://identifiers.org/google.patent>, <http://identifiers.org/gpcrdb>, <http://identifiers.org/gpmdb>, <http://identifiers.org/gramene.gene>, <http://identifiers.org/gramene.protein>, <http://identifiers.org/gramene.qtl>, <http://identifiers.org/gramene.taxonomy>, <http://identifiers.org/greengenes>, <http://identifiers.org/grid>, <http://identifiers.org/grin.taxonomy>, <http://identifiers.org/gro>, <http://identifiers.org/grsdb>, <http://identifiers.org/gsso>, <http://identifiers.org/gtex>, <http://identifiers.org/gudmap>, <http://identifiers.org/gwascentral.marker>, <http://identifiers.org/gwascentral.phenotype>, <http://identifiers.org/gwascentral.study>, <http://identifiers.org/gxa.expt>, <http://identifiers.org/gxa.gene>, <http://identifiers.org/hamap>, <http://identifiers.org/hco>, <http://identifiers.org/hcvdb>, <http://identifiers.org/hdr>, <http://identifiers.org/hgmd>, <http://identifiers.org/hgnc>, <http://identifiers.org/hgnc.family>, <http://identifiers.org/hgnc.genefamily>, <http://identifiers.org/hgnc.genegroup>, <http://identifiers.org/hgnc.symbol>, <http://identifiers.org/hinv.locus>, <http://identifiers.org/hinv.protein>, <http://identifiers.org/hinv.transcript>, <http://identifiers.org/hmdb>, <http://identifiers.org/hogenom>, <http://identifiers.org/homd.seq>, <http://identifiers.org/homd.taxon>, <http://identifiers.org/homologene>, <http://identifiers.org/hovergen>, <http://identifiers.org/hp>, <http://identifiers.org/hpa>, <http://identifiers.org/hpm.peptide>, <http://identifiers.org/hpm.protein>, <http://identifiers.org/hprd>, <http://identifiers.org/hpscreg>, <http://identifiers.org/hssp>, <http://identifiers.org/huge>, <http://identifiers.org/iao>, <http://identifiers.org/icd>, <http://identifiers.org/icdc>, <http://identifiers.org/ice.chem>, <http://identifiers.org/iceberg.element>, <http://identifiers.org/iceberg.family>, <http://identifiers.org/ideal>, <http://identifiers.org/identifiers.namespace>, <http://identifiers.org/ido>, <http://identifiers.org/idoo>, <http://identifiers.org/idot>, <http://identifiers.org/idr>, <http://identifiers.org/iedb>, <http://identifiers.org/igsn>, <http://identifiers.org/ilx>, <http://identifiers.org/imex>, <http://identifiers.org/img.gene>, <http://identifiers.org/img.taxon>, <http://identifiers.org/imgt.hla>, <http://identifiers.org/imgt.ligm>, <http://identifiers.org/inchi>, <http://identifiers.org/inchikey>, <http://identifiers.org/insdc>, <http://identifiers.org/insdc.cds>, <http://identifiers.org/insdc.gca>, <http://identifiers.org/insdc.sra>, <http://identifiers.org/intact>, <http://identifiers.org/intact.molecule>, <http://identifiers.org/interpro>, <http://identifiers.org/ird.segment>, <http://identifiers.org/irefweb>, <http://identifiers.org/isbn>, <http://identifiers.org/isfinder>, <http://identifiers.org/isni>, <http://identifiers.org/issn>, <http://identifiers.org/ito>, <http://identifiers.org/iuphar.family>, <http://identifiers.org/iuphar.ligand>, <http://identifiers.org/iuphar.receptor>, <http://identifiers.org/jaxmice>, <http://identifiers.org/jcggdb>, <http://identifiers.org/jcm>, <http://identifiers.org/jcsd>, <http://identifiers.org/jstor>, <http://identifiers.org/jws>, <http://identifiers.org/kaggle>, <http://identifiers.org/kegg>, <http://identifiers.org/kegg.compound>, <http://identifiers.org/kegg.disease>, <http://identifiers.org/kegg.drug>, <http://identifiers.org/kegg.environ>, <http://identifiers.org/kegg.genes>, <http://identifiers.org/kegg.genome>, <http://identifiers.org/kegg.glycan>, <http://identifiers.org/kegg.metagenome>, <http://identifiers.org/kegg.module>, <http://identifiers.org/kegg.orthology>, <http://identifiers.org/kegg.pathway>, <http://identifiers.org/kegg.reaction>, <http://identifiers.org/knapsack>, <http://identifiers.org/lei>, <http://identifiers.org/lgai.cede>, <http://identifiers.org/lgic>, <http://identifiers.org/licebase>, <http://identifiers.org/ligandbook>, <http://identifiers.org/ligandbox>, <http://identifiers.org/ligandexpo>, <http://identifiers.org/lincs.cell>, <http://identifiers.org/lincs.data>, <http://identifiers.org/lincs.protein>, <http://identifiers.org/lincs.smallmolecule>, <http://identifiers.org/linguist>, <http://identifiers.org/lipidbank>, <http://identifiers.org/lipidmaps>, <http://identifiers.org/lrg>, <http://identifiers.org/lw>, <http://identifiers.org/ma>, <http://identifiers.org/macie>, <http://identifiers.org/maggot>, <http://identifiers.org/maizegdb.locus>, <http://identifiers.org/mamo>, <http://identifiers.org/massbank>, <http://identifiers.org/massive>, <http://identifiers.org/matrixdb.association>, <http://identifiers.org/maxo>, <http://identifiers.org/mcro>, <http://identifiers.org/mdm>, <http://identifiers.org/meddra>, <http://identifiers.org/medgen>, <http://identifiers.org/mediadive.medium>, <http://identifiers.org/medlineplus>, <http://identifiers.org/merops>, <http://identifiers.org/merops.family>, <http://identifiers.org/merops.inhibitor>, <http://identifiers.org/mesh>, <http://identifiers.org/mesh.2012>, <http://identifiers.org/mesh.2013>, <http://identifiers.org/metabolights>, <http://identifiers.org/metacyc.compound>, <http://identifiers.org/metacyc.reaction>, <http://identifiers.org/metanetx.chemical>, <http://identifiers.org/metanetx.compartment>, <http://identifiers.org/metanetx.reaction>, <http://identifiers.org/metatlas>, <http://identifiers.org/metlin>, <http://identifiers.org/mex>, <http://identifiers.org/mge>, <http://identifiers.org/mgi>, <http://identifiers.org/mgnify.analysis>, <http://identifiers.org/mgnify.genome>, <http://identifiers.org/mgnify.proj>, <http://identifiers.org/mgnify.protein>, <http://identifiers.org/mgnify.samp>, <http://identifiers.org/mgnify.study>, <http://identifiers.org/mi>, <http://identifiers.org/microscope>, <http://identifiers.org/microsporidia>, <http://identifiers.org/mim>, <http://identifiers.org/mimodb>, <http://identifiers.org/minid>, <http://identifiers.org/minid.test>, <http://identifiers.org/mint>, <http://identifiers.org/mipmod>, <http://identifiers.org/mir>, <http://identifiers.org/mirbase>, <http://identifiers.org/mirbase.mature>, <http://identifiers.org/mirex>, <http://identifiers.org/miriam.collection>, <http://identifiers.org/miriam.resource>, <http://identifiers.org/mirnest>, <http://identifiers.org/mirtarbase>, <http://identifiers.org/mlc>, <http://identifiers.org/mmdb>, <http://identifiers.org/mmmp.biomaps>, <http://identifiers.org/mmp.cat>, <http://identifiers.org/mmp.db>, <http://identifiers.org/mmp.fun>, <http://identifiers.org/mmp.ref>, <http://identifiers.org/mmrrc>, <http://identifiers.org/mo>, <http://identifiers.org/mobidb>, <http://identifiers.org/mod>, <http://identifiers.org/modeldb>, <http://identifiers.org/modeldb.concept>, <http://identifiers.org/moid>, <http://identifiers.org/molbase>, <http://identifiers.org/molmedb>, <http://identifiers.org/mondo>, <http://identifiers.org/morpheus>, <http://identifiers.org/mp>, <http://identifiers.org/mpid>, <http://identifiers.org/ms>, <http://identifiers.org/multicellds.cell_line>, <http://identifiers.org/multicellds.collection>, <http://identifiers.org/multicellds.snapshot>, <http://identifiers.org/mw.project>, <http://identifiers.org/mw.study>, <http://identifiers.org/myco.lepra>, <http://identifiers.org/myco.marinum>, <http://identifiers.org/myco.smeg>, <http://identifiers.org/myco.tuber>, <http://identifiers.org/mycobank>, <http://identifiers.org/mzspec>, <http://identifiers.org/nando>, <http://identifiers.org/napdi>, <http://identifiers.org/napp>, <http://identifiers.org/narcis>, <http://identifiers.org/nasc>, <http://identifiers.org/nbn>, <http://identifiers.org/nbrc>, <http://identifiers.org/ncbidrs>, <http://identifiers.org/ncbigene>, <http://identifiers.org/ncbiprotein>, <http://identifiers.org/ncim>, <http://identifiers.org/ncit>, <http://identifiers.org/ndc>, <http://identifiers.org/nemo>, <http://identifiers.org/neurolex>, <http://identifiers.org/neuromorpho>, <http://identifiers.org/neurondb>, <http://identifiers.org/neurovault.collection>, <http://identifiers.org/neurovault.image>, <http://identifiers.org/nextdb>, <http://identifiers.org/nextprot>, <http://identifiers.org/ngl>, <http://identifiers.org/niaest>, <http://identifiers.org/nlfff>, <http://identifiers.org/nmdc>, <http://identifiers.org/nmr>, <http://identifiers.org/nmrshiftdb2>, <http://identifiers.org/noncodev3>, <http://identifiers.org/noncodev4.gene>, <http://identifiers.org/noncodev4.rna>, <http://identifiers.org/norine>, <http://identifiers.org/nuclearbd>, <http://identifiers.org/nucleotide>, <http://identifiers.org/obcs>, <http://identifiers.org/obi>, <http://identifiers.org/obv>, <http://identifiers.org/occ>, <http://identifiers.org/oci>, <http://identifiers.org/ocid>, <http://identifiers.org/oclc>, <http://identifiers.org/odam>, <http://identifiers.org/odam.explorer>, <http://identifiers.org/odc.sci>, <http://identifiers.org/odc.tbi>, <http://identifiers.org/odor>, <http://identifiers.org/oid>, <http://identifiers.org/oma.grp>, <http://identifiers.org/oma.hog>, <http://identifiers.org/oma.protein>, <http://identifiers.org/omia>, <http://identifiers.org/omid>, <http://identifiers.org/omit>, <http://identifiers.org/opb>, <http://identifiers.org/opl>, <http://identifiers.org/opm>, <http://identifiers.org/orcid>, <http://identifiers.org/ordb>, <http://identifiers.org/oridb.sacch>, <http://identifiers.org/oridb.schizo>, <http://identifiers.org/orphanet>, <http://identifiers.org/orphanet.ordo>, <http://identifiers.org/orthodb>, <http://identifiers.org/oryzabase.gene>, <http://identifiers.org/oryzabase.mutant>, <http://identifiers.org/oryzabase.reference>, <http://identifiers.org/oryzabase.stage>, <http://identifiers.org/oryzabase.strain>, <http://identifiers.org/otl>, <http://identifiers.org/p3db.protein>, <http://identifiers.org/p3db.site>, <http://identifiers.org/paleodb>, <http://identifiers.org/panther.family>, <http://identifiers.org/panther.node>, <http://identifiers.org/panther.pathway>, <http://identifiers.org/panther.pthcmp>, <http://identifiers.org/pass2>, <http://identifiers.org/pathwaycommons>, <http://identifiers.org/pato>, <http://identifiers.org/paxdb.organism>, <http://identifiers.org/paxdb.protein>, <http://identifiers.org/pazar>, <http://identifiers.org/pdb>, <http://identifiers.org/pdb-ccd>, <http://identifiers.org/pdb.ligand>, <http://identifiers.org/ped>, <http://identifiers.org/ped.ensemble>, <http://identifiers.org/peptideatlas>, <http://identifiers.org/peptideatlas.dataset>, <http://identifiers.org/peroxibase>, <http://identifiers.org/pfam>, <http://identifiers.org/pgs>, <http://identifiers.org/pgx>, <http://identifiers.org/pharmgkb.disease>, <http://identifiers.org/pharmgkb.drug>, <http://identifiers.org/pharmgkb.gene>, <http://identifiers.org/pharmgkb.pathways>, <http://identifiers.org/phenolexplorer>, <http://identifiers.org/phosphopoint.kinase>, <http://identifiers.org/phosphopoint.protein>, <http://identifiers.org/phosphosite.protein>, <http://identifiers.org/phosphosite.residue>, <http://identifiers.org/phylomedb>, <http://identifiers.org/phytozome.locus>, <http://identifiers.org/pid.pathway>, <http://identifiers.org/pigqtldb>, <http://identifiers.org/pina>, <http://identifiers.org/piroplasma>, <http://identifiers.org/pirsf>, <http://identifiers.org/pkdb>, <http://identifiers.org/planttfdb>, <http://identifiers.org/plasmodb>, <http://identifiers.org/pmap.cutdb>, <http://identifiers.org/pmap.substratedb>, <http://identifiers.org/pmc>, <http://identifiers.org/pmdb>, <http://identifiers.org/pmp>, <http://identifiers.org/pmr>, <http://identifiers.org/pmr.workspace>, <http://identifiers.org/po>, <http://identifiers.org/pocketome>, <http://identifiers.org/polbase>, <http://identifiers.org/pombase>, <http://identifiers.org/pr>, <http://identifiers.org/pride>, <http://identifiers.org/pride.project>, <http://identifiers.org/prints>, <http://identifiers.org/probonto>, <http://identifiers.org/prodom>, <http://identifiers.org/proglyc>, <http://identifiers.org/prosite>, <http://identifiers.org/protclustdb>, <http://identifiers.org/proteomicsdb.peptide>, <http://identifiers.org/proteomicsdb.protein>, <http://identifiers.org/protonet.cluster>, <http://identifiers.org/protonet.proteincard>, <http://identifiers.org/ps>, <http://identifiers.org/pscdb>, <http://identifiers.org/pseudomonas>, <http://identifiers.org/psipar>, <http://identifiers.org/pubchem.bioassay>, <http://identifiers.org/pubchem.compound>, <http://identifiers.org/pubchem.substance>, <http://identifiers.org/pubmed>, <http://identifiers.org/pw>, <http://identifiers.org/px>, <http://identifiers.org/pypi>, <http://identifiers.org/qtldb>, <http://identifiers.org/rapdb.locus>, <http://identifiers.org/rapdb.transcript>, <http://identifiers.org/rbk>, <http://identifiers.org/re3data>, <http://identifiers.org/reactome>, <http://identifiers.org/rebase>, <http://identifiers.org/refseq>, <http://identifiers.org/refseq.gcf>, <http://identifiers.org/repeatsdb.protein>, <http://identifiers.org/repeatsdb.structure>, <http://identifiers.org/resid>, <http://identifiers.org/rfam>, <http://identifiers.org/rgd>, <http://identifiers.org/rgd.qtl>, <http://identifiers.org/rgd.strain>, <http://identifiers.org/rhea>, <http://identifiers.org/ricegap>, <http://identifiers.org/ricenetdb.compound>, <http://identifiers.org/ricenetdb.gene>, <http://identifiers.org/ricenetdb.mirna>, <http://identifiers.org/ricenetdb.protein>, <http://identifiers.org/ricenetdb.reaction>, <http://identifiers.org/rism>, <http://identifiers.org/rnacentral>, <http://identifiers.org/rnamods>, <http://identifiers.org/ro>, <http://identifiers.org/ror>, <http://identifiers.org/rouge>, <http://identifiers.org/rrid>, <http://identifiers.org/runbiosimulations>, <http://identifiers.org/sabiork.compound>, <http://identifiers.org/sabiork.ec>, <http://identifiers.org/sabiork.kineticrecord>, <http://identifiers.org/sabiork.reaction>, <http://identifiers.org/sasbdb>, <http://identifiers.org/sbo>, <http://identifiers.org/sciflection>, <http://identifiers.org/scop>, <http://identifiers.org/scretf>, <http://identifiers.org/sdbs>, <http://identifiers.org/sedml.format>, <http://identifiers.org/sedml.language>, <http://identifiers.org/seed>, <http://identifiers.org/seed.compound>, <http://identifiers.org/seed.reaction>, <http://identifiers.org/sgd>, <http://identifiers.org/sgd.pathways>, <http://identifiers.org/sgn>, <http://identifiers.org/sheepqtldb>, <http://identifiers.org/sider.drug>, <http://identifiers.org/sider.effect>, <http://identifiers.org/signaling-gateway>, <http://identifiers.org/signor>, <http://identifiers.org/sio>, <http://identifiers.org/sisu>, <http://identifiers.org/sitex>, <http://identifiers.org/skm>, <http://identifiers.org/slm>, <http://identifiers.org/smart>, <http://identifiers.org/smpdb>, <http://identifiers.org/snomedct>, <http://identifiers.org/snp2tfbs>, <http://identifiers.org/so>, <http://identifiers.org/soybase>, <http://identifiers.org/spdx>, <http://identifiers.org/spike.map>, <http://identifiers.org/splash>, <http://identifiers.org/spp>, <http://identifiers.org/stap>, <http://identifiers.org/stato>, <http://identifiers.org/stitch>, <http://identifiers.org/storedb>, <http://identifiers.org/string>, <http://identifiers.org/subtilist>, <http://identifiers.org/subtiwiki>, <http://identifiers.org/sugarbind>, <http://identifiers.org/supfam>, <http://identifiers.org/swh>, <http://identifiers.org/swiss-model>, <http://identifiers.org/swissregulon>, <http://identifiers.org/synapse>, <http://identifiers.org/t3db>, <http://identifiers.org/tair.gene>, <http://identifiers.org/tair.locus>, <http://identifiers.org/tair.name>, <http://identifiers.org/tair.protein>, <http://identifiers.org/tarbase>, <http://identifiers.org/taxonomy>, <http://identifiers.org/tcdb>, <http://identifiers.org/tgd>, <http://identifiers.org/tigrfam>, <http://identifiers.org/tissuelist>, <http://identifiers.org/togovar>, <http://identifiers.org/tol>, <http://identifiers.org/topdb>, <http://identifiers.org/topfind>, <http://identifiers.org/toxoplasma>, <http://identifiers.org/transyt>, <http://identifiers.org/treebase>, <http://identifiers.org/treefam>, <http://identifiers.org/tricdb>, <http://identifiers.org/trichdb>, <http://identifiers.org/tritrypdb>, <http://identifiers.org/ttd.drug>, <http://identifiers.org/ttd.target>, <http://identifiers.org/uberon>, <http://identifiers.org/ubio.namebank>, <http://identifiers.org/umbbd.compound>, <http://identifiers.org/umbbd.enzyme>, <http://identifiers.org/umbbd.pathway>, <http://identifiers.org/umbbd.reaction>, <http://identifiers.org/umbbd.rule>, <http://identifiers.org/umls>, <http://identifiers.org/unigene>, <http://identifiers.org/unii>, <http://identifiers.org/unimod>, <http://identifiers.org/uniparc>, <http://identifiers.org/unipathway.compound>, <http://identifiers.org/unipathway.reaction>, <http://identifiers.org/uniprot>, <http://identifiers.org/uniprot.chain>, <http://identifiers.org/uniprot.isoform>, <http://identifiers.org/uniref>, <http://identifiers.org/unists>, <http://identifiers.org/unite>, <http://identifiers.org/uo>, <http://identifiers.org/uspto>, <http://identifiers.org/utrdb>, <http://identifiers.org/validatordb>, <http://identifiers.org/vario>, <http://identifiers.org/vbase2>, <http://identifiers.org/vbrc>, <http://identifiers.org/vcell>, <http://identifiers.org/vectorbase>, <http://identifiers.org/vegbank>, <http://identifiers.org/vfb>, <http://identifiers.org/vfdb.gene>, <http://identifiers.org/vfdb.genus>, <http://identifiers.org/vgnc>, <http://identifiers.org/viaf>, <http://identifiers.org/vipr>, <http://identifiers.org/viralzone>, <http://identifiers.org/virsirna>, <http://identifiers.org/vmhgene>, <http://identifiers.org/vmhmetabolite>, <http://identifiers.org/vmhreaction>, <http://identifiers.org/wb>, <http://identifiers.org/wb.rnai>, <http://identifiers.org/wikidata>, <http://identifiers.org/wikigenes>, <http://identifiers.org/wikipathways>, <http://identifiers.org/wikipedia.en>, <http://identifiers.org/worfdb>, <http://identifiers.org/wormpep>, <http://identifiers.org/worms>, <http://identifiers.org/xenbase>, <http://identifiers.org/ydpm>, <http://identifiers.org/yeastintron>, <http://identifiers.org/yetfasco>, <http://identifiers.org/yid>, <http://identifiers.org/yrcpdr>, <http://identifiers.org/zfin>, <http://identifiers.org/zinc> ;
     <http://www.w3.org/ns/dcat#landingPage> <https://registry.identifiers.org> ;
     <http://xmlns.com/foaf/0.1/page> <http://identifiers.org>, <https://docs.identifiers.org> .
 
@@ -6206,14 +6208,14 @@ The mission of the ISNI International Authority (ISNI-IA) is to assign to the pu
 <http://identifiers.org/knapsack>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100350> ;
-    :luiPattern "^C\\d{8}" ;
+    :luiPattern "^C\\d{8}$" ;
     :mirid "MIR:00000271" ;
     :prefix "knapsack" ;
     :sampleID "C00000001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:41.635"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> """KNApSAcK provides information on metabolites and the
 taxonomic class with which they are associated.""" ;
-    <http://purl.org/dc/terms/modified> "2020-04-22T09:28:07.963"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:29:41.844"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "KNApSAcK" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "KNApSAcK" .
@@ -6319,13 +6321,13 @@ taxonomic class with which they are associated.""" ;
 <http://identifiers.org/lincs.cell>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100721> ;
-    :luiPattern "(^LCL-\\d+$)|(^LDC-\\d+$)|(^ES-\\d+$)|(^LSC-\\d+$)|(^LPC-\\d+$)" ;
+    :luiPattern "^(LCL-\\d+)|(LDC-\\d+)|(ES-\\d+)|(LSC-\\d+)|(LPC-\\d+)$" ;
     :mirid "MIR:00000544" ;
     :prefix "lincs.cell" ;
     :sampleID "LCL-2085" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:44.903"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Library of Network-Based Cellular Signatures (LINCS) Program aims to  create a network-based understanding of biology by cataloging changes in gene expression and other cellular processes that occur when cells are exposed to a variety of perturbing agents. The LINCS cell model system can have the following cell categories: cell lines, primary cells, induced pluripotent stem cells, differentiated cells, and embryonic stem cells. The metadata contains information provided by each LINCS Data and Signature Generation Center (DSGC) and the association with a tissue or organ from which the cells were derived, in many cases are also associated to a disease." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:44.903"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:26:58.993"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "LINCS Cell" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "LINCS Cell" .
@@ -6557,13 +6559,13 @@ taxonomic class with which they are associated.""" ;
 <http://identifiers.org/maxo>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001031> ;
-    :luiPattern "\\d{7}" ;
+    :luiPattern "^\\d{7}$" ;
     :mirid "MIR:00001032" ;
     :prefix "maxo" ;
     :sampleID "0001073" ;
     <http://purl.org/dc/terms/created> "2023-10-30T09:40:47.492"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "An ontology to represent medically relevant actions, procedures, therapies, interventions, and recommendations." ;
-    <http://purl.org/dc/terms/modified> "2023-10-30T09:40:47.492"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:34:46.766"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Medical Action Ontology" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Medical Action Ontology" .
@@ -6892,6 +6894,36 @@ taxonomic class with which they are associated.""" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Mouse Genome Database" .
 
+<http://identifiers.org/mgnify.analysis>
+    :isDeprecated false ;
+    :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001093> ;
+    :luiPattern "^MGYA\\d{8}$" ;
+    :mirid "MIR:00001094" ;
+    :prefix "mgnify.analysis" ;
+    :sampleID "MGYA00791518" ;
+    <http://purl.org/dc/terms/created> "2025-05-06T10:59:08.462"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> """The free-to-use MGnify platform provides assembly, analysis and archiving of microbiome-derived nucleic acid sequence data from a wide range of biomes, with analysis results providing taxonomic and functional
+profiles. The platform also includes MGnify Proteins, a database of protein sequences derived from the analysis of metagenomic assemblies, and MGnify Genomes, a resource of biome-specific catalogues of microbial genomes, including extensive functional annotations.""" ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T10:59:08.462"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/title> "MGnify Analysis" ;
+    a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MGnify Analysis" .
+
+<http://identifiers.org/mgnify.genome>
+    :isDeprecated false ;
+    :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001091> ;
+    :luiPattern "^MGYG\\d{9}(\\.\\d+)?$" ;
+    :mirid "MIR:00001092" ;
+    :prefix "mgnify.genome" ;
+    :sampleID "MGYG000004903" ;
+    <http://purl.org/dc/terms/created> "2025-05-06T10:57:49.377"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> """The free-to-use MGnify platform provides assembly, analysis and archiving of microbiome-derived nucleic acid sequence data from a wide range of biomes, with analysis results providing taxonomic and functional
+profiles. The platform also includes MGnify Proteins, a database of protein sequences derived from the analysis of metagenomic assemblies, and MGnify Genomes, a resource of biome-specific catalogues of microbial genomes, including extensive functional annotations.""" ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T10:57:49.377"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/title> "MGnify Genome" ;
+    a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MGnify Genome" .
+
 <http://identifiers.org/mgnify.proj>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100711> ;
@@ -6906,6 +6938,21 @@ taxonomic class with which they are associated.""" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "MGnify Project" .
 
+<http://identifiers.org/mgnify.protein>
+    :isDeprecated false ;
+    :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001097> ;
+    :luiPattern "^MGYP\\d{12}$" ;
+    :mirid "MIR:00001098" ;
+    :prefix "mgnify.protein" ;
+    :sampleID "MGYP000261684433" ;
+    <http://purl.org/dc/terms/created> "2025-05-06T11:01:27.215"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> """The free-to-use MGnify platform provides assembly, analysis and archiving of microbiome-derived nucleic acid sequence data from a wide range of biomes, with analysis results providing taxonomic and functional
+profiles. The platform also includes MGnify Proteins, a database of protein sequences derived from the analysis of metagenomic assemblies, and MGnify Genomes, a resource of biome-specific catalogues of microbial genomes, including extensive functional annotations.""" ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T11:01:27.215"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/title> "MGnify Protein" ;
+    a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MGnify Protein" .
+
 <http://identifiers.org/mgnify.samp>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100656> ;
@@ -6919,6 +6966,21 @@ taxonomic class with which they are associated.""" ;
     <http://purl.org/dc/terms/title> "MGnify Sample" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "MGnify Sample" .
+
+<http://identifiers.org/mgnify.study>
+    :isDeprecated false ;
+    :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001183> ;
+    :luiPattern "^MGYS\\d{8}$" ;
+    :mirid "MIR:00001096" ;
+    :prefix "mgnify.study" ;
+    :sampleID "MGYS00006794" ;
+    <http://purl.org/dc/terms/created> "2025-05-06T11:00:21.695"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> """The free-to-use MGnify platform provides assembly, analysis and archiving of microbiome-derived nucleic acid sequence data from a wide range of biomes, with analysis results providing taxonomic and functional
+profiles. The platform also includes MGnify Proteins, a database of protein sequences derived from the analysis of metagenomic assemblies, and MGnify Genomes, a resource of biome-specific catalogues of microbial genomes, including extensive functional annotations.""" ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T11:00:21.695"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/title> "MGnify Study" ;
+    a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MGnify Study" .
 
 <http://identifiers.org/mi>
     :isDeprecated false ;
@@ -7007,13 +7069,13 @@ taxonomic class with which they are associated.""" ;
 <http://identifiers.org/minid.test>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000724> ;
-    :luiPattern "[A-Za-z0-9]+$" ;
+    :luiPattern "^[A-Za-z0-9]+$" ;
     :mirid "MIR:00000707" ;
     :prefix "minid.test" ;
     :sampleID "3SBPLMKKVEVR" ;
     <http://purl.org/dc/terms/created> "2020-02-25T11:14:38.686"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Minid are identifiers used to provide robust reference to intermediate data generated during the course of a research investigation. This is a prefix for referencing identifiers in the minid test namespace. " ;
-    <http://purl.org/dc/terms/modified> "2020-02-28T10:24:36.137"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:29:17.225"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "MINID Test" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "MINID Test" .
@@ -7063,13 +7125,13 @@ taxonomic class with which they are associated.""" ;
 <http://identifiers.org/mirbase>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100135> ;
-    :luiPattern "MI\\d{7}" ;
+    :luiPattern "^MI\\d{7}$" ;
     :mirid "MIR:00000078" ;
     :prefix "mirbase" ;
     :sampleID "MI0000001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:53.607"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The miRBase Sequence Database is a searchable database of published miRNA sequences and annotation. The data were previously provided by the miRNA Registry. Each entry in the miRBase Sequence database represents a predicted hairpin portion of a miRNA transcript (termed mir in the database), with information on the location and sequence of the mature miRNA sequence (termed miR)." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:53.607"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T13:34:45.335"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "miRBase Sequence" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "miRBase Sequence" .
@@ -7077,13 +7139,13 @@ taxonomic class with which they are associated.""" ;
 <http://identifiers.org/mirbase.mature>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100296> ;
-    :luiPattern "MIMAT\\d{7}" ;
+    :luiPattern "^MIMAT\\d{7}$" ;
     :mirid "MIR:00000235" ;
     :prefix "mirbase.mature" ;
     :sampleID "MIMAT0000001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:33.415"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The miRBase Sequence Database is a searchable database of published miRNA sequences and annotation. This collection refers specifically to the mature miRNA sequence." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:33.415"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:23:26.075"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "miRBase mature sequence" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "miRBase mature sequence" .
@@ -9178,21 +9240,21 @@ Web applications that deal with Linked Data often need to specify and use URLs t
 <http://identifiers.org/miriam.resource:MIR%3A00000904>
     :countryCode "US" ;
     :hasProtectedUrls false ;
-    :homepage "https://www.yale.edu" ;
+    :homepage "https://modeldb.science/" ;
     :isDeprecated false ;
     :isOfficial true ;
     :isResourceOf <http://identifiers.org/modeldb.concept> ;
     :providerCode "yale" ;
-    :urlPattern "https://senselab.med.yale.edu/ModelDB/ModelList?id={$id}" ;
+    :urlPattern "https://modeldb.science/{$id}" ;
     <http://purl.org/dc/terms/created> "2022-01-29T10:45:35.646"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Organization information obtained from ROR API using ROR ID 'https://ror.org/03v76x132' with Wikidata IDs [Q56612637,Q49112], and ISNI IDs [0000000419368710]" ;
-    <http://purl.org/dc/terms/modified> "2022-01-29T10:45:35.646"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T13:30:23.423"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/03v76x132> ;
     <http://purl.org/dc/terms/title> "Yale University" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Yale University" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/modeldb.concept> ;
-    <http://xmlns.com/foaf/0.1/page> "https://www.yale.edu" .
+    <http://xmlns.com/foaf/0.1/page> "https://modeldb.science/" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00000906>
     :countryCode "US" ;
@@ -10687,6 +10749,86 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
     <http://www.w3.org/2000/01/rdf-schema#label> "idot via github" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/idot> ;
     <http://xmlns.com/foaf/0.1/page> "https://github.com/identifiers-org/ontop" .
+
+<http://identifiers.org/miriam.resource:MIR%3A00001091>
+    :countryCode "GB" ;
+    :hasProtectedUrls false ;
+    :homepage "https://www.ebi.ac.uk/metagenomics" ;
+    :isDeprecated false ;
+    :isOfficial true ;
+    :isResourceOf <http://identifiers.org/mgnify.genome> ;
+    :providerCode "ebi" ;
+    :urlPattern "https://www.ebi.ac.uk/metagenomics/genomes/{$id}" ;
+    <http://purl.org/dc/terms/created> "2025-05-06T10:57:49.409"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> """The free-to-use MGnify platform provides assembly, analysis and archiving of microbiome-derived nucleic acid sequence data from a wide range of biomes, with analysis results providing taxonomic and functional
+profiles. The platform also includes MGnify Proteins, a database of protein sequences derived from the analysis of metagenomic assemblies, and MGnify Genomes, a resource of biome-specific catalogues of microbial genomes, including extensive functional annotations.""" ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T10:57:49.409"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/publisher> <https://ror.org/02catss52> ;
+    <http://purl.org/dc/terms/title> "MGnify" ;
+    a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MGnify" ;
+    <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/mgnify.genome> ;
+    <http://xmlns.com/foaf/0.1/page> "https://www.ebi.ac.uk/metagenomics" .
+
+<http://identifiers.org/miriam.resource:MIR%3A00001093>
+    :countryCode "GB" ;
+    :hasProtectedUrls false ;
+    :homepage "https://www.ebi.ac.uk/metagenomics" ;
+    :isDeprecated false ;
+    :isOfficial true ;
+    :isResourceOf <http://identifiers.org/mgnify.analysis> ;
+    :providerCode "ebi" ;
+    :urlPattern "https://www.ebi.ac.uk/metagenomics/analyses/{$id}" ;
+    <http://purl.org/dc/terms/created> "2025-05-06T10:59:08.474"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> """The free-to-use MGnify platform provides assembly, analysis and archiving of microbiome-derived nucleic acid sequence data from a wide range of biomes, with analysis results providing taxonomic and functional
+profiles. The platform also includes MGnify Proteins, a database of protein sequences derived from the analysis of metagenomic assemblies, and MGnify Genomes, a resource of biome-specific catalogues of microbial genomes, including extensive functional annotations.""" ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T10:59:08.474"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/publisher> <https://ror.org/02catss52> ;
+    <http://purl.org/dc/terms/title> "MGnify" ;
+    a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MGnify" ;
+    <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/mgnify.analysis> ;
+    <http://xmlns.com/foaf/0.1/page> "https://www.ebi.ac.uk/metagenomics" .
+
+<http://identifiers.org/miriam.resource:MIR%3A00001097>
+    :countryCode "GB" ;
+    :hasProtectedUrls false ;
+    :homepage "https://www.ebi.ac.uk/metagenomics" ;
+    :isDeprecated false ;
+    :isOfficial true ;
+    :isResourceOf <http://identifiers.org/mgnify.protein> ;
+    :providerCode "ebi" ;
+    :urlPattern "https://www.ebi.ac.uk/metagenomics/proteins/{$id}" ;
+    <http://purl.org/dc/terms/created> "2025-05-06T11:01:27.221"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> """The free-to-use MGnify platform provides assembly, analysis and archiving of microbiome-derived nucleic acid sequence data from a wide range of biomes, with analysis results providing taxonomic and functional
+profiles. The platform also includes MGnify Proteins, a database of protein sequences derived from the analysis of metagenomic assemblies, and MGnify Genomes, a resource of biome-specific catalogues of microbial genomes, including extensive functional annotations.""" ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T11:01:27.221"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/publisher> <https://ror.org/02catss52> ;
+    <http://purl.org/dc/terms/title> "MGnify" ;
+    a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MGnify" ;
+    <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/mgnify.protein> ;
+    <http://xmlns.com/foaf/0.1/page> "https://www.ebi.ac.uk/metagenomics" .
+
+<http://identifiers.org/miriam.resource:MIR%3A00001183>
+    :countryCode "GB" ;
+    :hasProtectedUrls false ;
+    :homepage "https://www.ebi.ac.uk/metagenomics" ;
+    :isDeprecated false ;
+    :isOfficial true ;
+    :isResourceOf <http://identifiers.org/mgnify.study> ;
+    :providerCode "ebi" ;
+    :urlPattern "https://www.ebi.ac.uk/metagenomics/studies/{$id}" ;
+    <http://purl.org/dc/terms/created> "2025-05-06T11:00:21.701"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> """The free-to-use MGnify platform provides assembly, analysis and archiving of microbiome-derived nucleic acid sequence data from a wide range of biomes, with analysis results providing taxonomic and functional
+profiles. The platform also includes MGnify Proteins, a database of protein sequences derived from the analysis of metagenomic assemblies, and MGnify Genomes, a resource of biome-specific catalogues of microbial genomes, including extensive functional annotations.""" ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T11:00:21.701"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/publisher> <https://ror.org/02catss52> ;
+    <http://purl.org/dc/terms/title> "MGnify" ;
+    a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "MGnify" ;
+    <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/mgnify.study> ;
+    <http://xmlns.com/foaf/0.1/page> "https://www.ebi.ac.uk/metagenomics" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100001>
     :countryCode "GB" ;
@@ -16333,10 +16475,10 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/worfdb> ;
-    :urlPattern "http://worfdb.dfci.harvard.edu/index.php?search_type=name&page=showresultrc&race_query={$id}" ;
+    :urlPattern "http://worfdb.dfci.harvard.edu/html/index.php?search_type=name&page=showresultrc&race_query={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:46"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Worm Orf DB at Harvard" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:46"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:58:39.963"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/05r3dyn47> ;
     <http://purl.org/dc/terms/title> "Worm Orf DB at Harvard" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
@@ -16771,20 +16913,20 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/miriam.resource:MIR%3A00100402>
     :countryCode "JP" ;
     :hasProtectedUrls false ;
-    :homepage "http://riodb01.ibase.aist.go.jp/sdbs/cgi-bin/direct_frame_top.cgi" ;
+    :homepage "https://sdbs.db.aist.go.jp" ;
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/sdbs> ;
-    :urlPattern "http://riodb01.ibase.aist.go.jp/sdbs/cgi-bin/cre_frame_disp.cgi?sdbsno={$id}" ;
+    :urlPattern "https://sdbs.db.aist.go.jp/CompoundView.aspx?sdbsno={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:52.099"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "SDBS at AIST" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:52.099"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T13:03:42.744"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/01703db54> ;
     <http://purl.org/dc/terms/title> "SDBS at AIST" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "SDBS at AIST" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/sdbs> ;
-    <http://xmlns.com/foaf/0.1/page> "http://riodb01.ibase.aist.go.jp/sdbs/cgi-bin/direct_frame_top.cgi" .
+    <http://xmlns.com/foaf/0.1/page> "https://sdbs.db.aist.go.jp" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100403>
     :countryCode "DE" ;
@@ -18719,15 +18861,17 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 
 <http://identifiers.org/miriam.resource:MIR%3A00100526>
     :countryCode "SE" ;
+    :deprecationDate "2025-05-06T15:41:34.415"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     :hasProtectedUrls false ;
     :homepage "http://www.variationontology.org/" ;
-    :isDeprecated false ;
+    :isDeprecated true ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/vario> ;
     :urlPattern "http://www.ontobee.org/search?ontology=VariO&keywords=VariO_{$id}&submit=Search+terms" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:13.589"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-06T15:41:34.415"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "VariO at Lund University" ;
-    <http://purl.org/dc/terms/modified> "2020-03-11T14:29:59.706"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T15:41:34.418"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "VariO at Lund University" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "VariO at Lund University" ;
@@ -21198,16 +21342,18 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 
 <http://identifiers.org/miriam.resource:MIR%3A00100677>
     :countryCode "GB" ;
+    :deprecationDate "2025-05-06T15:38:36.54"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     :hasProtectedUrls false ;
     :homepage "https://www.ebi.ac.uk/ols/ontologies/vario" ;
-    :isDeprecated false ;
+    :isDeprecated true ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/vario> ;
     :providerCode "ols" ;
     :urlPattern "https://www.ebi.ac.uk/ols/ontologies/vario/terms?obo_id=VariO:{$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:13.825"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-06T15:38:36.54"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "VariO through OLS" ;
-    <http://purl.org/dc/terms/modified> "2023-06-12T10:29:53.057"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T15:38:36.543"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/02catss52> ;
     <http://purl.org/dc/terms/title> "VariO through OLS" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
@@ -25656,13 +25802,13 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/mod>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100084>, <http://identifiers.org/miriam.resource:MIR%3A00100239> ;
-    :luiPattern "^MOD:\\d{5}" ;
+    :luiPattern "^MOD:\\d{5}$" ;
     :mirid "MIR:00000056" ;
     :prefix "mod" ;
     :sampleID "00001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:47.775"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Proteomics Standards Initiative modification ontology (PSI-MOD)  aims to define a concensus nomenclature and ontology reconciling, in a hierarchical representation, the complementary descriptions of residue modifications." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:47.775"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:12:37.332"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Protein Modification Ontology" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Protein Modification Ontology" .
@@ -25684,13 +25830,13 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/modeldb.concept>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000904> ;
-    :luiPattern "\\d+" ;
+    :luiPattern "^\\d+$" ;
     :mirid "MIR:00000905" ;
     :prefix "modeldb.concept" ;
-    :sampleID "3639" ;
+    :sampleID "226812" ;
     <http://purl.org/dc/terms/created> "2022-01-29T10:45:35.629"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Concept used by ModelDB, an accessible location for storing and efficiently retrieving computational neuroscience models." ;
-    <http://purl.org/dc/terms/modified> "2022-01-29T10:45:35.629"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T13:30:32.073"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "ModelDB concept" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "ModelDB concept" .
@@ -25698,13 +25844,13 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/moid>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001067> ;
-    :luiPattern "[a-zA-Z0-9]+\\.[a-f0-9]{24}" ;
+    :luiPattern "^[a-zA-Z0-9]+\\.[a-f0-9]{24}$" ;
     :mirid "MIR:00001068" ;
     :prefix "moid" ;
     :sampleID "station.6051b2f8b9142a5b8c676342" ;
     <http://purl.org/dc/terms/created> "2024-05-08T12:45:54.541"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "M3G stands for “Metadata Management and distribution system for Multiple GNSS Networks”. M3G allows to upload, validate, and distribute GNSS station metadata such as IGS-style site logs, information about local networks, DOIs, nominal data provision, data licenses attached to the daily RINEX data, etc..." ;
-    <http://purl.org/dc/terms/modified> "2024-05-08T12:45:54.541"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:36:42.041"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Metadata Management and distribution system for Multiple GNSS Networks" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Metadata Management and distribution system for Multiple GNSS Networks" .
@@ -26133,13 +26279,13 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/ndc>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100554>, <http://identifiers.org/miriam.resource:MIR%3A00100700> ;
-    :luiPattern "^\\d+\\-\\d+\\-\\d+" ;
+    :luiPattern "^\\d+\\-\\d+\\-\\d+$" ;
     :mirid "MIR:00000431" ;
     :prefix "ndc" ;
     :sampleID "0002-1975-61" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:18.754"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The National Drug Code (NDC) is a unique, three-segment number used by the Food and Drug Administration (FDA) to identify drug products for commercial use. This is required by the Drug Listing Act of 1972. The FDA publishes and updates the listed NDC numbers daily." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:18.754"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:25:33.043"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "National Drug Code" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "National Drug Code" .
@@ -26147,13 +26293,13 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/nemo>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000790> ;
-    :luiPattern "[a-z]{3}-[a-km-z0-9]{7}" ;
+    :luiPattern "^[a-z]{3}-[a-km-z0-9]{7}$" ;
     :mirid "MIR:00000744" ;
     :prefix "nemo" ;
     :sampleID "smp-m3w9hbe" ;
     <http://purl.org/dc/terms/created> "2019-09-19T13:46:35.999"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "This namespace is about Neuroscience Multi-Omic data, specially focused on that data generated from the BRAIN Initiative and related brain research projects." ;
-    <http://purl.org/dc/terms/modified> "2019-10-02T08:18:15.555"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:29:05.023"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Neuroscience Multi-Omic BRAIN Initiative Data" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Neuroscience Multi-Omic BRAIN Initiative Data" .
@@ -26245,13 +26391,13 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/nextprot>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100300> ;
-    :luiPattern "^NX_\\w+" ;
+    :luiPattern "^NX_\\w+$" ;
     :mirid "MIR:00000236" ;
     :prefix "nextprot" ;
     :sampleID "NX_O00165" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:33.634"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "neXtProt is a resource on human proteins, and includes information such as proteins’ function, subcellular location, expression, interactions and role in diseases." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:33.634"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:23:37.54"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "nextProt" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "nextProt" .
@@ -26464,13 +26610,13 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/obv>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000915> ;
-    :luiPattern "AC[0-9]{8}" ;
+    :luiPattern "^AC[0-9]{8}$" ;
     :mirid "MIR:00001000" ;
     :prefix "obv" ;
     :sampleID "AC00963334" ;
     <http://purl.org/dc/terms/created> "2023-04-11T08:16:21.531"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Austrian Library Network (OBV) is the largest network of scientific and administrative libraries in Austria with 70 participants, representing more than 90 individual institutions - including the Austrian National Library, university libraries, the colleges of education, individual ministries, numerous technical colleges and other important collections." ;
-    <http://purl.org/dc/terms/modified> "2023-04-11T08:16:21.531"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:43:54.339"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Austrian Library Network" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Austrian Library Network" .
@@ -26506,13 +26652,13 @@ University of North Carolina, University of Colorado, Lawrence Berkeley National
 <http://identifiers.org/ocid>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000706>, <http://identifiers.org/miriam.resource:MIR%3A00000885> ;
-    :luiPattern "ocid:[0-9]{12}" ;
+    :luiPattern "^ocid:[0-9]{12}$" ;
     :mirid "MIR:00000738" ;
     :prefix "ocid" ;
     :sampleID "190000021540" ;
     <http://purl.org/dc/terms/created> "2019-09-10T09:27:59.693"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "'ocid' stands for \"Ontology Concept Identifiers\" and are 12 digit long integers covering IDs in topical ontologies from anatomy up to toxicology." ;
-    <http://purl.org/dc/terms/modified> "2019-09-10T09:27:59.693"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:28:47.152"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Ontology Concept Identifiers" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Ontology Concept Identifiers" .
@@ -27565,13 +27711,13 @@ PharmGKB Pathways are drug centric, gene based, interactive pathways which focus
 <http://identifiers.org/pmc>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100191>, <http://identifiers.org/miriam.resource:MIR%3A00100498> ;
-    :luiPattern "PMC\\d+" ;
+    :luiPattern "^PMC\\d+$" ;
     :mirid "MIR:00000147" ;
     :prefix "pmc" ;
     :sampleID "PMC3084216" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:12.446"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "PMC International (PMCI) is a free full-text archive of biomedical and life sciences journal literature. PMCI is a collaborative effort between the U.S. National Institutes of Health and the National Library of Medicine, the publishers whose journal content makes up the PMC archive, and organizations in other countries that share NIH's and NLM's interest in archiving life sciences literature." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:12.446"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:21:35.397"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "PMC International" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "PMC International" .
@@ -27579,13 +27725,13 @@ PharmGKB Pathways are drug centric, gene based, interactive pathways which focus
 <http://identifiers.org/pmdb>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100247> ;
-    :luiPattern "^PM\\d{7}" ;
+    :luiPattern "^PM\\d{7}$" ;
     :mirid "MIR:00000190" ;
     :prefix "pmdb" ;
     :sampleID "PM0012345" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:22.644"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Protein Model DataBase (PMDB), is a database that collects manually built three dimensional protein models, obtained by different structure prediction techniques." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:22.644"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:23:07.196"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Protein Model Database" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Protein Model Database" .
@@ -27651,13 +27797,13 @@ PharmGKB Pathways are drug centric, gene based, interactive pathways which focus
 <http://identifiers.org/pocketome>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100520> ;
-    :luiPattern "^[A-Za-z_0-9]+" ;
+    :luiPattern "^[A-Za-z_0-9]+$" ;
     :mirid "MIR:00000400" ;
     :prefix "pocketome" ;
     :sampleID "1433C_TOBAC_1_252" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:12.099"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Pocketome is an encyclopedia of conformational ensembles of all druggable binding sites that can be identified experimentally from co-crystal structures in the Protein Data Bank. Each Pocketome entry corresponds to a small molecule binding site in a protein which has been co-crystallized in complex with at least one drug-like small molecule, and is represented in at least two PDB entries." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:12.099"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:25:19.867"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Pocketome" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Pocketome" .
@@ -27880,13 +28026,13 @@ PharmGKB Pathways are drug centric, gene based, interactive pathways which focus
 <http://identifiers.org/ps>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000950> ;
-    :luiPattern "N:package:[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}" ;
+    :luiPattern "^N:package:[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}$" ;
     :mirid "MIR:00000951" ;
     :prefix "ps" ;
     :sampleID "N:package:e3243db3-7986-488e-9a10-c7a0bfdcfe8a" ;
     <http://purl.org/dc/terms/created> "2022-03-15T08:27:12.699"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Pennsieve is a publicly accessible Scientific Data Management and publication platform. The platform supports data curation, sharing and publishing complex scientific datasets with a focus on integration between graph-based metadata and file-archival. The platform provides a \"peer\"-reviewed publication mechanism and public datasets are available through its Discover Web Application and APIs. " ;
-    <http://purl.org/dc/terms/modified> "2022-03-15T08:27:12.699"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:43:00.99"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Pennsieve" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Pennsieve" .
@@ -28104,13 +28250,13 @@ PharmGKB Pathways are drug centric, gene based, interactive pathways which focus
 <http://identifiers.org/reactome>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100026> ;
-    :luiPattern "(^R-[A-Z]{3}-\\d+(-\\d+)?(\\.\\d+)?$)|(^REACT_\\d+(\\.\\d+)?$)" ;
+    :luiPattern "^(R-[A-Z]{3}-\\d+(-\\d+)?(\\.\\d+)?)|(REACT_\\d+(\\.\\d+)?)$" ;
     :mirid "MIR:00000018" ;
     :prefix "reactome" ;
     :sampleID "R-HSA-201451" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:34.555"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Reactome project is a collaboration to develop a curated resource of core pathways and reactions in human biology." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:34.555"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:09:26.049"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Reactome" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Reactome" .
@@ -28459,13 +28605,13 @@ The initiative works with participating journals to intercept manuscripts in the
 <http://identifiers.org/runbiosimulations>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000898> ;
-    :luiPattern "[0-9a-z]{24,24}" ;
+    :luiPattern "^[0-9a-z]{24,24}$" ;
     :mirid "MIR:00000897" ;
     :prefix "runbiosimulations" ;
     :sampleID "5fde96bdc5f1aa9ff0cce18a" ;
     <http://purl.org/dc/terms/created> "2021-02-28T15:53:07.38"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "runBioSimulations is a platform for sharing simulation experiments and their results. runBioSimulations enables investigators to use a wide range of simulation tools to execute a wide range of simulations. runBioSimulations permanently saves the results of these simulations, and investigators can share results by sharing URLs similar to sharing URLs for files with DropBox and Google Drive." ;
-    <http://purl.org/dc/terms/modified> "2021-02-28T15:53:07.38"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:30:19.894"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "runBioSimulations" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "runBioSimulations" .
@@ -28599,13 +28745,13 @@ The initiative works with participating journals to intercept manuscripts in the
 <http://identifiers.org/sdbs>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100402> ;
-    :luiPattern "\\d+$" ;
+    :luiPattern "^\\d+$" ;
     :mirid "MIR:00000319" ;
     :prefix "sdbs" ;
     :sampleID "4544" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:51.94"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Spectral Database for Organic Compounds (SDBS) is an integrated spectral database system for organic compounds. It provides access to 6 different types of spectra for each compound, including Mass spectrum (EI-MS), a Fourier transform infrared spectrum (FT-IR), and NMR spectra." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:51.94"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:24:03.953"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Spectral Database for Organic Compounds" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Spectral Database for Organic Compounds" .
@@ -28767,15 +28913,17 @@ The initiative works with participating journals to intercept manuscripts in the
     <http://www.w3.org/2000/01/rdf-schema#label> "SIDER Side Effect" .
 
 <http://identifiers.org/signaling-gateway>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-06T12:11:18.063"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100073> ;
-    :luiPattern "A\\d{6}$" ;
+    :luiPattern "^A\\d{6}$" ;
     :mirid "MIR:00000045" ;
     :prefix "signaling-gateway" ;
     :sampleID "A001094" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:44.579"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-06T12:11:18.063"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Signaling Gateway provides  information on  mammalian proteins involved in cellular signaling." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:44.579"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:11:18.064"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Signaling Gateway" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Signaling Gateway" .
@@ -29180,13 +29328,13 @@ Note: Currently, direct access to RNA products is restricted. This is expected t
 <http://identifiers.org/synapse>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001042> ;
-    :luiPattern "[0-9]*\\.*[0-9]*" ;
+    :luiPattern "^[0-9]*\\.*[0-9]*$" ;
     :mirid "MIR:00001043" ;
     :prefix "synapse" ;
     :sampleID "41455251.1" ;
     <http://purl.org/dc/terms/created> "2024-03-20T10:13:27.272"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Synapse is a collaborative, open-source research platform that allows teams to share data, track analyses, and collaborate." ;
-    <http://purl.org/dc/terms/modified> "2024-03-20T10:13:27.272"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:34:26.272"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Synapse Data Repository" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Synapse Data Repository" .
@@ -29264,13 +29412,13 @@ Note: Currently, direct access to RNA products is restricted. This is expected t
 <http://identifiers.org/tarbase>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100713> ;
-    :luiPattern "^[a-z]{3}\\-(mir|let|lin)\\-\\w+(\\-\\w+\\-\\w+)?" ;
+    :luiPattern "^[a-z]{3}\\-(mir|let|lin)\\-\\w+(\\-\\w+\\-\\w+)?$" ;
     :mirid "MIR:00000340" ;
     :prefix "tarbase" ;
     :sampleID "hsa-let-7a-2-3p" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:56.599"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "TarBase stores microRNA (miRNA) information for miRNA–gene interactions, as well as miRNA- and gene-related facts to information specific to the interaction and the experimental validation methodologies used." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:56.599"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:24:28.947"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "TarBase" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "TarBase" .
@@ -29420,13 +29568,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/transyt>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000731> ;
-    :luiPattern "T[A-Z]\\d{7}" ;
+    :luiPattern "^T[A-Z]\\d{7}$" ;
     :mirid "MIR:00000736" ;
     :prefix "transyt" ;
     :sampleID "TR0000001" ;
     <http://purl.org/dc/terms/created> "2020-02-28T10:48:52.126"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Transport Systems Tracker (TranSyT) is a tool to identify transport systems and the compounds carried across membranes." ;
-    <http://purl.org/dc/terms/modified> "2020-03-03T05:45:40.2"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:29:31.825"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "TranSyT" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "TranSyT" .
@@ -29490,13 +29638,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/tritrypdb>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100200> ;
-    :luiPattern "^\\w+(\\.)?\\w+(\\.)?\\w+" ;
+    :luiPattern "^\\w+(\\.)?\\w+(\\.)?\\w+$" ;
     :mirid "MIR:00000155" ;
     :prefix "tritrypdb" ;
     :sampleID "Tb927.8.620" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:14.213"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "TriTrypDB is one of the databases that can be accessed through the EuPathDB (http://EuPathDB.org; formerly ApiDB) portal, covering eukaryotic pathogens of the genera Cryptosporidium, Giardia, Leishmania, Neospora, Plasmodium, Toxoplasma, Trichomonas and Trypanosoma. While each of these groups is supported by a taxon-specific database built upon the same infrastructure, the EuPathDB portal offers an entry point to all these resources, and the opportunity to leverage orthology for searches across genera." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:14.213"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:22:53.998"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "TriTrypDB" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "TriTrypDB" .
@@ -29816,13 +29964,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/uo>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100178>, <http://identifiers.org/miriam.resource:MIR%3A00100243> ;
-    :luiPattern "^UO:\\d{7}?" ;
+    :luiPattern "^UO:\\d{7}?$" ;
     :mirid "MIR:00000136" ;
     :prefix "uo" ;
     :sampleID "0000080" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:09.596"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Ontology of standardized units" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:09.596"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:13:40.874"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Unit Ontology" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Unit Ontology" .
@@ -29844,13 +29992,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/utrdb>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000992> ;
-    :luiPattern "([3-5][A-Z])\\w+[^A-Z][0-9]" ;
+    :luiPattern "^([3-5][A-Z])\\w+[^A-Z][0-9]$" ;
     :mirid "MIR:00000993" ;
     :prefix "utrdb" ;
     :sampleID "5UTR_107_ENST00000517291.2" ;
     <http://purl.org/dc/terms/created> "2023-02-23T11:08:58.437"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "A curated database of 5' and 3' untranslated sequences of eukaryotic mRNAs. In the current update, the UTR entries are organized in a gene-centric structure to better visualize and retrieve 5' and 3'UTR variants generated by alternative initiation and termination of transcription and alternative splicing. Experimentally validated miRNA targets and conserved sequence elements are also annotated. The integration of UTRdb with genomic data has allowed the implementation of an efficient annotation system and a powerful retrieval resource for the selection and extraction of specific UTR subsets. " ;
-    <http://purl.org/dc/terms/modified> "2023-02-23T11:21:10.786"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:43:25.035"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "UTRdb" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "UTRdb" .
@@ -30068,13 +30216,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/vmhgene>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000794> ;
-    :luiPattern "^[0-9]+\\.[0-9]+" ;
+    :luiPattern "^[0-9]+\\.[0-9]+$" ;
     :mirid "MIR:00000774" ;
     :prefix "vmhgene" ;
     :sampleID "8639.1" ;
     <http://purl.org/dc/terms/created> "2021-02-01T15:47:59.756"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Virtual Metabolic Human (VMH) is a resource that combines human and gut microbiota metabolism with nutrition and disease." ;
-    <http://purl.org/dc/terms/modified> "2021-02-01T15:47:59.756"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:30:04.741"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "VMH Gene" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "VMH Gene" .
@@ -30082,13 +30230,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/vmhmetabolite>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100841> ;
-    :luiPattern "[a-zA-Z0-9_\\(\\_\\)\\[\\]]+" ;
+    :luiPattern "^[a-zA-Z0-9_\\(\\_\\)\\[\\]]+$" ;
     :mirid "MIR:00000636" ;
     :prefix "vmhmetabolite" ;
     :sampleID "h2o" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:18:07.981"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Virtual Metabolic Human (VMH) is a resource that combines human and gut microbiota metabolism with nutrition and disease." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:18:07.981"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:28:09.995"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "VMH metabolite" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "VMH metabolite" .
@@ -30096,13 +30244,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/vmhreaction>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100845> ;
-    :luiPattern "[a-zA-Z0-9_\\(\\_\\)\\[\\]]+" ;
+    :luiPattern "^[a-zA-Z0-9_\\(\\_\\)\\[\\]]+$" ;
     :mirid "MIR:00000640" ;
     :prefix "vmhreaction" ;
     :sampleID "HEX1" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:18:08.921"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Virtual Metabolic Human (VMH) is a resource that combines human and gut microbiota metabolism with nutrition and disease." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:18:08.921"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:28:29.544"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "VMH reaction" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "VMH reaction" .
@@ -30166,13 +30314,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/wikipathways>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000696>, <http://identifiers.org/miriam.resource:MIR%3A00100106> ;
-    :luiPattern "WP\\d{1,5}(\\_r\\d+)?$" ;
+    :luiPattern "^WP\\d{1,5}(\\_r\\d+)?$" ;
     :mirid "MIR:00000076" ;
     :prefix "wikipathways" ;
     :sampleID "WP100" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:53.125"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "WikiPathways is a resource providing an open and public collection of pathway maps created and curated by the community in a Wiki-like style." ;
-    <http://purl.org/dc/terms/modified> "2023-01-05T18:26:05.922"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:12:53.245"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "WikiPathways" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "WikiPathways" .
@@ -30194,13 +30342,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/worfdb>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100370> ;
-    :luiPattern "^\\w+(\\.\\d+)?" ;
+    :luiPattern "^\\w+(\\.\\d+)?$" ;
     :mirid "MIR:00000288" ;
     :prefix "worfdb" ;
     :sampleID "T01B6.1" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:45.846"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "WOrfDB (Worm ORFeome DataBase) contains data from the cloning of complete set of predicted protein-encoding Open Reading Frames (ORFs) of Caenorhabditis elegans. This collection describes experimentally defined transcript structures of unverified genes through RACE (Rapid Amplification of cDNA Ends)." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:45.846"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-06T12:23:48.578"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Worfdb" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Worfdb" .
