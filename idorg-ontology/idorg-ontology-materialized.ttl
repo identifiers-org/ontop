@@ -23588,10 +23588,10 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/d1id> ;
-    :urlPattern "https://cn.dataone.org/cn/v2/resolve/{{$id}}" ;
+    :urlPattern "https://cn.dataone.org/cn/v2/resolve/%7B{$id}%7D" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:18:02.398"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DataONE" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:18:02.398"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-07T08:46:38.466"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/00hr5y405> ;
     <http://purl.org/dc/terms/title> "DataONE" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
