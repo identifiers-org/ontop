@@ -275,15 +275,17 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "AOPWiki (Stressor)" .
 
 <http://identifiers.org/apd>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:17:41.134"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100359> ;
     :luiPattern "^\\d{5}$" ;
     :mirid "MIR:00000278" ;
     :prefix "apd" ;
     :sampleID "01001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:43.451"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:17:41.134"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The antimicrobial peptide database (APD) provides information on anticancer, antiviral, antifungal and antibacterial peptides." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:43.451"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:17:41.135"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "APD" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "APD" .
@@ -331,15 +333,19 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "ArachnoServer" .
 
 <http://identifiers.org/ardb>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:22:19.253"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationOfflineDate "2009-07-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "ARDB is no longer being maintained." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100678> ;
     :luiPattern "^[A-Z_]{3}[0-9]{4,}$" ;
     :mirid "MIR:00000522" ;
     :prefix "ardb" ;
     :sampleID "CAE46076" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:40.104"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2009-07-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>, "2025-05-30T14:22:19.253"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Antibiotic Resistance Genes Database (ARDB) is a manually curated database which characterises genes involved in antibiotic resistance. Each gene and resistance type is annotated with information, including resistance profile, mechanism of action, ontology, COG and CDD annotations, as well as external links to sequence and protein databases. This collection references resistance genes." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:40.104"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:23:55.497"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Antibiotic Resistance Genes Database" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Antibiotic Resistance Genes Database" .
@@ -415,15 +421,18 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "arXiv" .
 
 <http://identifiers.org/asap>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T12:37:28.087"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "While ASAP seems to be online, it doesn't seem to be possible to link to entries." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100364> ;
     :luiPattern "^[A-Za-z0-9-]+$" ;
     :mirid "MIR:00000283" ;
     :prefix "asap" ;
     :sampleID "ABE-0009634" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:44.568"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T12:37:28.087"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "ASAP (a systematic annotation package for community analysis of genomes) stores bacterial genome sequence and functional characterization data. It includes multiple genome sequences at various stages of analysis, corresponding experimental data and access to collections of related genome resources." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:44.568"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T12:38:00.777"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "ASAP" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "ASAP" .
@@ -457,29 +466,33 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Amazon Standard Identification Number (ASIN)" .
 
 <http://identifiers.org/aspgd.locus>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:21:48.601"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100534> ;
     :luiPattern "^[A-Za-z_0-9]+$" ;
     :mirid "MIR:00000412" ;
     :prefix "aspgd.locus" ;
     :sampleID "ASPL0000349247" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:14.975"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:21:48.601"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Aspergillus Genome Database (AspGD) is a repository for information relating to fungi of the genus Aspergillus, which includes organisms of clinical, agricultural and industrial importance. AspGD facilitates comparative genomics by providing a full-featured genomics viewer, as well as matched and standardized sets of genomic information for the sequenced aspergilli. This collection references gene information." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:14.975"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:21:48.602"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "AspGD Locus" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "AspGD Locus" .
 
 <http://identifiers.org/aspgd.protein>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:16:08.596"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100535> ;
     :luiPattern "^[A-Za-z_0-9]+$" ;
     :mirid "MIR:00000413" ;
     :prefix "aspgd.protein" ;
     :sampleID "ASPL0000349247" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:15.227"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:16:08.596"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Aspergillus Genome Database (AspGD) is a repository for information relating to fungi of the genus Aspergillus, which includes organisms of clinical, agricultural and industrial importance. AspGD facilitates comparative genomics by providing a full-featured genomics viewer, as well as matched and standardized sets of genomic information for the sequenced aspergilli. This collection references protein information." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:15.227"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:16:08.599"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "AspGD Protein" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "AspGD Protein" .
@@ -555,15 +568,17 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Animal TFDB Family" .
 
 <http://identifiers.org/autdb>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:28:34.456"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100538> ;
     :luiPattern "^[A-Z]+[A-Z-0-9]{2,}$" ;
     :mirid "MIR:00000415" ;
     :prefix "autdb" ;
     :sampleID "ADA" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:15.426"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:28:34.456"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "AutDB is a curated database for autism research. It is built on information extracted from the studies on molecular genetics and biology of Autism Spectrum Disorders (ASD). The four modules of AutDB include information on Human Genes, Animal models, Protein Interactions (PIN) and Copy Number Variants (CNV) respectively. It provides an annotated list of ASD candidate genes in the form of reference dataset for interrogating molecular mechanisms underlying the disorder." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:15.426"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:28:34.457"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "AutDB" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "AutDB" .
@@ -697,15 +712,17 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Bloomington Drosophila Stock Center" .
 
 <http://identifiers.org/beetlebase>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:31:34.157"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100202> ;
     :luiPattern "^TC\\d+$" ;
     :mirid "MIR:00000157" ;
     :prefix "beetlebase" ;
     :sampleID "TC010103" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:14.695"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:31:34.157"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "BeetleBase is a comprehensive sequence database and community resource for Tribolium genetics, genomics and developmental biology. It incorporates information about genes, mutants, genetic markers, expressed sequence tags and publications." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:14.695"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:31:34.16"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BeetleBase" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BeetleBase" .
@@ -1141,15 +1158,19 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "BioStudies database" .
 
 <http://identifiers.org/biosystems>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T13:59:24.086"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationOfflineDate "2022-04-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "NCBI now provides metabolic pathway and other biosystems data through the regularly updated PubChem Pathways resource." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100128> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000097" ;
     :prefix "biosystems" ;
     :sampleID "001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:58.906"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2022-04-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>, "2025-05-30T13:59:24.086"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The NCBI BioSystems database centralizes and cross-links existing biological systems databases, increasing their utility and target audience by integrating their pathways and systems into NCBI resources." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:58.906"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:00:10.791"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BioSystems" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BioSystems" .
@@ -1314,10 +1335,10 @@
     :luiPattern "^[A-Z0-9]+$" ;
     :mirid "MIR:00000253" ;
     :prefix "bykdb" ;
-    :sampleID "A0A009E7X8" ;
+    :sampleID "A0A009HB13" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:38.105"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The bacterial tyrosine kinase database (BYKdb) that collects sequences of putative and authentic bacterial tyrosine kinases,  providing structural and functional information." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:38.105"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:30:47.733"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BYKdb" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BYKdb" .
@@ -1603,15 +1624,17 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Candida Genome Database" .
 
 <http://identifiers.org/cgsc>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:41:07.392"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100377> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000295" ;
     :prefix "cgsc" ;
     :sampleID "74" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:47.138"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:41:07.392"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The CGSC Database of E. coli genetic information includes genotypes and reference information for the strains in the CGSC collection, the names, synonyms, properties, and map position for genes, gene product information, and information on specific mutations and references to primary literature." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:47.138"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:41:07.393"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "CGSC Strain" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "CGSC Strain" .
@@ -2254,15 +2277,17 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "CryptoDB" .
 
 <http://identifiers.org/csa>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:32:14.714"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100188> ;
     :luiPattern "^[0-9][A-Za-z0-9]{3}$" ;
     :mirid "MIR:00000144" ;
     :prefix "csa" ;
     :sampleID "1a05" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:11.769"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:32:14.714"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Catalytic Site Atlas (CSA) is a database documenting enzyme active sites and catalytic residues in enzymes of 3D structure. It uses a defined classification for catalytic residues which includes only those residues thought to be directly involved in some aspect of the reaction catalysed by an enzyme." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:11.769"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:32:14.715"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "CSA" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "CSA" .
@@ -2366,15 +2391,17 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "CTD Gene" .
 
 <http://identifiers.org/cubedb>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:38:50.108"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100517> ;
     :luiPattern "^[A-Za-z_0-9]+$" ;
     :mirid "MIR:00000397" ;
     :prefix "cubedb" ;
     :sampleID "AKR" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:11.437"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:38:50.108"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Cube-DB is a database of pre-evaluated results for detection of functional divergence in human/vertebrate protein families. It analyzes comparable taxonomical samples for all paralogues under consideration, storing functional specialisation at the level of residues. The data are presented as a table of per-residue scores, and mapped onto related structures where available." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:11.437"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:38:56.991"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Cube db" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Cube db" .
@@ -2424,15 +2451,17 @@ These data will help scientists uncover and understand cellular level mechanisms
     <http://www.w3.org/2000/01/rdf-schema#label> "DANDI: Distributed Archives for Neurophysiology Data Integration" .
 
 <http://identifiers.org/darc>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:42:05.875"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100465> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000366" ;
     :prefix "darc" ;
     :sampleID "1250" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:02.814"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:42:05.875"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DARC (Database of Aligned Ribosomal Complexes) stores available cryo-EM (electron microscopy) data and atomic coordinates of ribosomal particles from the PDB, which are aligned within a common coordinate system. The aligned coordinate system simplifies direct visualization of conformational changes in the ribosome, such as subunit rotation and head-swiveling, as well as direct comparison of bound ligands, such as antibiotics or translation factors." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:02.814"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:42:05.877"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DARC" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DARC" .
@@ -2508,15 +2537,17 @@ These data will help scientists uncover and understand cellular level mechanisms
     <http://www.w3.org/2000/01/rdf-schema#label> "Datanator Reaction" .
 
 <http://identifiers.org/datf>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:43:34.501"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100591> ;
     :luiPattern "^AT[1-5]G\\d{5}(\\.\\d+)?$" ;
     :mirid "MIR:00000456" ;
     :prefix "datf" ;
     :sampleID "AT1G01030.1" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:24.701"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:43:34.501"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DATF contains known and predicted Arabidopsis transcription factors (1827 genes in 56 families) with the unique information of 1177 cloned sequences and many other features including 3D structure templates, EST expression information, transcription factor binding sites and nuclear location signals." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:24.701"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:43:34.502"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DATF" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DATF" .
@@ -2580,15 +2611,17 @@ These data will help scientists uncover and understand cellular level mechanisms
     <http://www.w3.org/2000/01/rdf-schema#label> "dbGaP" .
 
 <http://identifiers.org/dbprobe>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:41:38.034"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100205> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000160" ;
     :prefix "dbprobe" ;
     :sampleID "1000000" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:15.607"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:41:38.034"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The NCBI Probe Database is a public registry of nucleic acid reagents designed for use in a wide variety of biomedical research applications, together with information on reagent distributors, probe effectiveness, and computed sequence similarities." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:15.607"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:41:38.034"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "dbProbe" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "dbProbe" .
@@ -3136,29 +3169,33 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
     <http://www.w3.org/2000/01/rdf-schema#label> "DOME Registry" .
 
 <http://identifiers.org/dommino>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:39:31.19"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100474> ;
     :luiPattern "^[0-9][A-Za-z0-9]{3}$" ;
     :mirid "MIR:00000373" ;
     :prefix "dommino" ;
     :sampleID "2GC4" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:04.514"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:39:31.19"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DOMMINO is a database of macromolecular interactions that includes the interactions between protein domains, interdomain linkers, N- and C-terminal regions and protein peptides." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:04.514"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:39:35.337"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DOMMINO" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DOMMINO" .
 
 <http://identifiers.org/door>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:48:18.957"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100588> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000453" ;
     :prefix "door" ;
     :sampleID "1398574" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:24.062"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:48:18.957"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DOOR (Database for prOkaryotic OpeRons) contains computationally predicted operons of all the sequenced prokaryotic genomes. It includes operons for RNA genes." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:24.062"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:48:18.957"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DOOR" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DOOR" .
@@ -3206,57 +3243,65 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
     <http://www.w3.org/2000/01/rdf-schema#label> "DPV" .
 
 <http://identifiers.org/dragondb.allele>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T15:04:04.035"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100382> ;
     :luiPattern "^\\w+$" ;
     :mirid "MIR:00000300" ;
     :prefix "dragondb.allele" ;
     :sampleID "cho" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:47.981"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T15:04:04.035"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DragonDB is a genetic and genomic database for Antirrhinum majus (Snapdragon). This collection refers to allele information." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:47.981"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T15:04:04.038"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DragonDB Allele" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DragonDB Allele" .
 
 <http://identifiers.org/dragondb.dna>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:56:28.162"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100379> ;
     :luiPattern "^\\d\\w+$" ;
     :mirid "MIR:00000297" ;
     :prefix "dragondb.dna" ;
     :sampleID "3hB06" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:47.375"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:56:28.162"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DragonDB is a genetic and genomic database for Antirrhinum majus (Snapdragon). This collection refers to DNA sequence information." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:47.375"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:56:28.163"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DragonDB DNA" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DragonDB DNA" .
 
 <http://identifiers.org/dragondb.locus>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:58:19.813"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100381> ;
     :luiPattern "^\\w+$" ;
     :mirid "MIR:00000299" ;
     :prefix "dragondb.locus" ;
     :sampleID "DEF" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:47.798"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:58:19.813"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DragonDB is a genetic and genomic database for Antirrhinum majus (Snapdragon). This collection refers to Locus information." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:47.798"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:58:19.815"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DragonDB Locus" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DragonDB Locus" .
 
 <http://identifiers.org/dragondb.protein>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:56:37.252"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100380> ;
     :luiPattern "^\\w+$" ;
     :mirid "MIR:00000298" ;
     :prefix "dragondb.protein" ;
     :sampleID "AMDEFA" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:47.607"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:56:37.252"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DragonDB is a genetic and genomic database for Antirrhinum majus (Snapdragon). This collection refers to protein sequence information." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:47.607"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:56:37.252"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DragonDB Protein" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DragonDB Protein" .
@@ -3518,15 +3563,18 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
     <http://www.w3.org/2000/01/rdf-schema#label> "European Genome-phenome Archive Study" .
 
 <http://identifiers.org/eggnog>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:50:18.945"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "This namespace covers v3 which is not available online anymore. See http://eggnog.embl.de for recent versions." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100260> ;
     :luiPattern "^\\w+$" ;
     :mirid "MIR:00000201" ;
     :prefix "eggnog" ;
     :sampleID "veNOG12876" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:24.719"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:50:18.945"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "eggNOG (evolutionary genealogy of genes: Non-supervised Orthologous Groups) is a database of orthologous groups of genes. The orthologous groups are annotated with functional description lines (derived by identifying a common denominator for the genes based on their various annotations), with functional categories (i.e derived from the original COG/KOG categories)." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:24.719"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:50:52.193"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "eggNOG" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "eggNOG" .
@@ -3997,15 +4045,17 @@ It also includes trials conducted outside these areas if they form part of a pae
     <http://www.w3.org/2000/01/rdf-schema#label> "FamPlex" .
 
 <http://identifiers.org/fsnp>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T15:06:49.583"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100637> ;
     :luiPattern "^rs\\d+$" ;
     :mirid "MIR:00000496" ;
     :prefix "fsnp" ;
     :sampleID "rs17852708" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:33.34"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T15:06:49.583"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Functional Single Nucleotide Polymorphism (F-SNP) database integrates information obtained from databases about the functional effects of SNPs. These effects are predicted and indicated at the splicing, transcriptional, translational and post-translational level. In particular, users can retrieve SNPs that disrupt genomic regions known to be functional, including splice sites and transcriptional regulatory regions. Users can also identify non-synonymous SNPs that may have deleterious effects on protein structure or function, interfere with protein translation or impede post-translational modification." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:33.34"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T15:06:49.584"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "F-SNP" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "F-SNP" .
@@ -4224,15 +4274,17 @@ It also includes trials conducted outside these areas if they form part of a pae
     <http://www.w3.org/2000/01/rdf-schema#label> "GeneDB" .
 
 <http://identifiers.org/genefarm>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T15:08:14.412"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100270> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000211" ;
     :prefix "genefarm" ;
     :sampleID "4892" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:27.145"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T15:08:14.412"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "GeneFarm is a database whose purpose is to store traceable annotations for Arabidopsis nuclear genes and gene products." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:27.145"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T15:08:18.249"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "GeneFarm" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "GeneFarm" .
@@ -5184,15 +5236,17 @@ The GOLD (Genomes OnLine Database)is a resource for centralized monitoring of ge
     <http://www.w3.org/2000/01/rdf-schema#label> "HomoloGene" .
 
 <http://identifiers.org/hovergen>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T15:07:19.95"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100104> ;
     :luiPattern "^HBG\\d+$" ;
     :mirid "MIR:00000074" ;
     :prefix "hovergen" ;
     :sampleID "HBG004341" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:52.667"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T15:07:19.95"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "HOVERGEN is a database of homologous vertebrate genes that allows one to select sets of homologous genes among vertebrate species, and to visualize multiple alignments and phylogenetic trees." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:52.667"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T15:07:31.674"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "HOVERGEN" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "HOVERGEN" .
@@ -7595,21 +7649,21 @@ at Technische Universität Dresden, Germany. Morpheus.lab develops and maintains
 <http://identifiers.org/miriam.resource:MIR%3A00000735>
     :countryCode "US" ;
     :hasProtectedUrls false ;
-    :homepage "http://www.bmrb.wisc.edu/" ;
+    :homepage "https://bmrb.io/" ;
     :isDeprecated false ;
     :isOfficial true ;
     :isResourceOf <http://identifiers.org/bmrb> ;
     :providerCode "bmrb" ;
-    :urlPattern "http://rest.bmrb.wisc.edu/bmrb/{$id}/html" ;
+    :urlPattern "https://bmrb.io/data_library/summary/index.php?bmrbId={$id}" ;
     <http://purl.org/dc/terms/created> "2019-12-09T15:05:02.715"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "BMRB collects, annotates, archives, and disseminates (worldwide in the public domain) the important spectral and quantitative data derived from NMR spectroscopic investigations of biological macromolecules and metabolites. The goal is to empower scientists in their analysis of the structure, dynamics, and chemistry of biological systems and to support further development of the field of biomolecular NMR spectroscopy." ;
-    <http://purl.org/dc/terms/modified> "2019-12-09T15:05:02.715"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:03:26.974"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/01y2jtd41> ;
     <http://purl.org/dc/terms/title> "Biological Magnetic Resonance Data Bank" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Biological Magnetic Resonance Data Bank" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/bmrb> ;
-    <http://xmlns.com/foaf/0.1/page> "http://www.bmrb.wisc.edu/" .
+    <http://xmlns.com/foaf/0.1/page> "https://bmrb.io/" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00000737>
     :countryCode "CH" ;
@@ -10809,6 +10863,24 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     <http://www.w3.org/2000/01/rdf-schema#label> "MGnify" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/mgnify.protein> ;
     <http://xmlns.com/foaf/0.1/page> "https://www.ebi.ac.uk/metagenomics" .
+
+<http://identifiers.org/miriam.resource:MIR%3A00001099>
+    :countryCode "US" ;
+    :hasProtectedUrls false ;
+    :homepage "https://www.nlm.nih.gov/" ;
+    :isDeprecated false ;
+    :isOfficial false ;
+    :isResourceOf <http://identifiers.org/umls> ;
+    :providerCode "nlm" ;
+    :urlPattern "https://uts.nlm.nih.gov/uts/umls/concept/{$id}" ;
+    <http://purl.org/dc/terms/created> "2025-05-30T12:46:33.091"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/description> "The National Library of Medicine (NLM), on the campus of the National Institutes of Health in Bethesda, Maryland, has been a center of information innovation since its founding in 1836. The world’s largest biomedical library, NLM maintains and makes available a vast print collection and produces electronic information resources on a wide range of topics that are searched billions of times each year by millions of people around the globe. It also supports and conducts research, development, and training in biomedical informatics and health information technology. In addition, the Library coordinates an 8,000+ member Network of the National Library of Medicine that promotes and provides access to health information in communities across the United States." ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T12:46:33.091"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/title> "National Library of Medicine" ;
+    a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
+    <http://www.w3.org/2000/01/rdf-schema#label> "National Library of Medicine" ;
+    <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/umls> ;
+    <http://xmlns.com/foaf/0.1/page> "https://www.nlm.nih.gov/" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00001183>
     :countryCode "GB" ;
@@ -15844,19 +15916,19 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
 <http://identifiers.org/miriam.resource:MIR%3A00100324>
     :countryCode "FR" ;
     :hasProtectedUrls false ;
-    :homepage "https://bykdb.ibcp.fr/BYKdb/" ;
+    :homepage "https://bykdb.lyon.inserm.fr/BYKdb/BYKdbIndex" ;
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/bykdb> ;
-    :urlPattern "https://bykdb.ibcp.fr/data/html/annotated/{$id}.html" ;
+    :urlPattern "https://bykdb.lyon.inserm.fr/data/html/annotated/{$id}.html" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:38.266"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "BYKdb at CNRS" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:38.266"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:30:43.172"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BYKdb at CNRS" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BYKdb at CNRS" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/bykdb> ;
-    <http://xmlns.com/foaf/0.1/page> "https://bykdb.ibcp.fr/BYKdb/" .
+    <http://xmlns.com/foaf/0.1/page> "https://bykdb.lyon.inserm.fr/BYKdb/BYKdbIndex" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100325>
     :countryCode "AU" ;
@@ -16182,20 +16254,20 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
 <http://identifiers.org/miriam.resource:MIR%3A00100351>
     :countryCode "CA" ;
     :hasProtectedUrls false ;
-    :homepage "http://webprod3.hc-sc.gc.ca/dpd-bdpp/index-eng.jsp" ;
+    :homepage "https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html" ;
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/cdpd> ;
-    :urlPattern "http://webprod3.hc-sc.gc.ca/dpd-bdpp/info.do?lang=eng&code={$id}" ;
+    :urlPattern "https://health-products.canada.ca/dpd-bdpp/info?lang=eng&code={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:42.002"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Canadian Drug Identification Number at Health Canada" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:42.002"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:26:55.855"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/05p8nb362> ;
     <http://purl.org/dc/terms/title> "Canadian Drug Identification Number at Health Canada" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Canadian Drug Identification Number at Health Canada" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/cdpd> ;
-    <http://xmlns.com/foaf/0.1/page> "http://webprod3.hc-sc.gc.ca/dpd-bdpp/index-eng.jsp" .
+    <http://xmlns.com/foaf/0.1/page> "https://www.canada.ca/en/health-canada/services/drugs-health-products/drug-products/drug-product-database.html" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100353>
     :countryCode "JP" ;
@@ -16329,10 +16401,10 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/dpv> ;
-    :urlPattern "http://www.dpvweb.net/dpv/showdpv.php?dpvno={$id}" ;
+    :urlPattern "https://www.dpvweb.net/dpv/showdpv/?dpvno={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:44.066"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "DPV at Rothamsted" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:44.066"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:59:42.773"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "DPV at Rothamsted" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "DPV at Rothamsted" ;
@@ -16379,20 +16451,20 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
 <http://identifiers.org/miriam.resource:MIR%3A00100364>
     :countryCode "US" ;
     :hasProtectedUrls false ;
-    :homepage "http://asap.ahabs.wisc.edu/asap/home.php" ;
+    :homepage "https://www.genome.wisc.edu/tools/asap.htm" ;
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/asap> ;
     :urlPattern "http://asap.ahabs.wisc.edu/asap/feature_info.php?LocationID=WIS&FeatureID={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:44.728"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "ASAP at University of Wisconsin" ;
-    <http://purl.org/dc/terms/modified> "2019-12-09T15:09:20.777"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T12:37:23.926"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/01y2jtd41> ;
     <http://purl.org/dc/terms/title> "ASAP at University of Wisconsin" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "ASAP at University of Wisconsin" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/asap> ;
-    <http://xmlns.com/foaf/0.1/page> "http://asap.ahabs.wisc.edu/asap/home.php" .
+    <http://xmlns.com/foaf/0.1/page> "https://www.genome.wisc.edu/tools/asap.htm" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100365>
     :countryCode "US" ;
@@ -17900,15 +17972,17 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
 
 <http://identifiers.org/miriam.resource:MIR%3A00100470>
     :countryCode "GB" ;
+    :deprecationDate "2025-05-30T14:04:46.198"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     :hasProtectedUrls false ;
     :homepage "http://scop.mrc-lmb.cam.ac.uk/scop/" ;
-    :isDeprecated false ;
+    :isDeprecated true ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/scop> ;
     :urlPattern "http://scop.mrc-lmb.cam.ac.uk/scop/search.cgi?sunid={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:04.011"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:04:46.198"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "SCOP at MRC" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:04.011"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:04:46.199"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "SCOP at MRC" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "SCOP at MRC" ;
@@ -18700,7 +18774,7 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     <http://xmlns.com/foaf/0.1/page> "http://www.bioinsilico.org/cgi-bin/CAPSDB/staticHTML/home" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100517>
-    :countryCode "CN" ;
+    :countryCode "SG" ;
     :hasProtectedUrls false ;
     :homepage "http://epsf.bmad.bii.a-star.edu.sg/cube/db/html/home.html" ;
     :isDeprecated false ;
@@ -18709,7 +18783,7 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     :urlPattern "http://epsf.bmad.bii.a-star.edu.sg/cube/db/data/{$id}/" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:11.585"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Cube db at Bioinformatics Institute (Singapore)" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:11.585"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:36:15.901"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/044w3nw43> ;
     <http://purl.org/dc/terms/title> "Cube db at Bioinformatics Institute (Singapore)" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
@@ -19759,19 +19833,19 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
 <http://identifiers.org/miriam.resource:MIR%3A00100584>
     :countryCode "US" ;
     :hasProtectedUrls false ;
-    :homepage "http://www.geneontology.org/cgi-bin/references.cgi" ;
+    :homepage "http://www.geneontology.org" ;
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/go_ref> ;
-    :urlPattern "https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-{$id}.md" ;
+    :urlPattern "https://geneontology.org/GO_REF/{$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:23.58"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Gene Ontology Reference at The Gene Ontology Consortium" ;
-    <http://purl.org/dc/terms/modified> "2020-07-30T07:29:26.918"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T13:57:41.985"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Gene Ontology Reference at The Gene Ontology Consortium" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Gene Ontology Reference at The Gene Ontology Consortium" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/go_ref> ;
-    <http://xmlns.com/foaf/0.1/page> "http://www.geneontology.org/cgi-bin/references.cgi" .
+    <http://xmlns.com/foaf/0.1/page> "http://www.geneontology.org" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100585>
     :countryCode "US" ;
@@ -21615,19 +21689,19 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
 <http://identifiers.org/miriam.resource:MIR%3A00100699>
     :countryCode "US" ;
     :hasProtectedUrls false ;
-    :homepage "http://homologene.bio2rdf.org/fct" ;
+    :homepage "http://bio2rdf.org" ;
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/homologene> ;
-    :urlPattern "http://homologene.bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:{$id}" ;
+    :urlPattern "http://bio2rdf.org/describe/?url=http://bio2rdf.org/homologene:{$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:42.917"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Bio2RDF" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:42.917"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T15:04:54.286"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Bio2RDF" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Bio2RDF" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/homologene> ;
-    <http://xmlns.com/foaf/0.1/page> "http://homologene.bio2rdf.org/fct" .
+    <http://xmlns.com/foaf/0.1/page> "http://bio2rdf.org" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100700>
     :countryCode "US" ;
@@ -22242,15 +22316,17 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
 
 <http://identifiers.org/miriam.resource:MIR%3A00100736>
     :countryCode "BG" ;
+    :deprecationDate "2025-05-30T12:46:51.67"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     :hasProtectedUrls false ;
     :homepage "http://linkedlifedata.com/" ;
-    :isDeprecated false ;
-    :isOfficial true ;
+    :isDeprecated true ;
+    :isOfficial false ;
     :isResourceOf <http://identifiers.org/umls> ;
     :urlPattern "http://linkedlifedata.com/resource/umls/id/{$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:48.68"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T12:46:51.67"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "Unified Medical Language System at LinkedLifeData" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:48.68"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T12:46:51.671"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Unified Medical Language System at LinkedLifeData" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Unified Medical Language System at LinkedLifeData" ;
@@ -27681,15 +27757,17 @@ PharmGKB Pathways are drug centric, gene based, interactive pathways which focus
     <http://www.w3.org/2000/01/rdf-schema#label> "PlasmoDB" .
 
 <http://identifiers.org/pmap.cutdb>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:34:33.518"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100284> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000225" ;
     :prefix "pmap.cutdb" ;
     :sampleID "25782" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:30.793"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:34:33.518"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Proteolysis MAP is a resource for proteolytic networks and pathways. PMAP is comprised of five databases, linked together in one environment. CutDB is a database of individual proteolytic events (cleavage sites)." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:30.793"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:34:33.519"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "CutDB" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "CutDB" .
@@ -29226,16 +29304,20 @@ The interactions include direct (physical) and indirect (functional) association
     <http://www.w3.org/2000/01/rdf-schema#label> "STRING" .
 
 <http://identifiers.org/subtilist>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T13:48:55.659"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationOfflineDate "2018-04-10T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "This resource is now deprecated due to the creation of the GenoList multi-genome browser. However, GenoList also is now itself deprecated, as it is no longer available at the stated homepage, and the organisation has stated that the resource has been discontinued." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100557> ;
     :luiPattern "^BG\\d+$" ;
     :mirid "MIR:00000433" ;
     :prefix "subtilist" ;
     :sampleID "BG11523" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:19.31"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2018-04-10T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>, "2025-05-30T13:48:55.659"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> """SubtiList serves to collate and integrate various aspects of the genomic information from B. subtilis, the paradigm of sporulating Gram-positive bacteria.
 SubtiList provides a complete dataset of DNA and protein sequences derived from the paradigm strain B. subtilis 168, linked to the relevant annotations and functional assignments.""" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:19.31"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T13:51:07.633"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "SubtiList" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "SubtiList" .
@@ -29777,7 +29859,7 @@ Each page contains information about a particular group, with pages linked one t
 
 <http://identifiers.org/umls>
     :isDeprecated false ;
-    :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100736> ;
+    :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001099>, <http://identifiers.org/miriam.resource:MIR%3A00100736> ;
     :luiPattern "^C\\d+$" ;
     :mirid "MIR:00000559" ;
     :prefix "umls" ;
@@ -29934,15 +30016,17 @@ Each page contains information about a particular group, with pages linked one t
     <http://www.w3.org/2000/01/rdf-schema#label> "UniRef" .
 
 <http://identifiers.org/unists>
-    :isDeprecated false ;
+    :deprecationDate "2025-05-30T14:08:00.571"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100207> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000162" ;
     :prefix "unists" ;
     :sampleID "456789" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:16.225"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-05-30T14:08:00.571"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "UniSTS is a comprehensive database of sequence tagged sites (STSs) derived from STS-based maps and other experiments. STSs are defined by PCR primer pairs and are associated with additional information such as genomic position, genes, and sequences." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:16.225"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-05-30T14:08:00.572"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "UniSTS" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "UniSTS" .
