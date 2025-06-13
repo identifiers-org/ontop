@@ -4164,15 +4164,18 @@ It also includes trials conducted outside these areas if they form part of a pae
     <http://www.w3.org/2000/01/rdf-schema#label> "Data Object Service" .
 
 <http://identifiers.org/gabi>
-    :isDeprecated false ;
+    :deprecationDate "2025-06-12T14:28:53.204"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "Pages are online but a database error is thrown when accessing entries." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100210> ;
     :luiPattern "^\\w+$" ;
     :mirid "MIR:00000164" ;
     :prefix "gabi" ;
     :sampleID "2679240" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:16.652"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-06-12T14:28:53.204"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "GabiPD (Genome Analysis of Plant Biological Systems Primary Database) constitutes a repository for a wide array of heterogeneous data from high-throughput experiments in several plant species. These data (i.e. genomics, transcriptomics, proteomics and metabolomics), originating from different model or crop species, can be accessed through a central gene 'Green Card'." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:16.652"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-06-12T14:29:41.053"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "GABI" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "GABI" .
@@ -5315,15 +5318,17 @@ The GOLD (Genomes OnLine Database)is a resource for centralized monitoring of ge
     <http://www.w3.org/2000/01/rdf-schema#label> "Human Proteome Map Peptide" .
 
 <http://identifiers.org/hpm.protein>
-    :isDeprecated false ;
+    :deprecationDate "2025-06-12T14:41:50.175"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100682> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000526" ;
     :prefix "hpm.protein" ;
     :sampleID "1968" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:40.825"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-06-12T14:41:50.175"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Human Proteome Map (HPM) portal integrates the peptide sequencing result from the draft map of the human proteome project. The project was based on LC-MS/MS by utilizing of high resolution and high accuracy Fourier transform mass spectrometry. The HPM contains direct evidence of translation of a number of protein products derived from human genes, based on peptide identifications of multiple organs/tissues and cell types from individuals with clinically defined healthy tissues. The HPM portal provides data on individual proteins, as well as on individual peptide spectra. This collection references proteins." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:40.825"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-06-12T14:41:54.304"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Human Proteome Map Protein" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Human Proteome Map Protein" .
@@ -6330,15 +6335,17 @@ taxonomic class with which they are associated.""" ;
     <http://www.w3.org/2000/01/rdf-schema#label> "LG Chemical Entity Detection Dataset (LGCEDe)" .
 
 <http://identifiers.org/lgic>
-    :isDeprecated false ;
+    :deprecationDate "2025-06-12T15:38:06.071"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100118> ;
     :luiPattern "^\\w+$" ;
     :mirid "MIR:00000087" ;
     :prefix "lgic" ;
     :sampleID "5HT3Arano" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:56.548"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-06-12T15:38:06.071"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Ligand-Gated Ion Channel database provides nucleic and proteic sequences of the subunits of ligand-gated ion channels. These transmembrane proteins can exist under different conformations, at least one of which forms a pore through the membrane connecting two neighbouring compartments. The database can be used to generate multiple sequence alignments from selected subunits, and gives the atomic coordinates of subunits, or portion of subunits, where available." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:56.548"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-06-12T15:38:09.932"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Ligand-Gated Ion Channel database" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Ligand-Gated Ion Channel database" .
