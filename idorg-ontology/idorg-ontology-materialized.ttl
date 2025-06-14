@@ -4871,15 +4871,18 @@ The GOLD (Genomes OnLine Database)is a resource for centralized monitoring of ge
     <http://www.w3.org/2000/01/rdf-schema#label> "Gramene Growth Stage Ontology" .
 
 <http://identifiers.org/grsdb>
-    :isDeprecated false ;
+    :deprecationDate "2025-06-13T08:18:31.964"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "The GRSDB2 project is not supported anymore. The curated data in the database is also outdated. Consider using the QGRS Mapper web tool https://bioinformatics.ramapo.edu/QGRS/index.php which can be used within limits to analyze individual sequences." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100636> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000495" ;
     :prefix "grsdb" ;
     :sampleID "10142" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:33.087"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-06-13T08:18:31.964"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "GRSDB is a database of G-quadruplexes and contains information on composition and distribution of putative Quadruplex-forming G-Rich Sequences (QGRS) mapped in the eukaryotic pre-mRNA sequences, including those that are alternatively processed (alternatively spliced or alternatively polyadenylated). The data stored in the GRSDB is based on computational analysis of NCBI Entrez Gene entries and their corresponding annotated genomic nucleotide sequences of RefSeq/GenBank." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:33.087"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-06-13T08:20:11.414"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "GRSDB" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "GRSDB" .
