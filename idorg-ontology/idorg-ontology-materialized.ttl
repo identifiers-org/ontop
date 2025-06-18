@@ -409,13 +409,13 @@
 <http://identifiers.org/arxiv>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100060> ;
-    :luiPattern "^(\\w+(\\-\\w+)?(\\.\\w+)?)?\\d{4,7}(\\.\\d+(v\\d+)?)?$" ;
+    :luiPattern "^(\\w+(\\-\\w+)?(\\.\\w+)?\\/?)?\\d{4,7}(\\.\\d+(v\\d+)?)?$" ;
     :mirid "MIR:00000035" ;
     :prefix "arxiv" ;
     :sampleID "0807.4956v1" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:41.707"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "arXiv is an e-print service in the fields of physics, mathematics, non-linear science, computer science, and quantitative biology." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:41.707"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-06-17T13:05:42.908"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "arXiv" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "arXiv" .
