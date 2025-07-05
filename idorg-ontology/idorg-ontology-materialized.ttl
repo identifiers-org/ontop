@@ -1307,29 +1307,33 @@
     <http://www.w3.org/2000/01/rdf-schema#label> "Brenda Tissue Ontology" .
 
 <http://identifiers.org/bugbase.expt>
-    :isDeprecated false ;
+    :deprecationDate "2025-07-04T10:41:44.933"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100524> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000404" ;
     :prefix "bugbase.expt" ;
     :sampleID "288" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:12.968"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-07-04T10:41:44.933"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "BugBase is a MIAME-compliant microbial gene expression and comparative genomic database. It stores experimental annotation and multiple raw and analysed data formats, as well as protocols for bacterial microarray designs. This collection references microarray experiments." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:12.968"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-04T10:41:44.936"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BugBase Expt" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BugBase Expt" .
 
 <http://identifiers.org/bugbase.protocol>
-    :isDeprecated false ;
+    :deprecationDate "2025-07-04T10:42:10.531"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100523> ;
     :luiPattern "^\\d+$" ;
     :mirid "MIR:00000403" ;
     :prefix "bugbase.protocol" ;
     :sampleID "67" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:12.749"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-07-04T10:42:10.531"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "BugBase is a MIAME-compliant microbial gene expression and comparative genomic database. It stores experimental annotation and multiple raw and analysed data formats, as well as protocols for bacterial microarray designs. This collection references design protocols." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:12.749"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-04T10:42:10.536"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "BugBase Protocol" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "BugBase Protocol" .
@@ -6961,15 +6965,18 @@ taxonomic class with which they are associated.""" ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Metabolic Atlas" .
 
 <http://identifiers.org/metlin>
-    :isDeprecated false ;
+    :deprecationDate "2025-07-04T10:50:10.765"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    :deprecationStatement "Access to database entries does not seem to be available anymore. If you know how to access this data, please get in contact with our team." ;
+    :isDeprecated true ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100406> ;
     :luiPattern "^\\d{4}$" ;
     :mirid "MIR:00000322" ;
     :prefix "metlin" ;
     :sampleID "1455" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:52.64"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/date> "2025-07-04T10:50:10.765"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The METLIN (Metabolite and Tandem Mass Spectrometry) Database is a repository of metabolite information as well as tandem mass spectrometry data, providing public access to its comprehensive MS and MS/MS metabolite data. An annotated list of known metabolites and their mass, chemical formula, and structure are available, with each metabolite linked to external resources for further reference and inquiry." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:52.64"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-04T10:51:17.567"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "METLIN" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "METLIN" .
@@ -17124,21 +17131,21 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
 <http://identifiers.org/miriam.resource:MIR%3A00100383>
     :countryCode "US" ;
     :hasProtectedUrls false ;
-    :homepage "http://catalog.loc.gov/webvoy.htm" ;
+    :homepage "http://catalog.loc.gov" ;
     :isDeprecated false ;
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/issn> ;
     :providerCode "" ;
-    :urlPattern "https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchArg={$id}&searchType=1&recCount=25" ;
+    :urlPattern "https://search.catalog.loc.gov/search?option=keyword&query={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:48.351"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "ISSN at Library of Congress" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:48.351"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-04T10:39:20.545"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/04p405e02> ;
     <http://purl.org/dc/terms/title> "ISSN at Library of Congress" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "ISSN at Library of Congress" ;
     <http://www.w3.org/ns/dcat#servesDataset> <http://identifiers.org/issn> ;
-    <http://xmlns.com/foaf/0.1/page> "http://catalog.loc.gov/webvoy.htm" .
+    <http://xmlns.com/foaf/0.1/page> "http://catalog.loc.gov" .
 
 <http://identifiers.org/miriam.resource:MIR%3A00100384>
     :countryCode "GB" ;
@@ -18786,10 +18793,10 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/inchi> ;
     :providerCode "" ;
-    :urlPattern "http://www.chemspider.com/{$id}" ;
+    :urlPattern "https://www.chemspider.com/search?params={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:07.515"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "InChI through Chemspider" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:07.515"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-04T10:22:03.245"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/025sbr097> ;
     <http://purl.org/dc/terms/title> "InChI through Chemspider" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
@@ -21575,10 +21582,10 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     :isOfficial false ;
     :isResourceOf <http://identifiers.org/dbest> ;
     :providerCode "" ;
-    :urlPattern "http://getentry.ddbj.nig.ac.jp/getentry/na/{$id}" ;
+    :urlPattern "https://getentry.ddbj.nig.ac.jp/getentry/na/{$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:15.539"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "dbEST through DNA Data Bank of Japan (DDBJ)" ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:16:15.539"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-04T10:40:19.7"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "dbEST through DNA Data Bank of Japan (DDBJ)" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "dbEST through DNA Data Bank of Japan (DDBJ)" ;
