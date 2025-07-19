@@ -16648,10 +16648,10 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     :isOfficial true ;
     :isResourceOf <http://identifiers.org/massbank> ;
     :providerCode "massbankjp" ;
-    :urlPattern "https://massbank.jp/RecordDisplay?id={$id}" ;
+    :urlPattern "https://massbank.jp/MassBank/RecordDisplay?id={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:42.296"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "MassBank in Japan" ;
-    <http://purl.org/dc/terms/modified> "2022-12-13T15:27:44.382"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-18T08:32:22.197"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "MassBank in Japan" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "MassBank in Japan" ;
@@ -21829,7 +21829,7 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     :urlPattern "https://massbank.eu/MassBank/RecordDisplay?id={$id}" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:16:42.45"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "MassBank in Europe" ;
-    <http://purl.org/dc/terms/modified> "2022-12-13T15:27:54.071"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-18T08:32:57.517"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "MassBank in Europe" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "MassBank in Europe" ;
