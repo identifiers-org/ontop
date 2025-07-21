@@ -4,7 +4,7 @@
 # The Identifiers.org Ontology Terms
 
 Below you will find an overview of the terms created for the identifiers.org ontology. Formal definitions of these can be found at the [idorg-ontology.ttl](./idorg-ontology.ttl) file.
-Aside from these terms, these files also uses terms from 
+Aside from these terms, these files also use terms from 
 [RDF Schema](https://www.w3.org/TR/rdf-schema/), 
 [VoID](https://www.w3.org/TR/void/), 
 [DCAT](https://www.w3.org/TR/vocab-dcat-3/), and 
