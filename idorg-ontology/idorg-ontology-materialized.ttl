@@ -10970,7 +10970,7 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
     :urlPattern "https://services.scicrunch.io/sparc/drs/v1/package/{$id}" ;
     <http://purl.org/dc/terms/created> "2025-06-04T08:33:08.315"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The FAIR Data Informatics Lab at UCSD is a leader in developing and providing novel informatics infrastructure and tools for making data FAIR: Findable, Accessible, Interoperable and Reusable." ;
-    <http://purl.org/dc/terms/modified> "2025-06-04T08:33:08.315"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-22T07:59:29.599"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/publisher> <https://ror.org/0168r3w48> ;
     <http://purl.org/dc/terms/title> "FAIR Data Informatics Laboratory" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
@@ -29981,13 +29981,13 @@ The initiative works with participating journals to intercept manuscripts in the
 <http://identifiers.org/sparc.drs>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00001101> ;
-    :luiPattern "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" ;
+    :luiPattern "(?:[a-zA-Z]+\\/)?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" ;
     :mirid "MIR:00001102" ;
     :prefix "sparc.drs" ;
-    :sampleID "8ca67504-3167-4cc8-ba74-98137bb7cd0a" ;
+    :sampleID "package/8ca67504-3167-4cc8-ba74-98137bb7cd0a" ;
     <http://purl.org/dc/terms/created> "2025-06-04T08:33:08.309"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The SPARC Data Repository Service (DRS) is an implementation of the Global Alliance for Genomics and Health (GA4GH) DRS specification that provides a standardized API that enables researchers and other data consumers to access and retrieve data objects from various data repositories in a consistent and cloud-agnostic way. This implementation provides information for data objects in the SPARC repository (sparc.science)." ;
-    <http://purl.org/dc/terms/modified> "2025-06-04T08:33:08.309"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-07-22T07:59:25.311"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "SPARC DRS" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "SPARC DRS" .
