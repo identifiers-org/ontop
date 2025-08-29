@@ -30784,13 +30784,13 @@ Each page contains information about a particular group, with pages linked one t
 <http://identifiers.org/uniprot>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100164>, <http://identifiers.org/miriam.resource:MIR%3A00100330> ;
-    :luiPattern "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$" ;
+    :luiPattern "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?(-\\d+)?(#PRO_\\d+)?$" ;
     :mirid "MIR:00000005" ;
     :prefix "uniprot" ;
     :sampleID "P0DP23" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:15:29.457"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The UniProt Knowledgebase (UniProtKB) is a comprehensive resource for protein sequence and functional information with extensive cross-references to more than 120 external databases. Besides amino acid sequence and a description, it also provides taxonomic data and citation information." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:15:29.457"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-08-28T14:39:34.041"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "UniProt Knowledgebase" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "UniProt Knowledgebase" .
