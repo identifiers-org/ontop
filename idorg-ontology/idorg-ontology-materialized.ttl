@@ -26702,13 +26702,13 @@ profiles. The platform also includes MGnify Proteins, a database of protein sequ
 <http://identifiers.org/molmedb>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00000749> ;
-    :luiPattern "^[m,M]{2}[0-9]{5}[0-9]*$" ;
+    :luiPattern "^[Mm]{2}[0-9]{5,}(\\.[0-9]+)?$" ;
     :mirid "MIR:00000768" ;
     :prefix "molmedb" ;
     :sampleID "MM00040" ;
     <http://purl.org/dc/terms/created> "2020-07-03T09:30:53.125"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "MolMeDB is an open chemistry database about interactions of molecules with membranes. We collect information on how chemicals interact with individual membranes either from experiment or from simulations. " ;
-    <http://purl.org/dc/terms/modified> "2020-07-03T09:30:53.125"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-09-01T09:45:25.887"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "MolMeDB" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "MolMeDB" .
