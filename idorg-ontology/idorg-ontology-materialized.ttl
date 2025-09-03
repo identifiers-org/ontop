@@ -6869,13 +6869,13 @@ taxonomic class with which they are associated.""" ;
 <http://identifiers.org/metabolights>
     :isDeprecated false ;
     :isNamespaceOf <http://identifiers.org/miriam.resource:MIR%3A00100486>, <http://identifiers.org/miriam.resource:MIR%3A00100853> ;
-    :luiPattern "^MTBLS\\d+$" ;
+    :luiPattern "^MTBL[CS]\\d+$" ;
     :mirid "MIR:00000380" ;
     :prefix "metabolights" ;
     :sampleID "MTBLS1" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:06.457"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "MetaboLights is a database for Metabolomics experiments and derived information. The database is cross-species, cross-technique and covers metabolite structures and their reference spectra as well as their biological roles, locations and concentrations, and experimental data from metabolic experiments. This collection references individual metabolomics studies." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:06.457"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-09-02T08:04:27.852"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "MetaboLights" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "MetaboLights" .
