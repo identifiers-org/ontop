@@ -3566,7 +3566,7 @@ The HEAL platform also offers a secure and cost-effective cloud-computing enviro
     :sampleID "EGAD00000000001" ;
     <http://purl.org/dc/terms/created> "2019-06-11T14:17:37.233"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The EGA is a service for permanent archiving and sharing of all types of personally identifiable genetic and phenotypic data resulting from biomedical research projects. The EGA contains exclusive data collected from individuals whose consent agreements authorize data release only for specific research use or to bona fide researchers. Strict protocols govern how information is managed, stored and distributed by the EGA project. This collection references 'Datasets'." ;
-    <http://purl.org/dc/terms/modified> "2019-06-11T14:17:37.233"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-09-22T12:41:11.469"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "European Genome-phenome Archive Dataset" ;
     a :Namespace, <http://www.w3.org/ns/dcat#Dataset> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "European Genome-phenome Archive Dataset" .
