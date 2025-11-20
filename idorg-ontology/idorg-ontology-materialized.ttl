@@ -10426,10 +10426,10 @@ We are part of the European Molecular Biology Laboratory (EMBL), an internationa
     :isOfficial true ;
     :isResourceOf <http://identifiers.org/pdb> ;
     :providerCode "wwpdb" ;
-    :urlPattern "https://www.wwpdb.org/pdb?id={$id}" ;
+    :urlPattern "https://www.wwpdb.org/pdb?id=pdb_0000{$id}" ;
     <http://purl.org/dc/terms/created> "2022-01-31T16:52:49.325"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/description> "The Worldwide PDB (wwPDB) organization manages the PDB archive and ensures that the PDB is freely and publicly available to the global community." ;
-    <http://purl.org/dc/terms/modified> "2022-02-02T10:20:16.642"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/modified> "2025-11-19T13:39:36.871"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
     <http://purl.org/dc/terms/title> "Worldwide Protein Data Bank" ;
     a :Resource, <http://www.w3.org/ns/dcat#DataService> ;
     <http://www.w3.org/2000/01/rdf-schema#label> "Worldwide Protein Data Bank" ;
